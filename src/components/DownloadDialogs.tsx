@@ -8,6 +8,8 @@ import SelectMicrobitUsbDialog from "./SelectMicrobitUsbDialog";
 import { DownloadStep as DownloadStep } from "../model";
 import { useDownloadActions } from "../hooks/download-hooks";
 import { useStore } from "../store";
+import UnplugRadioLinkMicrobitDialog from "./UnplugRadioLinkMicrobitDialog";
+import ConnectRadioDataCollectionMicrobitDialog from "./ConnectRadioDataCollectionMicrobitDialog";
 
 const DownloadDialogs = () => {
   const actions = useDownloadActions();
@@ -25,7 +27,7 @@ const DownloadDialogs = () => {
           onNext={actions.onHelpNext}
         />
       );
-    case DownloadStep.ChooseSameOrAnotherMicrobit:
+    case DownloadStep.ChooseSameOrDifferentMicrobit:
       return (
         <DownloadChooseMicrobitDialog
           isOpen
@@ -47,6 +49,24 @@ const DownloadDialogs = () => {
             headingId: "connectMB.connectCable.heading",
             subtitleId: "connectMB.connectCable.downloadProject.subtitle",
           }}
+        />
+      );
+    case DownloadStep.ConnectRadioRemoteMicrobit:
+      return (
+        <ConnectRadioDataCollectionMicrobitDialog
+          isOpen
+          onClose={actions.close}
+          onBackClick={actions.getOnBack()}
+          onNextClick={actions.getOnNext()}
+        />
+      );
+    case DownloadStep.UnplugRadioBridgeMicrobit:
+      return (
+        <UnplugRadioLinkMicrobitDialog
+          isOpen
+          onClose={actions.close}
+          onBackClick={actions.getOnBack()}
+          onNextClick={actions.getOnNext()}
         />
       );
     case DownloadStep.WebUsbFlashingTutorial:
