@@ -89,6 +89,8 @@ export interface State {
   gestures: GestureData[];
   model: tf.LayersModel | undefined;
 
+  timestamp: number | undefined;
+
   isRecording: boolean;
 
   project: Project;
@@ -172,6 +174,7 @@ export const useStore = create<Store>()(
   devtools(
     persist(
       (set, get) => ({
+        timestamp: undefined,
         gestures: [],
         isRecording: false,
         project: createUntitledProject(),
@@ -214,6 +217,7 @@ export const useStore = create<Store>()(
               model: undefined,
               project: createUntitledProject(),
               appEditNeedsFlushToEditor: true,
+              timestamp: Date.now(),
             },
             false,
             "newSession"
@@ -602,6 +606,7 @@ export const useStore = create<Store>()(
             "dataCollectionMicrobitConnected"
           );
         },
+
         tourStart(tourId: TourId) {
           set((state) => {
             if (!state.settings.toursCompleted.includes(tourId)) {
@@ -640,11 +645,18 @@ export const useStore = create<Store>()(
       }),
       {
         name: "ml",
-        partialize: ({ gestures, project, projectEdited, settings }) => ({
+        partialize: ({
           gestures,
           project,
           projectEdited,
           settings,
+          timestamp,
+        }) => ({
+          gestures,
+          project,
+          projectEdited,
+          settings,
+          timestamp,
           // The model itself is in IndexDB
         }),
         merge(persistedStateUnknown, currentState) {
