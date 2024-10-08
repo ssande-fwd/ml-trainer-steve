@@ -33,7 +33,6 @@ import MoreMenuButton from "./MoreMenuButton";
 const gridCommonProps: Partial<GridProps> = {
   gridTemplateColumns: "290px 360px 40px auto",
   gap: 3,
-  py: 2,
   w: "100%",
 };
 
@@ -86,9 +85,9 @@ const TestingModelGridView = () => {
             values={{ action: detectedLabel }}
           />
         </VisuallyHidden>
-        <HeadingGrid {...gridCommonProps} px={10} headings={headings} />
+        <HeadingGrid {...gridCommonProps} px={5} headings={headings} />
         <VStack
-          px={10}
+          px={5}
           w="full"
           h={0}
           justifyContent="start"
@@ -101,6 +100,7 @@ const TestingModelGridView = () => {
             <Grid
               {...gridCommonProps}
               {...(projectEdited ? { w: "fit-content", pr: 0 } : {})}
+              py={2}
               autoRows="max-content"
               h="fit-content"
               alignSelf="start"
@@ -154,7 +154,7 @@ const TestingModelGridView = () => {
       <VStack w="full" flexShrink={0} bottom={0} gap={0} bg="gray.25">
         <HStack
           justifyContent="right"
-          px={10}
+          px={5}
           py={2}
           w="full"
           borderBottomWidth={3}

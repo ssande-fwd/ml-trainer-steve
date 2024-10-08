@@ -23,8 +23,7 @@ import { FormattedMessage } from "react-intl";
 const gridCommonProps: Partial<GridProps> = {
   gridTemplateColumns: "290px 1fr",
   gap: 3,
-  px: 10,
-  py: 2,
+  px: 5,
   w: "100%",
 };
 
@@ -138,6 +137,7 @@ const DataSamplesGridView = () => {
       ) : (
         <Grid
           {...gridCommonProps}
+          py={2}
           alignItems="start"
           autoRows="max-content"
           overflow="auto"
