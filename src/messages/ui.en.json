@@ -1,4 +1,10 @@
 {
+  "aarhus-university-alt": [
+    {
+      "type": 0,
+      "value": "Aarhus University"
+    }
+  ],
   "about": [
     {
       "type": 0,
@@ -113,6 +119,28 @@
     {
       "type": 0,
       "value": "Cancel"
+    }
+  ],
+  "certainty-label": [
+    {
+      "type": 0,
+      "value": "certainty for "
+    },
+    {
+      "type": 1,
+      "value": "action"
+    },
+    {
+      "type": 0,
+      "value": ": "
+    },
+    {
+      "type": 1,
+      "value": "currentConfidence"
+    },
+    {
+      "type": 0,
+      "value": " percent"
     }
   ],
   "close-action": [
@@ -1275,6 +1303,12 @@
       "value": "Home"
     }
   ],
+  "homepage-alt": [
+    {
+      "type": 0,
+      "value": "graph showing x, y, z graph lines representing micro:bit accelerometer data"
+    }
+  ],
   "homepage-description": [
     {
       "type": 0,
@@ -1482,7 +1516,7 @@
   "newpage-new-session-subtitle": [
     {
       "type": 0,
-      "value": "Connect your micro:bit and collect movement data to build a machine learning model"
+      "value": "Connect your micro:bit and collect movement data to build a machine learning model."
     }
   ],
   "newpage-new-session-title": [
@@ -1645,6 +1679,12 @@
       "value": "Follow these instructions to restart the connection process."
     }
   ],
+  "recording-graph-label": [
+    {
+      "type": 0,
+      "value": "graph showing micro:bit x, y, z accelerometer data for one recording"
+    }
+  ],
   "reload-action": [
     {
       "type": 0,
@@ -1729,6 +1769,12 @@
     {
       "type": 0,
       "value": "Start training"
+    }
+  ],
+  "steps-alt": [
+    {
+      "type": 0,
+      "value": "diagram showing the iterative process of collecting data, training a model, testing the model, and improving the model by improving the data collected before finally coding using the model."
     }
   ],
   "steps-code": [
