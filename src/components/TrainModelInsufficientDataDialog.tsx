@@ -1,7 +1,5 @@
 import {
   Button,
-  HStack,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -10,11 +8,9 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
-  VStack,
 } from "@chakra-ui/react";
-import { FormattedMessage } from "react-intl";
-import trainModelImage from "../images/train_model_black.svg";
 import { ComponentProps } from "react";
+import { FormattedMessage } from "react-intl";
 
 const TrainModelInsufficientDataDialog = ({
   onClose,
@@ -36,23 +32,9 @@ const TrainModelInsufficientDataDialog = ({
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <VStack width="100%" alignItems="left">
-              <HStack gap={5}>
-                <Image
-                  src={trainModelImage}
-                  opacity={0.4}
-                  w="180px"
-                  h="107px"
-                  alt=""
-                  flexShrink={0}
-                />
-                <VStack gap={5}>
-                  <Text textAlign="left">
-                    <FormattedMessage id="insufficient-data-body" />
-                  </Text>
-                </VStack>
-              </HStack>
-            </VStack>
+            <Text>
+              <FormattedMessage id="insufficient-data-body" />
+            </Text>
           </ModalBody>
           <ModalFooter justifyContent="flex-end">
             <Button variant="primary" onClick={onClose}>

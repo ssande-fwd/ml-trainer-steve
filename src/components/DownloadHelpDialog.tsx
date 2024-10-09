@@ -2,7 +2,6 @@ import {
   Button,
   Checkbox,
   HStack,
-  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -11,12 +10,10 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import { ComponentProps, useCallback, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { useDeployment } from "../deployment";
-import testModelImage from "../images/test_model_black.svg";
 
 export interface DownloadHelpDialogProps
   extends Omit<ComponentProps<typeof Modal>, "children"> {
@@ -38,7 +35,7 @@ const DownloadHelpDialog = ({
       closeOnOverlayClick={false}
       motionPreset="none"
       onClose={onClose}
-      size="3xl"
+      size="xl"
       isCentered
       {...rest}
     >
@@ -49,17 +46,12 @@ const DownloadHelpDialog = ({
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <HStack gap={5} width="100%">
-              <Image src={testModelImage} opacity={0.4} w="180px" alt="" />
-              <VStack gap={5}>
-                <Text textAlign="left">
-                  <FormattedMessage
-                    id="download-project-intro-description"
-                    values={{ appNameFull }}
-                  />
-                </Text>
-              </VStack>
-            </HStack>
+            <Text>
+              <FormattedMessage
+                id="download-project-intro-description"
+                values={{ appNameFull }}
+              />
+            </Text>
           </ModalBody>
           <ModalFooter justifyContent="space-between">
             <Checkbox
