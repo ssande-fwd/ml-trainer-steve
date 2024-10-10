@@ -23,6 +23,7 @@ import YoutubeVideoEmbed from "../components/YoutubeVideoEmbed";
 import { useDeployment } from "../deployment";
 import blockImage from "../images/block.png";
 import xyzGraph from "../images/xyz-graph.png";
+import clap from "../images/clap-square.png";
 import { createNewPageUrl } from "../urls";
 
 const graphData = {
@@ -109,8 +110,18 @@ const HomePage = () => {
           <Box flex="1" position="relative">
             <Image
               src={xyzGraph}
-              borderRadius="md"
+              borderRadius="lg"
               bgColor="white"
+              pr={1}
+              alt={intl.formatMessage({ id: "homepage-alt" })}
+            />
+            <Image
+              height="55%"
+              position="absolute"
+              bottom={0}
+              left={0}
+              src={clap}
+              borderRadius="md"
               pr={1}
               alt={intl.formatMessage({ id: "homepage-alt" })}
             />
@@ -122,24 +133,9 @@ const HomePage = () => {
           </Heading>
           <Box w="100%" position="relative">
             <YoutubeVideoEmbed
-              youtubeId="ZhUtuuQemFc"
+              youtubeId="7DqaU_Qexy4"
               alt={intl.formatMessage({ id: "homepage-video-alt" })}
             />
-            <Box
-              position="absolute"
-              bgColor="brand.700"
-              color="white"
-              fontWeight="bold"
-              top={0}
-              left={0}
-              right={0}
-              bottom={0}
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Text>Video coming soon</Text>
-            </Box>
           </Box>
           <Text fontSize="md">
             <FormattedMessage
