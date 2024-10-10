@@ -10,11 +10,13 @@ import {
   MenuList,
   Portal,
   VStack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { MakeCodeRenderBlocksProvider } from "@microbit/makecode-embed/react";
-import React from "react";
+import React, { useCallback } from "react";
 import { RiArrowRightLine, RiDeleteBin2Line } from "react-icons/ri";
 import { FormattedMessage, useIntl } from "react-intl";
+import { useConnectActions } from "../connect-actions-hooks";
 import { usePrediction } from "../hooks/ml-hooks";
 import { useProject } from "../hooks/project-hooks";
 import { mlSettings } from "../ml";
@@ -26,6 +28,7 @@ import CodeViewCard from "./CodeViewCard";
 import CodeViewGridItem from "./CodeViewGridItem";
 import GestureNameGridItem from "./GestureNameGridItem";
 import HeadingGrid from "./HeadingGrid";
+import UnsupportedEditorDevice from "./IncompatibleEditorDevice";
 import LiveGraphPanel from "./LiveGraphPanel";
 import MoreMenuButton from "./MoreMenuButton";
 
@@ -59,12 +62,34 @@ const TestingModelGridView = () => {
   const gestures = useStore((s) => s.gestures);
   const setRequiredConfidence = useStore((s) => s.setRequiredConfidence);
   const { openEditor, project, resetProject, projectEdited } = useProject();
+  const { getDataCollectionBoardVersion } = useConnectActions();
 
   const [{ languageId }] = useSettings();
   const makeCodeLang = getMakeCodeLang(languageId);
 
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const continueToEditor = useCallback(async () => {
+    await openEditor();
+    onClose();
+  }, [onClose, openEditor]);
+
+  const maybeOpenEditor = useCallback(() => {
+    // Open editor if device is not a V1, otherwise show warning dialog.
+    if (getDataCollectionBoardVersion() === "V1") {
+      return onOpen();
+    }
+    void openEditor();
+  }, [getDataCollectionBoardVersion, onOpen, openEditor]);
+
   return (
     <>
+      <UnsupportedEditorDevice
+        isOpen={isOpen}
+        onClose={onClose}
+        onNext={continueToEditor}
+        stage="openEditor"
+      />
       <MakeCodeRenderBlocksProvider
         key={makeCodeLang}
         options={{
@@ -154,7 +179,7 @@ const TestingModelGridView = () => {
             <ButtonGroup isAttached>
               <Button
                 variant="primary"
-                onClick={openEditor}
+                onClick={maybeOpenEditor}
                 className={tourElClassname.editInMakeCodeButton}
               >
                 <FormattedMessage id="edit-in-makecode-action" />

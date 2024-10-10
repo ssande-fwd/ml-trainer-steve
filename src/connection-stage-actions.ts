@@ -1,8 +1,9 @@
+import { BoardVersion } from "@microbit/microbit-connection";
 import { deviceIdToMicrobitName } from "./bt-pattern-utils";
 import {
   ConnectActions,
   ConnectAndFlashFailResult,
-  ConnectAndFlashResult,
+  ConnectResult,
 } from "./connect-actions";
 import { ConnectionStatus } from "./connect-status-hooks";
 import {
@@ -65,13 +66,13 @@ export class ConnectionStageActions {
   ) => {
     this.setFlowStep(ConnectionFlowStep.WebUsbChooseMicrobit);
     const hex = this.getHexType();
-    const { result, deviceId } =
+    const { result, deviceId, boardVersion } =
       await this.actions.requestUSBConnectionAndFlash(hex, progressCallback);
-    if (result !== ConnectAndFlashResult.Success) {
+    if (result !== ConnectResult.Success) {
       return this.handleConnectAndFlashFail(result);
     }
 
-    await this.onFlashSuccess(deviceId, onSuccess);
+    await this.onFlashSuccess(deviceId, onSuccess, boardVersion);
   };
 
   private getHexType = () => {
@@ -84,7 +85,8 @@ export class ConnectionStageActions {
 
   private onFlashSuccess = async (
     deviceId: number,
-    onSuccess: (stage: ConnectionStage) => void
+    onSuccess: (stage: ConnectionStage) => void,
+    boardVersion?: BoardVersion
   ) => {
     let newStage = this.stage;
     // Store radio/bluetooth details. Radio is essential to pass to micro:bit 2.
@@ -113,6 +115,7 @@ export class ConnectionStageActions {
           connType: "radio",
           flowStep: ConnectionFlowStep.ConnectBattery,
           radioRemoteDeviceId: deviceId,
+          radioRemoteBoardVersion: boardVersion,
         };
         break;
       }
@@ -130,15 +133,15 @@ export class ConnectionStageActions {
     // TODO: Not sure if this is a good way of error handling because it means
     // there are 2 levels of switch statements to go through to provide UI
     switch (result) {
-      case ConnectAndFlashResult.ErrorMicrobitUnsupported:
+      case ConnectResult.ErrorMicrobitUnsupported:
         return this.setFlowStep(ConnectionFlowStep.MicrobitUnsupported);
-      case ConnectAndFlashResult.ErrorBadFirmware:
+      case ConnectResult.ErrorBadFirmware:
         return this.setFlowStep(ConnectionFlowStep.BadFirmware);
-      case ConnectAndFlashResult.ErrorNoDeviceSelected:
+      case ConnectResult.ErrorNoDeviceSelected:
         return this.setFlowStep(
           ConnectionFlowStep.TryAgainWebUsbSelectMicrobit
         );
-      case ConnectAndFlashResult.ErrorUnableToClaimInterface:
+      case ConnectResult.ErrorUnableToClaimInterface:
         return this.setFlowStep(ConnectionFlowStep.TryAgainCloseTabs);
       default:
         return this.setFlowStep(ConnectionFlowStep.TryAgainReplugMicrobit);
@@ -176,7 +179,10 @@ export class ConnectionStageActions {
     if (!newStage.radioRemoteDeviceId) {
       throw new Error("Radio bridge device id not set");
     }
-    await this.actions.connectMicrobitsSerial(newStage.radioRemoteDeviceId);
+    await this.actions.connectMicrobitsSerial(
+      newStage.radioRemoteDeviceId,
+      newStage.radioRemoteBoardVersion
+    );
   };
 
   private getConnectingStage = (connType: ConnectionType) => {

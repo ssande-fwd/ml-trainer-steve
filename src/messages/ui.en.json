@@ -1103,6 +1103,12 @@
       "value": "Training model…"
     }
   ],
+  "continue-makecode-action": [
+    {
+      "type": 0,
+      "value": "Continue to MakeCode"
+    }
+  ],
   "cookies-action": [
     {
       "type": 0,
@@ -1363,6 +1369,74 @@
     {
       "type": 0,
       "value": "Home page"
+    }
+  ],
+  "incompatible-device-body-1": [
+    {
+      "type": 0,
+      "value": "Continue to MakeCode to edit the program. You can then save the project hex which can be downloaded onto a micro:bit V2."
+    }
+  ],
+  "incompatible-device-body-2": [
+    {
+      "type": 0,
+      "value": "Alternatively, "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "save the project hex"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " without using MakeCode."
+    }
+  ],
+  "incompatible-device-body-alt": [
+    {
+      "type": 0,
+      "value": "Go back to select a different micro:bit, or "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "save the project hex"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " which can be downloaded onto a micro:bit V2 later."
+    }
+  ],
+  "incompatible-device-heading": [
+    {
+      "type": 0,
+      "value": "Incompatible device"
+    }
+  ],
+  "incompatible-device-subtitle": [
+    {
+      "type": 0,
+      "value": "You are using a micro:bit V1, but machine learning projects need the faster processor on a micro:bit V2. "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Learn more about micro:bit versions."
+        }
+      ],
+      "type": 8,
+      "value": "link"
     }
   ],
   "insufficient-data-body": [

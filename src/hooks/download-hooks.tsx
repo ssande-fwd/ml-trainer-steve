@@ -5,7 +5,7 @@ import {
 import { useMemo } from "react";
 import {
   ConnectActions,
-  ConnectAndFlashResult,
+  ConnectResult,
   ConnectionAndFlashOptions,
 } from "../connect-actions";
 import { useConnectActions } from "../connect-actions-hooks";
@@ -99,6 +99,15 @@ export class DownloadProjectActions {
   onChosenSameMicrobit = async () => {
     if (this.connectActions.isUsbDeviceConnected()) {
       const newStage = { ...this.state, microbitToFlash: MicrobitToFlash.Same };
+      const usbConnection = this.connectActions.getUsbConnection();
+      if (usbConnection.getBoardVersion() === "V1") {
+        this.updateStage({
+          ...newStage,
+          step: DownloadStep.IncompatibleDevice,
+        });
+        return;
+      }
+      this.updateStage(newStage);
       // Can flash directly without choosing device.
       return this.connectAndFlashMicrobit(newStage);
     }
@@ -144,7 +153,18 @@ export class DownloadProjectActions {
     if (!stage.hex) {
       throw new Error("Project hex/name is not set!");
     }
+
     this.updateStage({ step: DownloadStep.WebUsbChooseMicrobit });
+
+    const { result, usb } = await this.connectActions.requestUSBConnection(
+      connectionAndFlashOptions
+    );
+    if (result === ConnectResult.Success && usb.getBoardVersion() === "V1") {
+      return this.updateStage({
+        step: DownloadStep.IncompatibleDevice,
+      });
+    }
+
     await this.flashMicrobit(stage, connectionAndFlashOptions);
   };
 
@@ -155,17 +175,17 @@ export class DownloadProjectActions {
     if (!stage.hex) {
       throw new Error("Project hex/name is not set!");
     }
-    const { result } = await this.connectActions.requestUSBConnectionAndFlash(
+    const result = await this.connectActions.flashMicrobit(
       stage.hex.hex,
       this.flashingProgressCallback,
-      connectionAndFlashOptions
+      connectionAndFlashOptions?.temporaryUsbConnection
     );
     const newStage = {
       usbDevice:
         connectionAndFlashOptions?.temporaryUsbConnection ??
         this.connectActions.getUsbConnection(),
       step:
-        result === ConnectAndFlashResult.Success
+        result === ConnectResult.Success
           ? DownloadStep.None
           : DownloadStep.ManualFlashingTutorial,
       flashProgress: 0,
@@ -231,6 +251,8 @@ export class DownloadProjectActions {
           ? DownloadStep.ConnectRadioRemoteMicrobit
           : DownloadStep.ConnectCable;
       }
+      case DownloadStep.IncompatibleDevice:
+        return DownloadStep.ChooseSameOrDifferentMicrobit;
       default:
         throw new Error(`Prev step not accounted for: ${this.state.step}`);
     }
