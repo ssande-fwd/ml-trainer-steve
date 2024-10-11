@@ -38,7 +38,10 @@ const allFlags: FlagMetadata[] = [
   // Alphabetical order.
   { name: "devtools", defaultOnStages: ["local"] },
   { name: "homePageProjects", defaultOnStages: ["local"] },
-  { name: "preReleaseNotice", defaultOnStages: ["review", "staging"] },
+  {
+    name: "preReleaseNotice",
+    defaultOnStages: ["review", "staging", "production"],
+  },
   { name: "exampleOptInA", defaultOnStages: ["review", "staging"] },
   { name: "exampleOptInB", defaultOnStages: [] },
 ];
