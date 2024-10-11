@@ -1,7 +1,6 @@
 {
-  "name": "ai-creator",
-  "version": "0.6.0-local",
-  "author": "Center for Computational Thinking and Design at Aarhus University",
+  "name": "ml-trainer",
+  "version": "0.7.0-local",
   "private": true,
   "type": "module",
   "license": "MIT",
