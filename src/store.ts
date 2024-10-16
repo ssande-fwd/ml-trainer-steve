@@ -404,6 +404,7 @@ export const useStore = create<Store>()(
                 return copy;
               })(),
               model: undefined,
+              timestamp: Date.now(),
               ...updateProject(project, projectEdited, newGestures, undefined),
             };
           });
@@ -551,9 +552,11 @@ export const useStore = create<Store>()(
                   ? (JSON.parse(datasetString) as DatasetEditorJsonFormat)
                   : { data: [] };
 
+                const timestamp = Date.now();
                 return {
                   project: newProject,
-                  projectLoadTimestamp: Date.now(),
+                  projectLoadTimestamp: timestamp,
+                  timestamp,
                   // New project loaded externally so we can't know whether its edited.
                   projectEdited: true,
                   gestures: dataset.data,
