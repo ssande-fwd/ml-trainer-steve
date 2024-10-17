@@ -18,7 +18,6 @@ import { Logging } from "./logging/logging";
 export enum ConnectResult {
   Success = "Success",
   Failed = "Failed",
-  ErrorMicrobitUnsupported = "ErrorMicrobitUnsupported",
   ErrorBadFirmware = "ErrorBadFirmware",
   ErrorNoDeviceSelected = "ErrorNoDeviceSelected",
   ErrorUnableToClaimInterface = "ErrorUnableToClaimInterface",
@@ -71,7 +70,6 @@ export class ConnectActions {
   }
 
   requestUSBConnection = async (
-    // Used for MakeCode hex downloads.
     options?: ConnectionAndFlashOptions
   ): Promise<
     | {
@@ -121,10 +119,6 @@ export class ConnectActions {
     const data = Object.values(HexType).includes(hex as HexType)
       ? getFlashDataSource(hex as HexType)
       : createUniversalHexFlashDataSource(hex);
-
-    if (!data) {
-      return ConnectResult.ErrorMicrobitUnsupported;
-    }
     try {
       await usb.flash(data, {
         partial: true,
@@ -134,36 +128,6 @@ export class ConnectActions {
     } catch (e) {
       this.logging.error(`Flashing failed: ${JSON.stringify(e)}`);
       return ConnectResult.Failed;
-    }
-  };
-
-  requestUSBConnectionAndFlash = async (
-    hex: string | HexType,
-    progressCallback: (progress: number) => void
-  ): Promise<
-    | {
-        result: ConnectResult.Success;
-        deviceId: number;
-        boardVersion?: BoardVersion;
-      }
-    | {
-        result: ConnectAndFlashFailResult;
-        deviceId?: number;
-        boardVersion?: BoardVersion;
-      }
-  > => {
-    const { result, deviceId, usb } = await this.requestUSBConnection();
-    if (result !== ConnectResult.Success) {
-      return { result };
-    }
-    try {
-      const result = await this.flashMicrobit(hex, progressCallback);
-      return { result, deviceId, boardVersion: usb.getBoardVersion() };
-    } catch (e) {
-      this.logging.error(
-        `USB request device failed/cancelled: ${JSON.stringify(e)}`
-      );
-      return { result: this.handleConnectAndFlashError(e) };
     }
   };
 
