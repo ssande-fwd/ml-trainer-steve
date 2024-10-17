@@ -23,9 +23,11 @@ import TryAgainDialog from "./TryAgainDialog";
 import UnsupportedMicrobitDialog from "./UnsupportedMicrobitDialog";
 import WebUsbBluetoothUnsupportedDialog from "./WebUsbBluetoothUnsupportedDialog";
 import WhatYouWillNeedDialog from "./WhatYouWillNeedDialog";
+import { useLogging } from "../logging/logging-hooks";
 
 const ConnectionDialogs = () => {
   const { stage, actions } = useConnectionStage();
+  const logging = useLogging();
   const [flashProgress, setFlashProgress] = useState<number>(0);
   const { isOpen, onClose: onCloseDialog, onOpen } = useDisclosure();
   const [microbitName, setMicrobitName] = useState<string | undefined>(
@@ -71,9 +73,16 @@ const ConnectionDialogs = () => {
     }
   }, []);
 
-  async function connectAndFlash(): Promise<void> {
+  const connectAndFlash = useCallback(async () => {
+    if (stage.flowType === ConnectionFlowType.ConnectRadioBridge) {
+      logging.event({
+        type: "connect-user",
+        message: "radio-bridge",
+      });
+    }
     await actions.connectAndflashMicrobit(progressCallback, onFlashSuccess);
-  }
+  }, [actions, logging, onFlashSuccess, progressCallback, stage.flowType]);
+
   const onSkip = useCallback(
     () => actions.setFlowStep(ConnectionFlowStep.ConnectBattery),
     [actions]
@@ -84,6 +93,14 @@ const ConnectionDialogs = () => {
   );
 
   const dialogCommonProps = { isOpen, onClose };
+
+  const handleConnectBluetooth = useCallback(() => {
+    logging.event({
+      type: "connect-user",
+      message: "bluetooth",
+    });
+    void actions.connectBluetooth();
+  }, [actions, logging]);
 
   switch (stage.flowStep) {
     case ConnectionFlowStep.ReconnectFailedTwice:
@@ -167,7 +184,7 @@ const ConnectionDialogs = () => {
         <SelectMicrobitBluetoothDialog
           {...dialogCommonProps}
           onBackClick={actions.onBackClick}
-          onNextClick={actions.connectBluetooth}
+          onNextClick={handleConnectBluetooth}
         />
       );
     }
