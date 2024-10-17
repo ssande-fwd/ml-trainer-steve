@@ -122,7 +122,10 @@ export class ConnectActions {
     try {
       await usb.flash(data, {
         partial: true,
-        progress: (v: number | undefined) => progress(v ?? 100),
+        // If we could improve the re-rendering due to progress further we can remove this and accept the
+        // default which updates 4x as often.
+        minimumProgressIncrement: 0.01,
+        progress: (v: number | undefined) => progress(v ?? 1),
       });
       return ConnectResult.Success;
     } catch (e) {
