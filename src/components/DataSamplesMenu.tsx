@@ -3,8 +3,11 @@ import {
   IconButton,
   Menu,
   MenuButton,
+  MenuDivider,
   MenuItem,
+  MenuItemOption,
   MenuList,
+  MenuOptionGroup,
   Portal,
 } from "@chakra-ui/react";
 import { MdMoreVert } from "react-icons/md";
@@ -19,12 +22,16 @@ import { useStore } from "../store";
 import { useLogging } from "../logging/logging-hooks";
 import { useCallback } from "react";
 import { getTotalNumSamples } from "../utils/gestures";
+import { DataSamplesView } from "../model";
+import { flags } from "../flags";
 
 const DataSamplesMenu = () => {
   const intl = useIntl();
   const logging = useLogging();
   const gestures = useStore((s) => s.gestures);
   const downloadDataset = useStore((s) => s.downloadDataset);
+  const setDataSamplesView = useStore((s) => s.setDataSamplesView);
+  const dataSamplesView = useStore((s) => s.settings.dataSamplesView);
   const handleDownloadDataset = useCallback(() => {
     logging.event({
       type: "dataset-save",
@@ -42,6 +49,14 @@ const DataSamplesMenu = () => {
     });
     deleteAllGestures();
   }, [deleteAllGestures, logging]);
+  const handleViewChange = useCallback(
+    (view: string | string[]) => {
+      if (typeof view === "string") {
+        setDataSamplesView(view as DataSamplesView);
+      }
+    },
+    [setDataSamplesView]
+  );
   return (
     <Menu>
       <MenuButton
@@ -55,6 +70,29 @@ const DataSamplesMenu = () => {
       />
       <Portal>
         <MenuList>
+          {flags.fingerprints && (
+            <>
+              <MenuOptionGroup
+                defaultValue={dataSamplesView}
+                title={intl.formatMessage({
+                  id: "data-samples-view-options-heading",
+                })}
+                type="radio"
+                onChange={handleViewChange}
+              >
+                <MenuItemOption value={DataSamplesView.Graph}>
+                  <FormattedMessage id="data-samples-view-graph-option" />
+                </MenuItemOption>
+                <MenuItemOption value={DataSamplesView.DataFeatures}>
+                  <FormattedMessage id="data-samples-view-data-features-option" />
+                </MenuItemOption>
+                <MenuItemOption value={DataSamplesView.GraphAndDataFeatures}>
+                  <FormattedMessage id="data-samples-view-graph-and-data-features-option" />
+                </MenuItemOption>
+              </MenuOptionGroup>
+              <MenuDivider />
+            </>
+          )}
           <LoadProjectMenuItem icon={<RiUpload2Line />} accept=".json">
             <FormattedMessage id="import-data-samples-action" />
           </LoadProjectMenuItem>
