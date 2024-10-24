@@ -752,7 +752,7 @@
     "description": "Main menu label"
   },
   "makecode-back-alt": {
-    "defaultMessage": "Left arrow icon for MakeCode back. Button has aria label ",
+    "defaultMessage": "Left arrow icon for MakeCode back",
     "description": "Testing model page title"
   },
   "more-edit-in-makecode-options": {
