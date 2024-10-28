@@ -537,12 +537,6 @@
       "value": "Connect a micro:bit to record a data sample."
     }
   ],
-  "connect-to-record-title": [
-    {
-      "type": 0,
-      "value": "You don't have a micro:bit connected"
-    }
-  ],
   "connect-to-test-model": [
     {
       "type": 0,
@@ -625,6 +619,22 @@
     {
       "type": 0,
       "value": "Data samples"
+    }
+  ],
+  "data-samples-status-count": [
+    {
+      "type": 1,
+      "value": "numSamples"
+    },
+    {
+      "type": 0,
+      "value": " samples recorded"
+    }
+  ],
+  "data-samples-status-not-enough": [
+    {
+      "type": 0,
+      "value": "At least 3 required"
     }
   ],
   "data-samples-title": [
@@ -1719,6 +1729,12 @@
     {
       "type": 0,
       "value": "Reconnecting…"
+    }
+  ],
+  "record-action": [
+    {
+      "type": 0,
+      "value": "Record"
     }
   ],
   "record-action-aria": [
