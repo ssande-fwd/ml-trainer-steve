@@ -16,7 +16,6 @@ import DefaultPageLayout, {
   HomeMenuItem,
   HomeToolbarItem,
 } from "../components/DefaultPageLayout";
-import { useConnectionStage } from "../connection-stage-hooks";
 import { useDeployment } from "../deployment";
 import { useProject } from "../hooks/project-hooks";
 import { useLogging } from "../logging/logging-hooks";
@@ -68,7 +67,6 @@ const ImportPage = () => {
 
   const loadProject = useStore((s) => s.loadProject);
   const newSession = useStore((s) => s.newSession);
-  const { actions: connStageActions } = useConnectionStage();
 
   const handleStartSession = useCallback(() => {
     if (project) {
@@ -79,9 +77,8 @@ const ImportPage = () => {
       // with provided project name
       newSession(name);
       navigate(createDataSamplesPageUrl());
-      connStageActions.startConnect();
     }
-  }, [connStageActions, loadProject, name, navigate, newSession, project]);
+  }, [loadProject, name, navigate, newSession, project]);
 
   const { saveHex } = useProject();
   const handleSave = useCallback(() => {
