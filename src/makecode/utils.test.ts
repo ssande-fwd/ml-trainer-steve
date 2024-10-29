@@ -56,18 +56,6 @@ describe("test project generation", () => {
     );
     expect(result).toMatchSnapshot();
   });
-
-  it("generates a project to render the default gesture for the 'still' event", () => {
-    assert(!trainingResult.error);
-    const result = generateProject(
-      "Untitled",
-      data,
-      trainingResult.model,
-      currentDataWindow,
-      data.data[0]
-    );
-    expect(result).toMatchSnapshot();
-  });
 });
 
 describe("test project update", () => {

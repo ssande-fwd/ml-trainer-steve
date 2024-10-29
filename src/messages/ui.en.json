@@ -1437,6 +1437,42 @@
       "value": "Left arrow icon for MakeCode back"
     }
   ],
+  "makecode-block-default-alt": [
+    {
+      "type": 0,
+      "value": "MakeCode block: on ML "
+    },
+    {
+      "type": 1,
+      "value": "actionName"
+    },
+    {
+      "type": 0,
+      "value": " start, show icon "
+    },
+    {
+      "type": 1,
+      "value": "iconName"
+    }
+  ],
+  "makecode-block-on-ML": [
+    {
+      "type": 0,
+      "value": "on ML"
+    }
+  ],
+  "makecode-block-show-icon": [
+    {
+      "type": 0,
+      "value": "show icon"
+    }
+  ],
+  "makecode-block-start": [
+    {
+      "type": 0,
+      "value": "start"
+    }
+  ],
   "microbit-not-connected": [
     {
       "type": 0,
