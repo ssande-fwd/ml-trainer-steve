@@ -163,6 +163,7 @@ const DataSamplesTable = ({
               key={g.ID}
               gesture={g}
               newRecordingId={newRecordingId}
+              clearNewRecordingId={() => setNewRecordingId(undefined)}
               selected={selectedGesture.ID === g.ID}
               onSelectRow={() => setSelectedGestureIdx(idx)}
               onRecord={
