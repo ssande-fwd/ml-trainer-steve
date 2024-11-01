@@ -1747,16 +1747,100 @@
       "value": "Press to record a data sample or press button B on your data collection micro:bit."
     }
   ],
+  "record-samples": [
+    {
+      "type": 0,
+      "value": "Record "
+    },
+    {
+      "type": 1,
+      "value": "numSamples"
+    },
+    {
+      "type": 0,
+      "value": " samples"
+    }
+  ],
+  "record-samples-help": [
+    {
+      "type": 0,
+      "value": "Each sample has its own countdown"
+    }
+  ],
+  "record-seconds": [
+    {
+      "type": 0,
+      "value": "Record for "
+    },
+    {
+      "type": 1,
+      "value": "numSeconds"
+    },
+    {
+      "type": 0,
+      "value": " seconds"
+    }
+  ],
+  "record-seconds-help": [
+    {
+      "type": 0,
+      "value": "Move continuously to get "
+    },
+    {
+      "type": 1,
+      "value": "numSamples"
+    },
+    {
+      "type": 0,
+      "value": " samples"
+    }
+  ],
   "recording": [
     {
       "type": 0,
       "value": "Recording"
     }
   ],
+  "recording-complete": [
+    {
+      "type": 0,
+      "value": "Done"
+    }
+  ],
   "recording-data-for": [
     {
       "type": 0,
       "value": "Record data for action \""
+    },
+    {
+      "type": 1,
+      "value": "action"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "recording-data-for-numbered": [
+    {
+      "type": 0,
+      "value": "Record "
+    },
+    {
+      "type": 1,
+      "value": "sample"
+    },
+    {
+      "type": 0,
+      "value": " of "
+    },
+    {
+      "type": 1,
+      "value": "numSamples"
+    },
+    {
+      "type": 0,
+      "value": " for action \""
     },
     {
       "type": 1,
@@ -1777,6 +1861,12 @@
     {
       "type": 0,
       "value": "graph showing micro:bit x, y, z accelerometer data for one recording"
+    }
+  ],
+  "recording-options-aria": [
+    {
+      "type": 0,
+      "value": "More recording options"
     }
   ],
   "reload-action": [
@@ -1917,6 +2007,12 @@
     {
       "type": 0,
       "value": "Train"
+    }
+  ],
+  "stop-recording-action": [
+    {
+      "type": 0,
+      "value": "Stop recording"
     }
   ],
   "support-request": [

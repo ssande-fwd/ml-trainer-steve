@@ -2,21 +2,30 @@ import {
   Box,
   BoxProps,
   Button,
+  ButtonGroup,
   Card,
   CardBody,
   CloseButton,
   HStack,
+  Icon,
   keyframes,
+  Menu,
+  MenuItem,
+  MenuList,
+  Portal,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { ReactNode, useCallback } from "react";
+import { RiHashtag, RiTimerLine } from "react-icons/ri";
 import { FormattedMessage, useIntl } from "react-intl";
 import { DataSamplesView, GestureData, RecordingData } from "../model";
 import { useStore } from "../store";
 import { tourElClassname } from "../tours";
+import MoreMenuButton from "./MoreMenuButton";
 import RecordingFingerprint from "./RecordingFingerprint";
 import RecordingGraph from "./RecordingGraph";
+import { RecordingOptions } from "./RecordingDialog";
 
 const flash = keyframes({
   "0%, 10%": {
@@ -29,7 +38,7 @@ interface ActionDataSamplesCardProps {
   value: GestureData;
   selected: boolean;
   onSelectRow?: () => void;
-  onRecord: () => void;
+  onRecord: (recordingOptions: RecordingOptions) => void;
   newRecordingId?: number;
   clearNewRecordingId?: () => void;
 }
@@ -153,28 +162,90 @@ const RecordingArea = ({
 }: {
   action: GestureData;
   selected: boolean;
-  onRecord: () => void;
+  onRecord: (recordingOptions: RecordingOptions) => void;
 }) => {
   const intl = useIntl();
   return (
     <VStack w="8.25rem" justifyContent="center">
-      <Button
-        variant={selected ? "solid" : "outline"}
-        colorScheme="red"
-        onClick={onRecord}
-        aria-label={intl.formatMessage(
-          { id: "record-action-aria" },
-          { action: action.name }
-        )}
-      >
-        <FormattedMessage id="record-action" />
-      </Button>
+      <Menu>
+        <ButtonGroup isAttached>
+          <Button
+            pr={2}
+            variant={selected ? "record" : "recordOutline"}
+            borderRight="none"
+            onClick={() =>
+              onRecord({ recordingsToCapture: 1, continuousRecording: false })
+            }
+            aria-label={intl.formatMessage(
+              { id: "record-action-aria" },
+              { action: action.name }
+            )}
+          >
+            <FormattedMessage id="record-action" />
+          </Button>
+          <MoreMenuButton
+            minW={8}
+            variant={selected ? "record" : "recordOutline"}
+            aria-label={intl.formatMessage({ id: "recording-options-aria" })}
+          />
+          <Portal>
+            <MenuList>
+              <MenuItem
+                onClick={() =>
+                  onRecord({
+                    recordingsToCapture: 10,
+                    continuousRecording: false,
+                  })
+                }
+                icon={<Icon as={RiHashtag} h={5} w={5} />}
+              >
+                <Text fontSize="md">
+                  <FormattedMessage
+                    id="record-samples"
+                    values={{ numSamples: 10 }}
+                  />
+                </Text>
+                <Text fontSize="xs">
+                  <FormattedMessage id="record-samples-help" />
+                </Text>
+              </MenuItem>
+              <MenuItem
+                onClick={() =>
+                  onRecord({
+                    recordingsToCapture: 10,
+                    continuousRecording: true,
+                  })
+                }
+                icon={<Icon as={RiTimerLine} h={5} w={5} />}
+              >
+                <Text fontSize="md">
+                  <FormattedMessage
+                    id="record-seconds"
+                    values={{ numSeconds: 10 }}
+                  />
+                </Text>
+                <Text fontSize="xs">
+                  <FormattedMessage
+                    id="record-seconds-help"
+                    values={{ numSamples: 10 }}
+                  />
+                </Text>
+              </MenuItem>
+            </MenuList>
+          </Portal>
+        </ButtonGroup>
+      </Menu>
       {action.recordings.length < 3 ? (
-        <Text fontSize="xs" textAlign="center" fontWeight="bold">
+        <Text
+          fontSize="xs"
+          textAlign="center"
+          fontWeight="bold"
+          userSelect="none"
+        >
           <FormattedMessage id="data-samples-status-not-enough" />
         </Text>
       ) : (
-        <Text fontSize="xs" textAlign="center">
+        <Text fontSize="xs" textAlign="center" userSelect="none">
           <FormattedMessage
             id="data-samples-status-count"
             values={{ numSamples: action.recordings.length }}

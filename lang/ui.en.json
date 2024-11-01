@@ -999,12 +999,36 @@
     "defaultMessage": "Press to record a data sample or press button B on your data collection micro:bit.",
     "description": "Hint when you have named the first action but not recorded any data samples"
   },
+  "record-samples": {
+    "defaultMessage": "Record {numSamples} samples",
+    "description": "Additional recording action text"
+  },
+  "record-samples-help": {
+    "defaultMessage": "Each sample has its own countdown",
+    "description": "Help text for additional recording action"
+  },
+  "record-seconds": {
+    "defaultMessage": "Record for {numSeconds} seconds",
+    "description": "Additional recording action text"
+  },
+  "record-seconds-help": {
+    "defaultMessage": "Move continuously to get {numSamples} samples",
+    "description": "Help text for additional recording action"
+  },
   "recording": {
     "defaultMessage": "Recording",
     "description": "Shown during recording"
   },
+  "recording-complete": {
+    "defaultMessage": "Done",
+    "description": "Text shown when data recording complete"
+  },
   "recording-data-for": {
     "defaultMessage": "Record data for action \"{action}\"",
+    "description": "Text in recording dialog"
+  },
+  "recording-data-for-numbered": {
+    "defaultMessage": "Record {sample} of {numSamples} for action \"{action}\"",
     "description": "Text in recording dialog"
   },
   "recording-fingerprint-label": {
@@ -1014,6 +1038,10 @@
   "recording-graph-label": {
     "defaultMessage": "graph showing micro:bit x, y, z accelerometer data for one recording",
     "description": "Label for recording graph"
+  },
+  "recording-options-aria": {
+    "defaultMessage": "More recording options",
+    "description": "Aria label for more recording options button"
   },
   "reload-action": {
     "defaultMessage": "Click to reload the page",
@@ -1102,6 +1130,10 @@
   "steps-train": {
     "defaultMessage": "Train",
     "description": "Step in home page diagram"
+  },
+  "stop-recording-action": {
+    "defaultMessage": "Stop recording",
+    "description": "Button label to stop recording movement data while recording multiple samples"
   },
   "support-request": {
     "defaultMessage": "Please consider <link>raising a support request</link>.",

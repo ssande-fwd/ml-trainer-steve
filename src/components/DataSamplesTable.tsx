@@ -8,18 +8,25 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { ButtonEvent } from "@microbit/microbit-connection";
-import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { FormattedMessage } from "react-intl";
 import { useConnectActions } from "../connect-actions-hooks";
 import { useConnectionStage } from "../connection-stage-hooks";
-import { GestureData } from "../model";
+import { GestureData, TourId } from "../model";
 import { useStore } from "../store";
 import ConnectToRecordDialog from "./ConnectToRecordDialog";
-import DataSamplesTableRow from "./DataSamplesTableRow";
 import DataSamplesMenu from "./DataSamplesMenu";
+import DataSamplesTableRow from "./DataSamplesTableRow";
 import HeadingGrid, { GridColumnHeadingItemProps } from "./HeadingGrid";
 import LoadProjectInput, { LoadProjectInputRef } from "./LoadProjectInput";
-import RecordingDialog from "./RecordingDialog";
+import RecordingDialog, { RecordingOptions } from "./RecordingDialog";
 import ShowGraphsCheckbox from "./ShowGraphsCheckbox";
 
 const gridCommonProps: Partial<GridProps> = {
@@ -93,6 +100,30 @@ const DataSamplesTable = ({
     };
   }, [connection, recordingDialogDisclosure]);
 
+  const [recordingOptions, setRecordingOptions] = useState<RecordingOptions>({
+    continuousRecording: false,
+    recordingsToCapture: 1,
+  });
+  const handleRecord = useCallback(
+    (recordingOptions: RecordingOptions) => {
+      setRecordingOptions(recordingOptions);
+      isConnected
+        ? recordingDialogDisclosure.onOpen()
+        : connectToRecordDialogDisclosure.onOpen();
+    },
+    [connectToRecordDialogDisclosure, isConnected, recordingDialogDisclosure]
+  );
+
+  const tourStart = useStore((s) => s.tourStart);
+  useEffect(() => {
+    if (
+      !recordingDialogDisclosure.isOpen &&
+      gestures.length === 1 &&
+      gestures[0].recordings.length === 1
+    ) {
+      tourStart(TourId.CollectDataToTrainModel);
+    }
+  }, [gestures, recordingDialogDisclosure.isOpen, tourStart]);
   return (
     <>
       <ConnectToRecordDialog
@@ -106,6 +137,7 @@ const DataSamplesTable = ({
           onClose={recordingDialogDisclosure.onClose}
           actionName={selectedGesture.name}
           onRecordingComplete={setNewRecordingId}
+          recordingOptions={recordingOptions}
         />
       )}
       <HeadingGrid
@@ -173,11 +205,7 @@ const DataSamplesTable = ({
               clearNewRecordingId={() => setNewRecordingId(undefined)}
               selected={selectedGesture.ID === g.ID}
               onSelectRow={() => setSelectedGestureIdx(idx)}
-              onRecord={
-                isConnected
-                  ? recordingDialogDisclosure.onOpen
-                  : connectToRecordDialogDisclosure.onOpen
-              }
+              onRecord={handleRecord}
               showHints={showHints}
             />
           ))}

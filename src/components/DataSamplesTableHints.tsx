@@ -4,10 +4,11 @@ import { GestureData } from "../model";
 import ActionDataSamplesCard from "./ActionDataSamplesCard";
 import GreetingEmojiWithArrow from "./GreetingEmojiWithArrow";
 import UpCurveArrow from "./UpCurveArrow";
+import { RecordingOptions } from "./RecordingDialog";
 
 interface DataSamplesTableHintsProps {
   gesture: GestureData;
-  onRecord: () => void;
+  onRecord: (recordingOptions: RecordingOptions) => void;
 }
 
 const DataSamplesTableHints = ({
