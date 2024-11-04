@@ -35,7 +35,7 @@ import {
   getLowercaseFileExtension,
   readFileAsText,
 } from "../utils/fs-util";
-import { getTotalNumSamples } from "../utils/gestures";
+import { getTotalNumSamples } from "../utils/actions";
 import { useDownloadActions } from "./download-hooks";
 
 class CodeEditorError extends Error {}
@@ -178,10 +178,10 @@ export const ProjectProvider = ({
         },
       });
       if (fileExtension === "json") {
-        const gestureDataString = await readFileAsText(file);
-        const gestureData = JSON.parse(gestureDataString) as unknown;
-        if (isDatasetUserFileFormat(gestureData)) {
-          loadDataset(gestureData);
+        const actionsString = await readFileAsText(file);
+        const actions = JSON.parse(actionsString) as unknown;
+        if (isDatasetUserFileFormat(actions)) {
+          loadDataset(actions);
           navigate(createDataSamplesPageUrl());
         } else {
           setPostImportDialogState(PostImportDialogState.Error);
@@ -208,7 +208,7 @@ export const ProjectProvider = ({
   const setSave = useStore((s) => s.setSave);
   const save = useStore((s) => s.save);
   const settings = useStore((s) => s.settings);
-  const gestures = useStore((s) => s.gestures);
+  const actions = useStore((s) => s.gestures);
   const saveNextDownloadRef = useRef(false);
   const saveHex = useCallback(
     async (hex?: HexData): Promise<void> => {
@@ -231,8 +231,8 @@ export const ProjectProvider = ({
         logging.event({
           type: "hex-save",
           detail: {
-            actions: gestures.length,
-            samples: getTotalNumSamples(gestures),
+            actions: actions.length,
+            samples: getTotalNumSamples(actions),
           },
         });
         downloadHex(hex);
@@ -251,7 +251,7 @@ export const ProjectProvider = ({
     [
       doAfterEditorUpdate,
       driverRef,
-      gestures,
+      actions,
       getCurrentProject,
       intl,
       logging,
