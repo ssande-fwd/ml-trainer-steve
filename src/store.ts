@@ -710,13 +710,16 @@ const createMlStore = (logging: Logging) => {
                 const previousProjectHeader = prevProject.header!.id;
                 if (newProjectHeader !== previousProjectHeader) {
                   if (changedHeaderExpected) {
+                    logging.log(
+                      `[MakeCode] Detected new project, ignoring as expected due to import. ID change: ${prevProject.header?.id} -> ${newProject.header?.id}`
+                    );
                     return {
                       changedHeaderExpected: false,
                       project: newProject,
                     };
                   }
-                  console.log(
-                    "Detected new project in MakeCode, loading actions"
+                  logging.log(
+                    `[MakeCode] Detected new project, loading actions. ID change: ${prevProject.header?.id} -> ${newProject.header?.id}`
                   );
                   // It's a new project. Thanks user. We'll update our state.
                   // This will cause another write to MakeCode but that's OK as it gives us
@@ -744,9 +747,16 @@ const createMlStore = (logging: Logging) => {
                     isEditorOpen: false,
                   };
                 } else if (isEditorOpen) {
+                  logging.log(
+                    `[MakeCode] Edit copied to project. ID ${newProject.header?.id}`
+                  );
                   return {
                     project: newProject,
                   };
+                } else {
+                  logging.log(
+                    `[MakeCode] Edit ignored when closed. ID ${newProject.header?.id}`
+                  );
                 }
                 return state;
               },
