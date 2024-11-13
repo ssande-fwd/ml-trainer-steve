@@ -21,19 +21,19 @@ import FeedbackForm from "./FeedbackForm";
 const HelpMenuItems = () => {
   const aboutDialogDisclosure = useDisclosure();
   const feedbackDisclosure = useDisclosure();
-  const MenuButtonRef = useRef(null);
+  const menuButtonRef = useRef(null);
   const deployment = useDeployment();
   return (
     <>
       <AboutDialog
         isOpen={aboutDialogDisclosure.isOpen}
         onClose={aboutDialogDisclosure.onClose}
-        finalFocusRef={MenuButtonRef}
+        finalFocusRef={menuButtonRef}
       />
       <FeedbackForm
         isOpen={feedbackDisclosure.isOpen}
         onClose={feedbackDisclosure.onClose}
-        finalFocusRef={MenuButtonRef}
+        finalFocusRef={menuButtonRef}
       />
       <MenuItem
         as="a"
