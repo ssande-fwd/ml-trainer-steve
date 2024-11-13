@@ -8,7 +8,7 @@ import { ConnectionStatus } from "../connect-status-hooks";
 import { useConnectionStage } from "../connection-stage-hooks";
 import { useGraphColors } from "../hooks/use-graph-colors";
 import { maxAccelerationScaleForGraphs } from "../mlConfig";
-import { useStore } from "../store";
+import { useSettings, useStore } from "../store";
 import LiveGraphLabels from "./LiveGraphLabels";
 
 export const smoothenDataPoint = (curr: number, next: number) => {
@@ -20,8 +20,9 @@ export const smoothenDataPoint = (curr: number, next: number) => {
 const LiveGraph = () => {
   const { isConnected, status } = useConnectionStage();
   const connectActions = useConnectActions();
+  const [{ graphColorScheme }] = useSettings();
 
-  const colors = useGraphColors();
+  const colors = useGraphColors(graphColorScheme);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const [chart, setChart] = useState<SmoothieChart | undefined>(undefined);

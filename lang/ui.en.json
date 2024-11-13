@@ -675,6 +675,22 @@
     "defaultMessage": "Go",
     "description": "Go action"
   },
+  "graph-color-scheme": {
+    "defaultMessage": "Graph colour scheme",
+    "description": "Graph colour scheme setting label"
+  },
+  "graph-color-scheme-color-blind-1": {
+    "defaultMessage": "Colour blind alternative 1",
+    "description": "Graph colour scheme option"
+  },
+  "graph-color-scheme-color-blind-2": {
+    "defaultMessage": "Colour blind alternative 2",
+    "description": "Graph colour scheme option"
+  },
+  "graph-color-scheme-default": {
+    "defaultMessage": "Default (red, blue, green)",
+    "description": "Graph colour scheme option"
+  },
   "help-label": {
     "defaultMessage": "Help",
     "description": "Help icon aria label"
@@ -1215,6 +1231,26 @@
     "defaultMessage": "Reset to default blocks",
     "description": "Reset to default blocks button text"
   },
+  "restore-defaults-action": {
+    "defaultMessage": "Restore default values for all settings",
+    "description": "Restore default button text"
+  },
+  "restore-defaults-confirm-action": {
+    "defaultMessage": "Restore defaults",
+    "description": "Restore default settings confirm button text"
+  },
+  "restore-defaults-confirm-body": {
+    "defaultMessage": "Are you sure you want to restore default values for all settings?",
+    "description": "Restore default settings confirmation dialog body text"
+  },
+  "restore-defaults-confirm-heading": {
+    "defaultMessage": "Restore default settings",
+    "description": "Restore default settings confirmation dialog title"
+  },
+  "restore-defaults-helper": {
+    "defaultMessage": "Previously dismissed help content may be shown again.",
+    "description": "Restore default settings helper text"
+  },
   "save-action": {
     "defaultMessage": "Save",
     "description": "Label for action that saves the project as a file the user downloads"
@@ -1250,6 +1286,10 @@
   "select-icon-option-action-aria": {
     "defaultMessage": "Select \"{iconName}\" icon",
     "description": "Aria label for icon option"
+  },
+  "settings": {
+    "defaultMessage": "Settings",
+    "description": "Text for settings dialog header and menu item"
   },
   "settings-menu-action": {
     "defaultMessage": "Settings actions menu",

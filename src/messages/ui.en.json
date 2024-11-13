@@ -1133,6 +1133,30 @@
       "value": "Go"
     }
   ],
+  "graph-color-scheme": [
+    {
+      "type": 0,
+      "value": "Graph colour scheme"
+    }
+  ],
+  "graph-color-scheme-color-blind-1": [
+    {
+      "type": 0,
+      "value": "Colour blind alternative 1"
+    }
+  ],
+  "graph-color-scheme-color-blind-2": [
+    {
+      "type": 0,
+      "value": "Colour blind alternative 2"
+    }
+  ],
+  "graph-color-scheme-default": [
+    {
+      "type": 0,
+      "value": "Default (red, blue, green)"
+    }
+  ],
   "help-label": [
     {
       "type": 0,
@@ -2133,6 +2157,36 @@
       "value": "Reset to default blocks"
     }
   ],
+  "restore-defaults-action": [
+    {
+      "type": 0,
+      "value": "Restore default values for all settings"
+    }
+  ],
+  "restore-defaults-confirm-action": [
+    {
+      "type": 0,
+      "value": "Restore defaults"
+    }
+  ],
+  "restore-defaults-confirm-body": [
+    {
+      "type": 0,
+      "value": "Are you sure you want to restore default values for all settings?"
+    }
+  ],
+  "restore-defaults-confirm-heading": [
+    {
+      "type": 0,
+      "value": "Restore default settings"
+    }
+  ],
+  "restore-defaults-helper": [
+    {
+      "type": 0,
+      "value": "Previously dismissed help content may be shown again."
+    }
+  ],
   "save-action": [
     {
       "type": 0,
@@ -2201,6 +2255,12 @@
     {
       "type": 0,
       "value": "\" icon"
+    }
+  ],
+  "settings": [
+    {
+      "type": 0,
+      "value": "Settings"
     }
   ],
   "settings-menu-action": [

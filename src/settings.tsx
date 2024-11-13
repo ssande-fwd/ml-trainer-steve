@@ -42,7 +42,15 @@ export const defaultSettings: Settings = {
   toursCompleted: [],
   dataSamplesView: DataSamplesView.Graph,
   showGraphs: true,
+  graphColorScheme: "default",
 };
+
+export type GraphColorScheme = "default" | "color-blind-1" | "color-blind-2";
+export const graphColorSchemeOptions: GraphColorScheme[] = [
+  "default",
+  "color-blind-1",
+  "color-blind-2",
+];
 
 export interface Settings {
   languageId: string;
@@ -52,4 +60,5 @@ export interface Settings {
   toursCompleted: TourTriggerName[];
   dataSamplesView: DataSamplesView;
   showGraphs: boolean;
+  graphColorScheme: GraphColorScheme;
 }

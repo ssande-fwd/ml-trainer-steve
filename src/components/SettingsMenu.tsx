@@ -10,6 +10,7 @@ import { useRef } from "react";
 import { RiSettings2Line } from "react-icons/ri";
 import { useIntl } from "react-intl";
 import LanguageMenuItem from "./LanguageMenuItem";
+import SettingsMenuItem from "./SettingsMenuItem";
 
 /**
  * A settings button that triggers a drop-down menu with actions.
@@ -39,6 +40,7 @@ const SettingsMenu = () => {
         <Portal containerRef={containerRef}>
           <MenuList>
             <LanguageMenuItem finalFocusRef={settingsMenuRef} />
+            <SettingsMenuItem finalFocusRef={settingsMenuRef} />
           </MenuList>
         </Portal>
       </Menu>
