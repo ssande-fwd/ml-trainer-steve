@@ -1225,6 +1225,18 @@
       "value": "Projects"
     }
   ],
+  "homepage-projects-more": [
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Find out more about micro:bit and AI"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    }
+  ],
   "homepage-step-by-step": [
     {
       "type": 0,
