@@ -26,6 +26,7 @@ import {
   TourTrigger,
   TourState,
   TrainModelDialogStage,
+  EditorStartUp,
   TourTriggerName,
   tourSequence,
 } from "./model";
@@ -155,6 +156,8 @@ export interface State {
   appEditNeedsFlushToEditor: boolean;
   isEditorOpen: boolean;
   isEditorReady: boolean;
+  editorStartUp: EditorStartUp;
+  isEditorTimedOutDialogOpen: boolean;
 
   download: DownloadState;
   downloadFlashingProgress: number;
@@ -219,6 +222,9 @@ export interface Actions {
   checkIfProjectNeedsFlush(): boolean;
   editorChange(project: Project): void;
   editorReady(): void;
+  editorTimedOut(): void;
+  getEditorStartUp(): EditorStartUp;
+  setIsEditorTimedOutDialogOpen(isOpen: boolean): void;
   setChangedHeaderExpected(): void;
   projectFlushedToEditor(): void;
 
@@ -268,6 +274,8 @@ const createMlStore = (logging: Logging) => {
           model: undefined,
           isEditorOpen: false,
           isEditorReady: false,
+          editorStartUp: "in-progress",
+          isEditorTimedOutDialogOpen: false,
           appEditNeedsFlushToEditor: true,
           changedHeaderExpected: false,
           // This dialog flow spans two pages
@@ -722,7 +730,27 @@ const createMlStore = (logging: Logging) => {
           },
 
           editorReady() {
-            set({ isEditorReady: true }, false, "editorReady");
+            set(
+              { isEditorReady: true, editorStartUp: "done" },
+              false,
+              "editorReady"
+            );
+          },
+
+          editorTimedOut() {
+            set({ editorStartUp: "timed out" }, false, "editorTimedOut");
+          },
+
+          getEditorStartUp() {
+            return get().editorStartUp;
+          },
+
+          setIsEditorTimedOutDialogOpen(isOpen: boolean) {
+            set(
+              { isEditorTimedOutDialogOpen: isOpen },
+              false,
+              "setIsEditorTimedOutDialogOpen"
+            );
           },
 
           editorChange(newProject: Project) {
