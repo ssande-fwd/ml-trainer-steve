@@ -1,15 +1,15 @@
-import { GridItem, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, GridItem, Text, useDisclosure } from "@chakra-ui/react";
 import { FormattedMessage, useIntl } from "react-intl";
-import { ActionData } from "../model";
-import { useStore } from "../store";
-import DataSamplesTableHints from "./DataSamplesTableHints";
-import { ConfirmDialog } from "./ConfirmDialog";
-import ActionDataSamplesCard from "./ActionDataSamplesCard";
-import ActionNameCard from "./ActionNameCard";
 import {
   ConnectionFlowStep,
   useConnectionStage,
 } from "../connection-stage-hooks";
+import { ActionData } from "../model";
+import { useStore } from "../store";
+import ActionDataSamplesCard from "./ActionDataSamplesCard";
+import ActionNameCard from "./ActionNameCard";
+import { ConfirmDialog } from "./ConfirmDialog";
+import DataSamplesTableHints from "./DataSamplesTableHints";
 import { RecordingOptions } from "./RecordingDialog";
 
 interface DataSamplesTableRowProps {
@@ -59,31 +59,33 @@ const DataSamplesTableRow = ({
         onConfirm={() => deleteAction(action.ID)}
         onCancel={deleteConfirmDisclosure.onClose}
       />
-      <GridItem>
-        <ActionNameCard
-          value={action}
-          onDeleteAction={deleteConfirmDisclosure.onOpen}
-          onSelectRow={onSelectRow}
-          selected={selected}
-          readOnly={false}
-        />
-      </GridItem>
-      {showHints ? (
-        <DataSamplesTableHints action={action} onRecord={onRecord} />
-      ) : (
+      <Box display="contents" onFocusCapture={onSelectRow}>
         <GridItem>
-          {(action.name.length > 0 || action.recordings.length > 0) && (
-            <ActionDataSamplesCard
-              newRecordingId={newRecordingId}
-              value={action}
-              selected={selected}
-              onSelectRow={onSelectRow}
-              onRecord={onRecord}
-              clearNewRecordingId={clearNewRecordingId}
-            />
-          )}
+          <ActionNameCard
+            value={action}
+            onDeleteAction={deleteConfirmDisclosure.onOpen}
+            onSelectRow={onSelectRow}
+            selected={selected}
+            readOnly={false}
+          />
         </GridItem>
-      )}
+        {showHints ? (
+          <DataSamplesTableHints action={action} onRecord={onRecord} />
+        ) : (
+          <GridItem>
+            {(action.name.length > 0 || action.recordings.length > 0) && (
+              <ActionDataSamplesCard
+                newRecordingId={newRecordingId}
+                value={action}
+                selected={selected}
+                onSelectRow={onSelectRow}
+                onRecord={onRecord}
+                clearNewRecordingId={clearNewRecordingId}
+              />
+            )}
+          </GridItem>
+        )}
+      </Box>
     </>
   );
 };
