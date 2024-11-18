@@ -214,6 +214,9 @@ export const ProjectProvider = ({
         if (hasTimedOut) {
           editorTimedOut();
           logging.log("[MakeCode] Load timed out");
+          logging.event({
+            type: "makecode-load-failed",
+          });
           throw new CodeEditorError("MakeCode load timed out");
         }
       } finally {
