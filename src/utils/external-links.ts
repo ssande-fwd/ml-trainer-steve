@@ -11,6 +11,6 @@ export const projectUrl = (slug: string) =>
   `${microbitOrgBaseUrl}projects/make-it-code-it/${encodeURIComponent(slug)}/`;
 
 export const userGuideUrl = () =>
-  `${microbitOrgBaseUrl}get-started/user-guide/createai/`;
+  `${microbitOrgBaseUrl}get-started/user-guide/microbit-createai/`;
 
 export const landingPageUrl = () => `${microbitOrgBaseUrl}ai/`;
