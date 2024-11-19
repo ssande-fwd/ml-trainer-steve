@@ -18,10 +18,12 @@ const ClickableTooltip = ({
   const label = useDisclosure();
   const ref = useRef<HTMLDivElement>(null);
   const handleMouseEnter = useCallback(() => {
-    const openTooltips = document.querySelectorAll(
-      '[role="tooltip"]:not([hidden])'
+    const focussedTooltips = Array.from(
+      document.querySelectorAll(".focusable-tooltip")
     );
-    if (!openTooltips.length) {
+    if (
+      focussedTooltips.every((tooltip) => tooltip !== document.activeElement)
+    ) {
       label.onOpen();
     }
   }, [label]);
@@ -44,12 +46,13 @@ const ClickableTooltip = ({
   return (
     <Tooltip isOpen={label.isOpen} {...rest} closeOnEsc={true}>
       <Flex
+        className={isFocusable ? "focusable-tooltip" : undefined}
         onKeyDown={handleKeydown}
         ref={ref}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={label.onOpen}
-        tabIndex={isDisabled ? undefined : 0}
+        tabIndex={isFocusable && !isDisabled ? 0 : undefined}
         onFocus={isFocusable ? label.onOpen : undefined}
         onBlur={isFocusable ? label.onClose : undefined}
         _focusVisible={{
