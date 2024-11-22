@@ -72,6 +72,9 @@ const RecordingDialog = ({
   );
   const countdownStages: CountdownStage[] = useMemo(
     () => [
+      // Empty string state added to countdown because aria-live role region
+      // reads dynamic changes to region and not the initial contents.
+      { value: "", duration: 1, fontSize: "8xl" },
       { value: 3, duration: 500, fontSize: "8xl" },
       { value: 2, duration: 500, fontSize: "8xl" },
       { value: 1, duration: 500, fontSize: "8xl" },
@@ -241,6 +244,17 @@ const RecordingDialog = ({
     return recordingsToCapture - recordingsRemaining;
   }, [recordingsRemaining, recordingsToCapture]);
 
+  const recordingText = useMemo(() => {
+    if (recordingStatus === RecordingStatus.Recording) {
+      return intl.formatMessage({ id: "recording" });
+    } else if (recordingStatus === RecordingStatus.Countdown) {
+      return countdownStages[countdownStageIndex].value;
+    } else if (recordingStatus === RecordingStatus.Done) {
+      return intl.formatMessage({ id: "recording-complete" });
+    }
+    return "";
+  }, [countdownStageIndex, countdownStages, intl, recordingStatus]);
+
   return (
     <Modal
       closeOnOverlayClick={false}
@@ -273,36 +287,20 @@ const RecordingDialog = ({
           <ModalBody py={8}>
             <VStack justifyContent="center" gap={5}>
               <VStack h="20" alignItems="center" justifyContent="center">
-                {recordingStatus === RecordingStatus.Recording && (
-                  <Text
-                    fontSize="5xl"
-                    textAlign="center"
-                    fontWeight="bold"
-                    color="brand.500"
-                  >
-                    <FormattedMessage id="recording" />
-                  </Text>
-                )}
-                {recordingStatus === RecordingStatus.Countdown && (
-                  <Text
-                    fontSize={countdownStages[countdownStageIndex].fontSize}
-                    textAlign="center"
-                    fontWeight="bold"
-                    color="brand.500"
-                  >
-                    {countdownStages[countdownStageIndex].value}
-                  </Text>
-                )}
-                {recordingStatus === RecordingStatus.Done && (
-                  <Text
-                    fontSize="5xl"
-                    textAlign="center"
-                    fontWeight="bold"
-                    color="brand.500"
-                  >
-                    <FormattedMessage id="recording-complete" />
-                  </Text>
-                )}
+                <Text
+                  fontSize={
+                    recordingStatus === RecordingStatus.Countdown
+                      ? countdownStages[countdownStageIndex].fontSize
+                      : "5xl"
+                  }
+                  textAlign="center"
+                  fontWeight="bold"
+                  color="brand.500"
+                  role="timer"
+                  aria-live="assertive"
+                >
+                  {recordingText}
+                </Text>
               </VStack>
               <Progress
                 alignSelf="center"
