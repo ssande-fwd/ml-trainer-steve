@@ -1,14 +1,28 @@
 import { HStack, Text, VisuallyHidden, VStack } from "@chakra-ui/react";
+import debounce from "lodash.debounce";
+import { useEffect, useMemo, useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
+import { useStore } from "../store";
 import { tourElClassname } from "../tours";
 import InfoToolTip from "./InfoToolTip";
 import LedIcon from "./LedIcon";
 import { predictedActionDisplayWidth } from "./LiveGraphPanel";
-import { useStore } from "../store";
 
 const PredictedAction = () => {
   const intl = useIntl();
   const predictionResult = useStore((s) => s.predictionResult);
+  const estimatedAction = predictionResult?.detected?.name;
+  const [liveRegionEstimatedAction, setLiveRegionEstimatedAction] = useState<
+    string | undefined
+  >(estimatedAction);
+  const setLiveRegionEstimatedActionDebounced = useMemo(
+    () => debounce(setLiveRegionEstimatedAction, 500),
+    []
+  );
+  useEffect(() => {
+    setLiveRegionEstimatedActionDebounced(estimatedAction);
+  }, [setLiveRegionEstimatedActionDebounced, estimatedAction]);
+
   return (
     <VStack
       className={tourElClassname.estimatedAction}
@@ -23,7 +37,7 @@ const PredictedAction = () => {
           id="estimated-action-aria"
           values={{
             action:
-              predictionResult?.detected?.name ??
+              liveRegionEstimatedAction ??
               intl.formatMessage({ id: "unknown" }),
           }}
         />
@@ -52,7 +66,7 @@ const PredictedAction = () => {
         textAlign="center"
         w={`${predictedActionDisplayWidth}px`}
       >
-        {predictionResult?.detected?.name ?? <FormattedMessage id="unknown" />}
+        {estimatedAction ?? <FormattedMessage id="unknown" />}
       </Text>
     </VStack>
   );
