@@ -191,6 +191,9 @@ interface RecordingAreaProps extends BoxProps {
   onRecord: (recordingOptions: RecordingOptions) => void;
 }
 
+export const recordButtonId = (action: ActionData) =>
+  `record-button-${action.ID}`;
+
 const RecordingArea = ({
   action,
   selected,
@@ -203,6 +206,7 @@ const RecordingArea = ({
       <Menu>
         <ButtonGroup isAttached>
           <Button
+            id={recordButtonId(action)}
             pr={2}
             variant={selected ? "record" : "recordOutline"}
             borderRight="none"

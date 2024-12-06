@@ -17,10 +17,7 @@ import {
 import { ComponentProps, useCallback, useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { ConnectionStatus } from "../connect-status-hooks";
-import {
-  ConnectionFlowStep,
-  useConnectionStage,
-} from "../connection-stage-hooks";
+import { useConnectionStage } from "../connection-stage-hooks";
 import { ConnectOptions } from "../store";
 
 interface ConnectFirstDialogProps
@@ -35,12 +32,13 @@ const ConnectFirstDialog = ({
   options,
   onClose,
   onChooseConnect,
+  isOpen,
   ...rest
 }: ConnectFirstDialogProps) => {
   const {
     actions,
     status: connStatus,
-    stage: connStage,
+    isDialogOpen: isConnectionDialogOpen,
   } = useConnectionStage();
   const [isWaiting, setIsWaiting] = useState<boolean>(false);
 
@@ -86,15 +84,23 @@ const ConnectFirstDialog = ({
 
   useEffect(() => {
     if (
-      connStage.flowStep !== ConnectionFlowStep.None ||
-      (isWaiting && connStatus === ConnectionStatus.Connected)
+      isOpen &&
+      (isConnectionDialogOpen ||
+        (isWaiting && connStatus === ConnectionStatus.Connected))
     ) {
       // Close dialog if connection dialog is opened, or
       // once connected after waiting.
       handleOnClose();
       return;
     }
-  }, [connStage.flowStep, connStatus, handleOnClose, isWaiting, onClose]);
+  }, [
+    connStatus,
+    handleOnClose,
+    isConnectionDialogOpen,
+    isOpen,
+    isWaiting,
+    onClose,
+  ]);
 
   return (
     <Modal
@@ -103,6 +109,7 @@ const ConnectFirstDialog = ({
       size="md"
       isCentered
       onClose={handleOnClose}
+      isOpen={isOpen}
       {...rest}
     >
       <ModalOverlay>

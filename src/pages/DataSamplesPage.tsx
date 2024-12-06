@@ -16,10 +16,11 @@ import DefaultPageLayout, {
 } from "../components/DefaultPageLayout";
 import LiveGraphPanel from "../components/LiveGraphPanel";
 import TrainModelDialogs from "../components/TrainModelFlowDialogs";
+import { useConnectionStage } from "../connection-stage-hooks";
+import { keyboardShortcuts, useShortcut } from "../keyboard-shortcut-hooks";
 import { useHasSufficientDataForTraining, useStore } from "../store";
 import { tourElClassname } from "../tours";
 import { createTestingModelPageUrl } from "../urls";
-import { useConnectionStage } from "../connection-stage-hooks";
 
 const DataSamplesPage = () => {
   const actions = useStore((s) => s.actions);
@@ -51,6 +52,9 @@ const DataSamplesPage = () => {
     setSelectedActionIdx(actions.length);
     addNewAction();
   }, [addNewAction, actions]);
+  useShortcut(keyboardShortcuts.addAction, handleAddNewAction, {
+    enabled: !isAddNewActionDisabled,
+  });
   const intl = useIntl();
   return (
     <>

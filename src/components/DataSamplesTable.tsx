@@ -10,7 +10,6 @@ import {
   GridProps,
   HStack,
   Text,
-  useDisclosure,
   VStack,
 } from "@chakra-ui/react";
 import { ButtonEvent } from "@microbit/microbit-connection";
@@ -22,7 +21,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import { useConnectActions } from "../connect-actions-hooks";
 import { useConnectionStage } from "../connection-stage-hooks";
 import { ActionData } from "../model";
@@ -37,6 +36,10 @@ import RecordingDialog, {
   RecordingOptions,
 } from "./RecordingDialog";
 import ShowGraphsCheckbox from "./ShowGraphsCheckbox";
+import { ConfirmDialog } from "./ConfirmDialog";
+import { actionNameInputId } from "./ActionNameCard";
+import { recordButtonId } from "./ActionDataSamplesCard";
+import { keyboardShortcuts, useShortcut } from "../keyboard-shortcut-hooks";
 
 const gridCommonProps: Partial<GridProps> = {
   gridTemplateColumns: "290px 1fr",
@@ -81,8 +84,19 @@ const DataSamplesTable = ({
       (actions.length === 1 && actions[0].recordings.length === 0),
     [actions]
   );
-  const recordingDialogDisclosure = useDisclosure();
-  const connectToRecordDialogDisclosure = useDisclosure();
+  const intl = useIntl();
+  const isDeleteActionConfirmOpen = useStore((s) => s.isDeleteActionDialogOpen);
+  const deleteActionConfirmOnOpen = useStore((s) => s.deleteActionDialogOnOpen);
+  const deleteAction = useStore((s) => s.deleteAction);
+  const isRecordingDialogOpen = useStore((s) => s.isRecordingDialogOpen);
+  const recordingDialogOnOpen = useStore((s) => s.recordingDialogOnOpen);
+  const isConnectToRecordDialogOpen = useStore(
+    (s) => s.isConnectToRecordDialogOpen
+  );
+  const connectToRecordDialogOnOpen = useStore(
+    (s) => s.connectToRecordDialogOnOpen
+  );
+  const closeDialog = useStore((s) => s.closeDialog);
 
   const connection = useConnectActions();
   const { actions: connActions } = useConnectionStage();
@@ -100,17 +114,15 @@ const DataSamplesTable = ({
 
   useEffect(() => {
     const listener = (e: ButtonEvent) => {
-      if (!recordingDialogDisclosure.isOpen) {
-        if (e.state) {
-          recordingDialogDisclosure.onOpen();
-        }
+      if (!isRecordingDialogOpen && e.state) {
+        recordingDialogOnOpen();
       }
     };
     connection.addButtonListener("B", listener);
     return () => {
       connection.removeButtonListener("B", listener);
     };
-  }, [connection, recordingDialogDisclosure]);
+  }, [connection, isRecordingDialogOpen, recordingDialogOnOpen]);
 
   const [recordingOptions, setRecordingOptions] = useState<RecordingOptions>({
     continuousRecording: false,
@@ -119,11 +131,9 @@ const DataSamplesTable = ({
   const handleRecord = useCallback(
     (recordingOptions: RecordingOptions) => {
       setRecordingOptions(recordingOptions);
-      isConnected
-        ? recordingDialogDisclosure.onOpen()
-        : connectToRecordDialogDisclosure.onOpen();
+      isConnected ? recordingDialogOnOpen() : connectToRecordDialogOnOpen();
     },
-    [connectToRecordDialogDisclosure, isConnected, recordingDialogDisclosure]
+    [connectToRecordDialogOnOpen, isConnected, recordingDialogOnOpen]
   );
 
   const tourStart = useStore((s) => s.tourStart);
@@ -135,22 +145,100 @@ const DataSamplesTable = ({
     [tourStart]
   );
 
+  const actionNameInputEl = useCallback(
+    (idx: number) => document.getElementById(actionNameInputId(actions[idx])),
+    [actions]
+  );
+  const recordButtonEl = useCallback(
+    (idx: number) => document.getElementById(recordButtonId(actions[idx])),
+    [actions]
+  );
+  useShortcut(keyboardShortcuts.focusRecordButton, () =>
+    recordButtonEl(selectedActionIdx)?.focus()
+  );
+  useShortcut(keyboardShortcuts.focusActionName, () =>
+    actionNameInputEl(selectedActionIdx)?.focus()
+  );
+  const renameActionShortcutScopeRef = useShortcut(
+    keyboardShortcuts.renameAction,
+    () => actionNameInputEl(selectedActionIdx)?.focus()
+  );
+  const focusAction = useCallback(
+    (idx: number) => {
+      if (idx < 0 || idx >= actions.length) {
+        // Index is out of range.
+        return;
+      }
+      const nextRecordButton = recordButtonEl(idx);
+      const nextActionNameInput = actionNameInputEl(idx);
+      if (document.activeElement === actionNameInputEl(selectedActionIdx)) {
+        // When focused on an action name input.
+        return nextActionNameInput?.focus();
+      }
+      if (
+        document.activeElement === recordButtonEl(selectedActionIdx) &&
+        nextRecordButton
+      ) {
+        // When focused on a record button and next record button exists.
+        return nextRecordButton.focus();
+      }
+      nextActionNameInput?.focus();
+      setSelectedActionIdx(idx);
+    },
+    [
+      actionNameInputEl,
+      actions.length,
+      recordButtonEl,
+      selectedActionIdx,
+      setSelectedActionIdx,
+    ]
+  );
+  useShortcut(keyboardShortcuts.focusBelowAction, () =>
+    focusAction(selectedActionIdx + 1)
+  );
+  useShortcut(keyboardShortcuts.focusAboveAction, () =>
+    focusAction(selectedActionIdx - 1)
+  );
+
   return (
     <>
       <ConnectFirstDialog
-        isOpen={connectToRecordDialogDisclosure.isOpen}
-        onClose={connectToRecordDialogDisclosure.onClose}
+        isOpen={isConnectToRecordDialogOpen}
+        onClose={closeDialog}
         explanationTextId="connect-to-record-body"
       />
       {selectedAction && (
-        <RecordingDialog
-          actionId={selectedAction.ID}
-          isOpen={recordingDialogDisclosure.isOpen}
-          onClose={recordingDialogDisclosure.onClose}
-          actionName={selectedAction.name}
-          onRecordingComplete={handleRecordingComplete}
-          recordingOptions={recordingOptions}
-        />
+        <>
+          <ConfirmDialog
+            isOpen={isDeleteActionConfirmOpen}
+            heading={intl.formatMessage({
+              id: "delete-action-confirm-heading",
+            })}
+            body={
+              <Text>
+                <FormattedMessage
+                  id="delete-action-confirm-text"
+                  values={{
+                    action: selectedAction.name,
+                  }}
+                />
+              </Text>
+            }
+            onConfirm={() => {
+              deleteAction(selectedAction.ID);
+              closeDialog();
+            }}
+            onCancel={closeDialog}
+          />
+          <RecordingDialog
+            actionId={selectedAction.ID}
+            isOpen={isRecordingDialogOpen}
+            onClose={closeDialog}
+            actionName={selectedAction.name}
+            onRecordingComplete={handleRecordingComplete}
+            recordingOptions={recordingOptions}
+          />
+        </>
       )}
       <HeadingGrid
         position="sticky"
@@ -219,6 +307,8 @@ const DataSamplesTable = ({
               onSelectRow={() => setSelectedActionIdx(idx)}
               onRecord={handleRecord}
               showHints={showHints}
+              onDeleteAction={deleteActionConfirmOnOpen}
+              renameShortcutScopeRef={renameActionShortcutScopeRef}
             />
           ))}
         </Grid>

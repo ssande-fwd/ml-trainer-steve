@@ -166,6 +166,7 @@ export const useConnectionStage = (): {
   actions: ConnectionStageActions;
   isConnected: boolean;
   connectActions: ConnectActions;
+  isDialogOpen: boolean;
 } => {
   const connectionStageContextValue = useContext(ConnectionStageContext);
   if (!connectionStageContextValue) {
@@ -202,6 +203,7 @@ export const useConnectionStage = (): {
     actions.handleConnectionStatus
   );
   const isConnected = status === ConnectionStatus.Connected;
+  const isDialogOpen = stage.flowStep !== ConnectionFlowStep.None;
 
   return {
     status,
@@ -209,5 +211,6 @@ export const useConnectionStage = (): {
     actions,
     isConnected,
     connectActions,
+    isDialogOpen,
   };
 };

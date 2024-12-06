@@ -17,31 +17,26 @@ import { ReactNode, useCallback, useEffect } from "react";
 import { RiDownload2Line, RiHome2Line } from "react-icons/ri";
 import { FormattedMessage, useIntl } from "react-intl";
 import { useNavigate } from "react-router";
-import {
-  ConnectionFlowStep,
-  useConnectionStage,
-} from "../connection-stage-hooks";
+import { useConnectionStage } from "../connection-stage-hooks";
 import { useDeployment } from "../deployment";
 import { flags } from "../flags";
 import { useProject } from "../hooks/project-hooks";
-import {
-  PostImportDialogState,
-  SaveStep,
-  TrainModelDialogStage,
-} from "../model";
+import { keyboardShortcuts, useShortcut } from "../keyboard-shortcut-hooks";
+import { PostImportDialogState } from "../model";
 import Tour from "../pages/Tour";
 import { useStore } from "../store";
 import { createHomePageUrl } from "../urls";
 import ActionBar from "./ActionBar/ActionBar";
+import ItemsRight from "./ActionBar/ActionBarItemsRight";
 import AppLogo from "./AppLogo";
 import ConnectionDialogs from "./ConnectionFlowDialogs";
+import FeedbackForm from "./FeedbackForm";
 import ImportErrorDialog from "./ImportErrorDialog";
 import MakeCodeLoadErrorDialog from "./MakeCodeLoadErrorDialog";
 import NotCreateAiHexImportDialog from "./NotCreateAiHexImportDialog";
 import PreReleaseNotice from "./PreReleaseNotice";
 import ProjectDropTarget from "./ProjectDropTarget";
 import SaveDialogs from "./SaveDialogs";
-import ItemsRight from "./ActionBar/ActionBarItemsRight";
 
 interface DefaultPageLayoutProps {
   titleId?: string;
@@ -61,17 +56,10 @@ const DefaultPageLayout = ({
   showPageTitle = false,
 }: DefaultPageLayoutProps) => {
   const intl = useIntl();
-  const isEditorOpen = useStore((s) => s.isEditorOpen);
-  const isTourClosed = useStore((s) => s.tourState === undefined);
-  const isTrainDialogClosed = useStore(
-    (s) => s.trainModelDialogStage === TrainModelDialogStage.Closed
+  const { isDialogOpen: isConnectionDialogOpen } = useConnectionStage();
+  const isNonConnectionDialogOpen = useStore((s) =>
+    s.isNonConnectionDialogOpen()
   );
-  const isMakeCodeErrorDialogClosed = useStore(
-    (s) => !s.isEditorTimedOutDialogOpen
-  );
-  const { stage } = useConnectionStage();
-  const isConnectionDialogClosed = stage.flowStep === ConnectionFlowStep.None;
-  const isSaveDialogClosed = useStore((s) => s.save.step === SaveStep.None);
   const { appNameFull } = useDeployment();
 
   useEffect(() => {
@@ -86,17 +74,13 @@ const DefaultPageLayout = ({
     setPostImportDialogState(PostImportDialogState.None);
   }, [setPostImportDialogState]);
 
+  const isFeedbackOpen = useStore((s) => s.isFeedbackFormOpen);
+  const closeDialog = useStore((s) => s.closeDialog);
+
   return (
     <>
       {/* Suppress dialogs to prevent overlapping dialogs */}
-      {!isEditorOpen &&
-        isTrainDialogClosed &&
-        isTourClosed &&
-        isSaveDialogClosed &&
-        isMakeCodeErrorDialogClosed &&
-        postImportDialogState === PostImportDialogState.None && (
-          <ConnectionDialogs />
-        )}
+      {!isNonConnectionDialogOpen && <ConnectionDialogs />}
       <Tour />
       <SaveDialogs />
       <NotCreateAiHexImportDialog
@@ -108,13 +92,9 @@ const DefaultPageLayout = ({
         isOpen={postImportDialogState === PostImportDialogState.Error}
       />
       <MakeCodeLoadErrorDialog />
+      <FeedbackForm isOpen={isFeedbackOpen} onClose={closeDialog} />
       <ProjectDropTarget
-        isEnabled={
-          isTrainDialogClosed &&
-          isTourClosed &&
-          isConnectionDialogClosed &&
-          isSaveDialogClosed
-        }
+        isEnabled={!isNonConnectionDialogOpen && !isConnectionDialogOpen}
       >
         <VStack
           minH="100vh"
@@ -172,6 +152,7 @@ export const ProjectToolbarItems = () => {
   const handleSave = useCallback(() => {
     void saveHex();
   }, [saveHex]);
+  useShortcut(keyboardShortcuts.saveSession, handleSave);
 
   return (
     <>

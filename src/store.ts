@@ -180,6 +180,18 @@ export interface State {
 
   predictionInterval: ReturnType<typeof setInterval> | undefined;
   predictionResult: PredictionResult | undefined;
+
+  isLanguageDialogOpen: boolean;
+  isSettingsDialogOpen: boolean;
+  isConnectFirstDialogOpen: boolean;
+  isAboutDialogOpen: boolean;
+  isFeedbackFormOpen: boolean;
+  isDeleteAllActionsDialogOpen: boolean;
+  isDeleteActionDialogOpen: boolean;
+  isIncompatibleEditorDeviceDialogOpen: boolean;
+  isNameProjectDialogOpen: boolean;
+  isRecordingDialogOpen: boolean;
+  isConnectToRecordDialogOpen: boolean;
 }
 
 export interface ConnectOptions {
@@ -252,6 +264,20 @@ export interface Actions {
   setPostImportDialogState(state: PostImportDialogState): void;
   startPredicting(buffer: BufferedData): void;
   stopPredicting(): void;
+
+  languageDialogOnOpen(): void;
+  settingsDialogOnOpen(): void;
+  connectFirstDialogOnOpen(): void;
+  aboutDialogOnOpen(): void;
+  feedbackFormOnOpen(): void;
+  nameProjectDialogOnOpen(): void;
+  deleteAllActionsDialogOnOpen(): void;
+  deleteActionDialogOnOpen(): void;
+  incompatibleEditorDeviceDialogOnOpen(): void;
+  recordingDialogOnOpen(): void;
+  connectToRecordDialogOnOpen(): void;
+  closeDialog(): void;
+  isNonConnectionDialogOpen(): boolean;
 }
 
 type Store = State & Actions;
@@ -291,6 +317,17 @@ const createMlStore = (logging: Logging) => {
           postImportDialogState: PostImportDialogState.None,
           predictionInterval: undefined,
           predictionResult: undefined,
+          isLanguageDialogOpen: false,
+          isSettingsDialogOpen: false,
+          isConnectFirstDialogOpen: false,
+          isAboutDialogOpen: false,
+          isFeedbackFormOpen: false,
+          isDeleteAllActionsDialogOpen: false,
+          isNameProjectDialogOpen: false,
+          isRecordingDialogOpen: false,
+          isConnectToRecordDialogOpen: false,
+          isDeleteActionDialogOpen: false,
+          isIncompatibleEditorDeviceDialogOpen: false,
 
           setSettings(update: Partial<Settings>) {
             set(
@@ -1031,7 +1068,96 @@ const createMlStore = (logging: Logging) => {
               set({ predictionInterval: undefined });
             }
           },
+
+          languageDialogOnOpen() {
+            set({ isLanguageDialogOpen: true });
+          },
+          settingsDialogOnOpen() {
+            set({ isSettingsDialogOpen: true });
+          },
+          connectFirstDialogOnOpen() {
+            set({ isConnectFirstDialogOpen: true });
+          },
+          aboutDialogOnOpen() {
+            set({ isAboutDialogOpen: true });
+          },
+          feedbackFormOnOpen() {
+            set({ isFeedbackFormOpen: true });
+          },
+          deleteAllActionsDialogOnOpen() {
+            set({ isDeleteAllActionsDialogOpen: true });
+          },
+          nameProjectDialogOnOpen() {
+            set({ isNameProjectDialogOpen: true });
+          },
+          recordingDialogOnOpen() {
+            set({ isRecordingDialogOpen: true });
+          },
+          connectToRecordDialogOnOpen() {
+            set({ isConnectToRecordDialogOpen: true });
+          },
+          deleteActionDialogOnOpen() {
+            set({ isDeleteActionDialogOpen: true });
+          },
+          incompatibleEditorDeviceDialogOnOpen() {
+            set({ isIncompatibleEditorDeviceDialogOpen: true });
+          },
+          closeDialog() {
+            set({
+              isLanguageDialogOpen: false,
+              isSettingsDialogOpen: false,
+              isConnectFirstDialogOpen: false,
+              isAboutDialogOpen: false,
+              isFeedbackFormOpen: false,
+              isDeleteAllActionsDialogOpen: false,
+              isNameProjectDialogOpen: false,
+              isRecordingDialogOpen: false,
+              isConnectToRecordDialogOpen: false,
+              isDeleteActionDialogOpen: false,
+              isIncompatibleEditorDeviceDialogOpen: false,
+            });
+          },
+
+          isNonConnectionDialogOpen() {
+            const {
+              isAboutDialogOpen,
+              isSettingsDialogOpen,
+              isConnectFirstDialogOpen,
+              isLanguageDialogOpen,
+              isFeedbackFormOpen,
+              postImportDialogState,
+              isEditorOpen,
+              tourState,
+              trainModelDialogStage,
+              isEditorTimedOutDialogOpen,
+              isDeleteAllActionsDialogOpen,
+              isRecordingDialogOpen,
+              isConnectToRecordDialogOpen,
+              isDeleteActionDialogOpen,
+              isIncompatibleEditorDeviceDialogOpen,
+              save,
+            } = get();
+            return (
+              isAboutDialogOpen ||
+              isSettingsDialogOpen ||
+              isConnectFirstDialogOpen ||
+              isLanguageDialogOpen ||
+              isFeedbackFormOpen ||
+              isDeleteAllActionsDialogOpen ||
+              isRecordingDialogOpen ||
+              isConnectToRecordDialogOpen ||
+              isDeleteActionDialogOpen ||
+              isIncompatibleEditorDeviceDialogOpen ||
+              postImportDialogState !== PostImportDialogState.None ||
+              isEditorOpen ||
+              tourState !== undefined ||
+              trainModelDialogStage !== TrainModelDialogStage.Closed ||
+              isEditorTimedOutDialogOpen ||
+              save.step !== SaveStep.None
+            );
+          },
         }),
+
         {
           version: 1,
           name: "ml",
