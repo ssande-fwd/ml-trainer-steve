@@ -11,6 +11,17 @@ interface CodeViewDefaultBlockProps {
   icon: MakeCodeIcon;
 }
 
+const blockFont = `600 12pt "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace`;
+const textBoxPadding = 40;
+const textBoxMargin = 10;
+
+const getTextWidth = (text: string) => {
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  context!.font = blockFont;
+  return context!.measureText(text).width;
+};
+
 const CodeViewDefaultBlock = ({
   actionName,
   icon,
@@ -20,18 +31,36 @@ const CodeViewDefaultBlock = ({
   const iconName = intl.formatMessage({
     id: `led-icon-option-${icon.toLowerCase()}`,
   });
-  const actionNameTextBoxWidth = getActionNameTextBoxWidth(actionName);
-  const dropdownArrowXPos = actionNameTextBoxWidth - 20;
-  const onMlStartBlockWidth = actionNameTextBoxWidth + 120;
-  const startTextXPos = onMlStartBlockWidth - 50;
+
+  const actionNameBoxWidth = getTextWidth(actionName) + textBoxPadding;
+  const dropdownArrowXPos = actionNameBoxWidth - 20;
+
+  const onMlStartText = intl.formatMessage({ id: "ml.onStart|block" });
+  const [onMlStartText1, onMlStartText2] = onMlStartText
+    .split("$event")
+    .map((s) => s.trim());
+  const actionNameXPos =
+    getTextWidth(onMlStartText1) + (onMlStartText1 ? textBoxMargin : 10) + 5;
+  const onMlStartText2XPos =
+    actionNameXPos + actionNameBoxWidth + textBoxMargin;
+  const onMlStartBlockWidth =
+    actionNameXPos +
+    actionNameBoxWidth +
+    getTextWidth(onMlStartText2) +
+    (onMlStartText2 ? textBoxMargin : 0);
+
+  const showIconText = intl.formatMessage({ id: "makecode-block-show-icon" });
+  const showIconTextWidth = getTextWidth(showIconText) + textBoxPadding;
+  const showIconBlockWidth = showIconTextWidth + 10;
+
+  const makecodeBlockText = intl.formatMessage({
+    id: "makecode-block-alt-prefix",
+  });
+  const altText = `${makecodeBlockText} ${onMlStartText1} ${actionName}${
+    onMlStartText2 ? ` ${onMlStartText2},` : ","
+  } ${showIconText} ${iconName}`;
   return (
-    <Box
-      role="img"
-      aria-label={intl.formatMessage(
-        { id: "makecode-block-default-alt" },
-        { actionName, iconName }
-      )}
-    >
+    <Box role="img" aria-label={altText}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
@@ -57,7 +86,7 @@ const CodeViewDefaultBlock = ({
                 <path
                   stroke="#176cbf"
                   fill="#1e90ff"
-                  d="m 0,0  m 0,4 a 4 4 0 0,1 4,-4  h 8  c 2,0  3,1  4,2  l 4,4  c 1,1  2,2  4,2  h 12  c 2,0  3,-1  4,-2  l 4,-4  c 1,-1  2,-2  4,-2  h 130.4140625 a 4 4 0 0,1 4,4  v 8  V 54  V 58  V 58 a 4 4 0 0,1 -4,4  h -130.4140625  c -2,0  -3,1  -4,2  l -4,4  c -1,1  -2,2  -4,2  h -12  c -2,0  -3,-1  -4,-2  l -4,-4  c -1,-1  -2,-2  -4,-2  h -8 a 4 4 0 0,1 -4,-4 z&#10;"
+                  d={`m 0,0  m 0,4 a 4 4 0 0,1 4,-4  h 8  c 2,0  3,1  4,2  l 4,4  c 1,1  2,2  4,2  h 12  c 2,0  3,-1  4,-2  l 4,-4  c 1,-1  2,-2  4,-2  h ${showIconBlockWidth} a 4 4 0 0,1 4,4  v 8  V 54  V 58  V 58 a 4 4 0 0,1 -4,4  h -${showIconBlockWidth}  c -2,0  -3,1  -4,2  l -4,4  c -1,1  -2,2  -4,2  h -12  c -2,0  -3,-1  -4,-2  l -4,-4  c -1,-1  -2,-2  -4,-2  h -8 a 4 4 0 0,1 -4,-4 z&#10;`}
                 />
                 <g transform="translate(8,20)">
                   <text
@@ -72,7 +101,7 @@ const CodeViewDefaultBlock = ({
                     <FormattedMessage id="makecode-block-show-icon" />
                   </text>
                 </g>
-                <g transform="translate(102.4140625,8)">
+                <g transform={`translate(${showIconBlockWidth - 28}, 8)`}>
                   <rect
                     rx="4"
                     ry="4"
@@ -109,12 +138,12 @@ const CodeViewDefaultBlock = ({
                   fontFamily={`"Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace`}
                   fill="white"
                 >
-                  <FormattedMessage id="makecode-block-on-ML" />
+                  {onMlStartText1}
                 </text>
               </g>
               <g
                 data-argument-type="dropdown"
-                transform="translate(64.0078125,8)"
+                transform={`translate(${actionNameXPos},8)`}
               >
                 <rect
                   rx="4"
@@ -122,7 +151,7 @@ const CodeViewDefaultBlock = ({
                   x="0"
                   y="0"
                   height="35"
-                  width={`${actionNameTextBoxWidth}`}
+                  width={`${actionNameBoxWidth}`}
                   stroke="#204b92"
                   fill="transparent"
                 />
@@ -146,7 +175,7 @@ const CodeViewDefaultBlock = ({
                   transform={`translate(${dropdownArrowXPos},11.5)`}
                 />
               </g>
-              <g transform={`translate(${startTextXPos},14.5)`}>
+              <g transform={`translate(${onMlStartText2XPos},14.5)`}>
                 <text
                   dominantBaseline="central"
                   x="0"
@@ -156,7 +185,7 @@ const CodeViewDefaultBlock = ({
                   fontFamily={`"Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace`}
                   fill="white"
                 >
-                  <FormattedMessage id="makecode-block-start" />
+                  {onMlStartText2}
                 </text>
               </g>
             </g>
@@ -175,15 +204,6 @@ const CodeViewDefaultBlock = ({
       </svg>
     </Box>
   );
-};
-
-const blockFont = `600 12pt "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace`;
-const getActionNameTextBoxWidth = (text: string) => {
-  const canvas = document.createElement("canvas");
-  const context = canvas.getContext("2d");
-  context!.font = blockFont;
-  const textBoxPaddingWidth = 40;
-  return context!.measureText(text).width + textBoxPaddingWidth;
 };
 
 interface BlockLedMatrixInternalSvgProps {

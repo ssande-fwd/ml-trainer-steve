@@ -1,334 +1,334 @@
 {
   "aarhus-university-alt": {
-    "defaultMessage": "Aarhus University",
+    "defaultMessage": "Universidad de Aarhus",
     "description": "Alt text for Aarhus University logo in about dialog"
   },
   "about": {
-    "defaultMessage": "About",
+    "defaultMessage": "Acerca de nosotros",
     "description": "Menu item link to view information about app"
   },
   "about-dialog-alt": {
-    "defaultMessage": "micro:bit board showing a heart on the LED display",
+    "defaultMessage": "placa micro:bit mostrando un corazón en la pantalla LED",
     "description": "Alt text for image in about dialog"
   },
   "about-dialog-title": {
-    "defaultMessage": "Developed in partnership with <link>Center for Computational Thinking and Design, Aarhus University</link>",
+    "defaultMessage": "Desarrollado en colaboración con <link>Center for Computational Thinking and Design, Aarhus University</link>",
     "description": "Title of about dialog"
   },
   "accelerometer-image-alt": {
-    "defaultMessage": "micro:bit showing X axis going across the front, Y axis going down and up, Z axis going back to front",
+    "defaultMessage": "micro:bit mostrando el eje X atravesando la parte delantera, el eje Y de arriba abajo y el eje Z de atrás hacia delante",
     "description": "Alt text for image showing the board-relative directions of the X/Y/Z dimensions of the micro:bit accelerometer"
   },
   "action-label": {
-    "defaultMessage": "Action",
+    "defaultMessage": "Acción",
     "description": "Label for a movement-related action, e.g. clapping"
   },
   "action-label-tooltip-aria": {
-    "defaultMessage": "Action tooltip",
+    "defaultMessage": "Información de herramienta de la acción",
     "description": "Aria label for action tooltip icon"
   },
   "action-length-error": {
-    "defaultMessage": "Action names cannot be longer than {maxLen} characters.",
+    "defaultMessage": "Los nombres de las acciones no pueden tener más de {maxLen} caracteres.",
     "description": "Error message shown when an action name is too long"
   },
   "action-name-placeholder": {
-    "defaultMessage": "Name of action",
+    "defaultMessage": "Nombre de la acción",
     "description": "Placeholder text for user supplied name of a movement-related action, e.g. clapping"
   },
   "action-region": {
-    "defaultMessage": "Action \"{action}\"",
+    "defaultMessage": "Acción \"{action}\"",
     "description": "Region label for action row"
   },
   "action-tooltip": {
-    "defaultMessage": "The type of movement you want {appNameFull} to recognise e.g. ‘waving’ or ‘clapping’.",
+    "defaultMessage": "El tipo de movimiento que quieres que {appNameFull} reconozca, por ejemplo, «saludar» o «aplaudir».",
     "description": "Tooltip explaining action"
   },
   "actions-label": {
-    "defaultMessage": "Actions",
+    "defaultMessage": "Acciones",
     "description": "Label for Actions"
   },
   "add-action-action": {
-    "defaultMessage": "Add action",
+    "defaultMessage": "Añadir acción",
     "description": "Button to add an action (movement related, e.g. clapping)"
   },
   "ai-activity-timer-resource-title": {
-    "defaultMessage": "AI activity timer",
+    "defaultMessage": "Temporizador de actividad de IA",
     "description": "Home page resource card title"
   },
   "ai-storytelling-friend-resource-title": {
-    "defaultMessage": "AI storytelling friend",
+    "defaultMessage": "Amigo cuentacuentos con IA",
     "description": "Home page resource card title"
   },
   "back-action": {
-    "defaultMessage": "Back",
+    "defaultMessage": "Volver",
     "description": "Back button text"
   },
   "back-to-data-samples-action": {
-    "defaultMessage": "Edit data samples",
+    "defaultMessage": "Editar muestras de datos",
     "description": "Back button text"
   },
   "bluetooth-unsupported-advice": {
-    "defaultMessage": "We recommend Google Chrome or Microsoft Edge so you can connect directly to your micro:bit.",
+    "defaultMessage": "Te recomendamos Google Chrome o Microsoft Edge para que puedas conectarte directamente a tu micro:bit.",
     "description": "Note on supported browsers"
   },
   "bluetooth-unsupported-explain": {
-    "defaultMessage": "Unfortunately, WebUSB and Web Bluetooth are not supported by this browser. This means you cannot connect to a micro:bit to record the data samples needed to train a machine learning model.",
+    "defaultMessage": "Lamentablemente, WebUSB y Web Bluetooth no son compatibles con este navegador. Esto significa que no puedes conectarte a un micro:bit para grabar las muestras de datos necesarias para entrenar un modelo de aprendizaje automático.",
     "description": "Note on supported browsers"
   },
   "bluetooth-unsupported-header": {
-    "defaultMessage": "This browser is not supported",
+    "defaultMessage": "Este navegador no es compatible",
     "description": "Heading for browser support dialog"
   },
   "cancel-action": {
-    "defaultMessage": "Cancel",
+    "defaultMessage": "Cancelar",
     "description": "Cancel button text"
   },
   "cancel-recording-action": {
-    "defaultMessage": "Cancel recording",
+    "defaultMessage": "Cancelar grabación",
     "description": "Button label to cancel a movement data recording"
   },
   "certainty-label": {
-    "defaultMessage": "Certainty",
+    "defaultMessage": "Certeza",
     "description": "Heading for certainty column"
   },
   "certainty-label-tooltip-aria": {
-    "defaultMessage": "Certainty tooltip",
+    "defaultMessage": "Información de herramienta de la certeza",
     "description": "Aria label for code certainty icon"
   },
   "certainty-percentage-label": {
-    "defaultMessage": "certainty for {action}: {currentConfidence} percent",
+    "defaultMessage": "certeza para {action}: {currentConfidence} por ciento",
     "description": "Label for certainty of an action"
   },
   "certainty-tooltip": {
-    "defaultMessage": "How confident the model is that you are currently doing each action.",
+    "defaultMessage": "Cómo de seguro está el modelo de que estás realizando cada acción.",
     "description": "Tooltip for certainty column"
   },
   "click-to-reload-page-action": {
-    "defaultMessage": "Click to reload the page",
+    "defaultMessage": "Haga clic para recargar la página",
     "description": "Reload page button text"
   },
   "close-action": {
-    "defaultMessage": "Close",
+    "defaultMessage": "Cerrar",
     "description": "Close button text or label"
   },
   "code-download-error": {
-    "defaultMessage": "Error downloading the project code",
+    "defaultMessage": "Error al descargar el código del proyecto",
     "description": "Title for error message relating to project loading"
   },
   "code-label": {
-    "defaultMessage": "Code",
+    "defaultMessage": "Programa",
     "description": "Code column heading"
   },
   "code-label-tooltip-aria": {
-    "defaultMessage": "Code tooltip",
+    "defaultMessage": "Información de herramienta del código",
     "description": "Aria label for code tooltip icon"
   },
   "code-tooltip": {
-    "defaultMessage": "These are the MakeCode blocks for each detected action when you transfer your ML model and code to a micro:bit",
+    "defaultMessage": "Estos son los bloques MakeCode para cada acción detectada cuando transfieres tu modelo y código ML a un micro:bit",
     "description": "Code column heading tooltip"
   },
   "confirm-action": {
-    "defaultMessage": "Confirm",
+    "defaultMessage": "Confirmar",
     "description": "Confirm button text"
   },
   "confirm-save-action": {
-    "defaultMessage": "Confirm and save",
+    "defaultMessage": "Confirmar y guardar",
     "description": "Confirm and save action label"
   },
   "connect-action": {
-    "defaultMessage": "Connect",
+    "defaultMessage": "Conectar",
     "description": "Connect action to connect to data collection micro:bit via Bluetooth or micro:bit radio"
   },
   "connect-action-aria": {
-    "defaultMessage": "Connect to micro:bit",
+    "defaultMessage": "Conectar al micro:bit",
     "description": "Connect action to connect to data collection micro:bit via Bluetooth or micro:bit radio"
   },
   "connect-battery-heading": {
-    "defaultMessage": "Disconnect USB and connect battery pack",
+    "defaultMessage": "Desconectar el USB y conectar la batería",
     "description": "Battery connection dialog "
   },
   "connect-battery-holder": {
-    "defaultMessage": "Battery holder",
+    "defaultMessage": "Portapilas",
     "description": "Label for battery holder icon"
   },
   "connect-battery-link": {
-    "defaultMessage": "You can attach the micro:bit to your wrist or an object",
+    "defaultMessage": "Puedes sujetar el micro:bit a tu muñeca o a un objeto",
     "description": "Battery connection dialog"
   },
   "connect-battery-subtitle": {
-    "defaultMessage": "Disconnect the micro:bit from the computer and connect the battery pack.",
+    "defaultMessage": "Desconecta el micro:bit del ordenador y conecta la batería.",
     "description": "Battery connection dialog"
   },
   "connect-bluetooth-cancelled-connection": {
-    "defaultMessage": "You didn't choose a micro:bit. Do you want to try again?",
+    "defaultMessage": "No has elegido un micro:bit. ¿Quieres volver a intentarlo?",
     "description": "Error when the user cancelled the Web Bluetooth permission/device selection dialog"
   },
   "connect-bluetooth-heading": {
-    "defaultMessage": "Connect using Web Bluetooth",
+    "defaultMessage": "Conectar mediante Web Bluetooth",
     "description": "Connection dialogs"
   },
   "connect-bluetooth-invalid-pattern": {
-    "defaultMessage": "The pattern you have drawn is invalid.",
+    "defaultMessage": "El patrón que has dibujado no es válido.",
     "description": "Error when the bluetooth pattern is incomplete "
   },
   "connect-bluetooth-start-heading": {
-    "defaultMessage": "What you need to connect using Web Bluetooth",
+    "defaultMessage": "Qué necesitas para conectarte mediante Web Bluetooth",
     "description": "Connection dialog heading"
   },
   "connect-bluetooth-start-requirements1": {
-    "defaultMessage": "1 micro:bit",
+    "defaultMessage": "un micro:bit",
     "description": "Label for icon of single micro:bit"
   },
   "connect-bluetooth-start-requirements2-subtitle": {
-    "defaultMessage": "with Internet, a USB port & Web Bluetooth",
+    "defaultMessage": "con Internet, un puerto USB y Web Bluetooth",
     "description": "Under heading 'Computer' this lists the features the computer needs"
   },
   "connect-bluetooth-start-switch-radio": {
-    "defaultMessage": "Connect using micro:bit radio instead",
+    "defaultMessage": "Conéctate utilizando la radio del micro:bit",
     "description": "Link to alternative connection method"
   },
   "connect-cable-alt": {
-    "defaultMessage": "animation showing a USB cable being connected to the top of a micro:bit",
+    "defaultMessage": "animación que muestra cómo se conecta un cable USB a la parte superior de un micro:bit",
     "description": "Alt text"
   },
   "connect-cable-download-project-subtitle": {
-    "defaultMessage": "Connect a micro:bit to this computer with a USB cable to download your machine learning MakeCode program to it.",
+    "defaultMessage": "Conecta un micro:bit a este ordenador con un cable USB para descargar en él tu programa MakeCode de aprendizaje automático.",
     "description": "Download project dialog"
   },
   "connect-cable-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit",
+    "defaultMessage": "Conecta el cable USB al micro:bit",
     "description": "Connect cable dialog heading"
   },
   "connect-cable-skip": {
-    "defaultMessage": "Skip: program already downloaded?",
+    "defaultMessage": "Saltar: ¿programa ya descargado?",
     "description": "Link to skip"
   },
   "connect-cable-subtitle": {
-    "defaultMessage": "Connect the micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it.",
+    "defaultMessage": "Conecta el micro:bit a este ordenador con un cable USB para poder descargar en él el programa de recogida de datos.",
     "description": "Project download instructions"
   },
   "connect-computer": {
-    "defaultMessage": "Computer",
+    "defaultMessage": "Ordenador",
     "description": "Label for computer icon in connection dialog"
   },
   "connect-data-collection-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit 1",
+    "defaultMessage": "Conecta el cable USB al micro:bit 1",
     "description": "Connection dialog heading"
   },
   "connect-data-collection-subtitle": {
-    "defaultMessage": "Connect the first micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it. This is the micro:bit you will use to collect data samples.",
+    "defaultMessage": "Conecta el primer micro:bit a este ordenador con un cable USB para poder descargarle el programa de recogida de datos. Este es el micro:bit que utilizarás para recoger las muestras de datos.",
     "description": "Connection dialog subtitle"
   },
   "connect-failed-bluetooth-heading": {
-    "defaultMessage": "Failed to connect to micro:bit",
+    "defaultMessage": "Error al conectarse con el micro:bit",
     "description": "Bluetooth connection error message"
   },
   "connect-failed-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be established.",
+    "defaultMessage": "No se ha podido establecer la conexión con el micro:bit de recogida de datos.",
     "description": "Bluetooth connection error message"
   },
   "connect-failed-bridge-heading": {
-    "defaultMessage": "Failed to connect to radio link micro:bit",
+    "defaultMessage": "No se ha podido conectar al enlace de radio del micro:bit",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer could not be established.",
+    "defaultMessage": "No se ha podido establecer la conexión con el micro:bit conectado a tu ordenador.",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-remote-heading": {
-    "defaultMessage": "Failed to connect to data collection micro:bit",
+    "defaultMessage": "Error al conectar con la recogida de datos del micro:bit",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be established.",
+    "defaultMessage": "No se ha podido establecer la conexión con el micro:bit de recogida de datos.",
     "description": "micro:bit radio connection error message"
   },
   "connect-help-alt": {
-    "defaultMessage": "WebUSB connection dialog with BBC micro:bit entry labelled 1 and Connect button labelled 2",
+    "defaultMessage": "Diálogo de conexión WebUSB con entrada BBC micro:bit con la etiqueta 1 y botón Conectar con la etiqueta 2",
     "description": "Alt text for image in connect help dialog"
   },
   "connect-micro-usb-cable": {
-    "defaultMessage": "Micro USB cable",
+    "defaultMessage": "Cable micro USB",
     "description": "Label for cable icon in list of requirements"
   },
   "connect-or-import": {
-    "defaultMessage": "<link1>Connect a data collection micro:bit</link1> or <link2>import data samples</link2>",
+    "defaultMessage": "<link1>Conecta una colección de datos de micro:bit</link1> o <link2>importa muestras de datos</link2>",
     "description": "Empty data samples page text"
   },
   "connect-pattern-heading": {
-    "defaultMessage": "Copy pattern",
+    "defaultMessage": "Copiar patrón",
     "description": "Heading for Bluetooth pattern connection dialog"
   },
   "connect-pattern-input-label": {
-    "defaultMessage": "Column {colNum} - number of LEDs lit on the micro:bit display",
+    "defaultMessage": "Columna {colNum}: número de LED encendidos en la pantalla del micro:bit",
     "description": "Screen reader text for numeric pattern input"
   },
   "connect-pattern-subtitle": {
-    "defaultMessage": "Copy the pattern displayed on the micro:bit.",
+    "defaultMessage": "Copia el patrón que aparece en el micro:bit.",
     "description": "Instruction for bluetooth pattern dialog"
   },
   "connect-popup": {
-    "defaultMessage": "Select micro:bit",
+    "defaultMessage": "Selecciona micro:bit",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-bluetooth-alt": {
-    "defaultMessage": "Web Bluetooth connection dialog with BBC micro:bit entry labelled 1 and Pair button labelled 2",
+    "defaultMessage": "Diálogo de conexión de Web Bluetooth con la entrada del micro:bit BBC etiquetada como 1 y el botón Emparejar etiquetado como 2",
     "description": "Alt text"
   },
   "connect-popup-bluetooth-instruction2": {
-    "defaultMessage": "Select 'Pair'",
+    "defaultMessage": "Selecciona «Emparejar».",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-bluetooth-title": {
-    "defaultMessage": "Connect to micro:bit using Web Bluetooth",
+    "defaultMessage": "Conéctate a micro:bit mediante Web Bluetooth",
     "description": "Instruction for dialog that previews the Bluetooth permission dialog"
   },
   "connect-popup-instruction-heading": {
-    "defaultMessage": "In the next popup",
+    "defaultMessage": "En la siguiente ventana emergente",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-instruction1": {
-    "defaultMessage": "Choose your micro:bit",
+    "defaultMessage": "Elige tu micro:bit",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-usb-bluetooth-data-collection-title": {
-    "defaultMessage": "Download data collection program to micro:bit",
+    "defaultMessage": "Descarga el programa de recogida de datos al micro:bit",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-usb-radio-data-collection-title": {
-    "defaultMessage": "Download data collection program to micro:bit 1",
+    "defaultMessage": "Descarga el programa de recogida de datos al micro:bit 1",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-usb-radio-link-title": {
-    "defaultMessage": "Download radio link program to micro:bit 2",
+    "defaultMessage": "Descarga el programa de enlace de radio al micro:bit 2",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-webusb-instruction2": {
-    "defaultMessage": "Select 'Connect'",
+    "defaultMessage": "Selecciona «Conectar».",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-radio-data-collection-microbit-description": {
-    "defaultMessage": "Connect the data collection micro:bit to this computer to download your machine learning MakeCode program to it. If you're wearing the data collection micro:bit, you may need to remove it.",
+    "defaultMessage": "Conecta el micro:bit de recogida de datos a este ordenador para descargar en él tu programa MakeCode de aprendizaje automático. Si llevas puesto el micro:bit de recogida de datos, puede que tengas que quitártelo.",
     "description": "Connect radio data collection micro:bit dialog description"
   },
   "connect-radio-data-collection-microbit-title": {
-    "defaultMessage": "Connect USB cable to the data collection micro:bit",
+    "defaultMessage": "Conecta el cable USB al micro:bit de recogida de datos",
     "description": "Connect radio data collection micro:bit dialog title"
   },
   "connect-radio-heading": {
-    "defaultMessage": "Connecting micro:bits",
+    "defaultMessage": "Conectar micro:bits",
     "description": "Text shown while radio link and data connection micro:bit are being connected"
   },
   "connect-radio-link-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit 2",
+    "defaultMessage": "Conecta el cable USB al micro:bit 2",
     "description": "Heading for connecting radio link micro:bit cable"
   },
   "connect-radio-link-subtitle": {
-    "defaultMessage": "Connect a second micro:bit to this computer with a USB cable so that the radio link program can be downloaded to it. This radio link micro:bit will communicate with the data collection micro:bit.",
+    "defaultMessage": "Conecta un segundo micro:bit a este ordenador con un cable USB para poder descargarle el programa de enlace de radio. Este micro:bit de radioenlace se comunicará con el micro:bit de recogida de datos.",
     "description": "Instruction for connecting radio link micro:bit cable"
   },
   "connect-radio-start-heading": {
-    "defaultMessage": "What you need to connect using micro:bit radio",
+    "defaultMessage": "Qué necesitas para conectarte con la radio del micro:bit",
     "description": "Connection dialog heading"
   },
   "connect-radio-start-requirements1": {
@@ -336,55 +336,55 @@
     "description": "Label for icon of two micro:bits"
   },
   "connect-radio-start-requirements1-subtitle": {
-    "defaultMessage": "V2 only",
+    "defaultMessage": "V2 solo",
     "description": "Shown below 2 micro:bit label for micro:bit radio approach"
   },
   "connect-radio-start-requirements2-subtitle": {
-    "defaultMessage": "with Internet & a USB port",
+    "defaultMessage": "con Internet y un puerto USB",
     "description": "Shown below 'Computer' heading listing additional requirements"
   },
   "connect-radio-start-switch-bluetooth": {
-    "defaultMessage": "Connect using Web Bluetooth instead",
+    "defaultMessage": "Conéctate utilizando Web Bluetooth en su lugar",
     "description": "Link to alternative connection method"
   },
   "connect-to-record": {
-    "defaultMessage": "Connect to record data samples",
+    "defaultMessage": "Conecta para grabar muestras de datos",
     "description": "Live graph disconnected micro:bit status message for data samples page"
   },
   "connect-to-record-body": {
-    "defaultMessage": "Connect a micro:bit to record a data sample.",
+    "defaultMessage": "Conecta un micro:bit para grabar una muestra de datos.",
     "description": "Insufficient data modal content"
   },
   "connect-to-test-model": {
-    "defaultMessage": "Connect to test your ML model",
+    "defaultMessage": "Conecta para probar tu modelo de ML",
     "description": "Live graph disconnected micro:bit status message for test model page"
   },
   "connect-to-tour-body": {
-    "defaultMessage": "You need to connect a data collection micro:bit to view the tour.",
+    "defaultMessage": "Necesitas conectar un micro:bit de recogida de datos para ver el recorrido.",
     "description": "Prompt to connect the app to a micro:bit"
   },
   "connect-troubleshoot": {
-    "defaultMessage": "Troubleshoot problems with connecting to your micro:bit",
+    "defaultMessage": "Solucionar problemas de conexión al micro:bit",
     "description": "Link to support article for troubleshooting"
   },
   "connect-troubleshooting": {
-    "defaultMessage": "Troubleshooting",
+    "defaultMessage": "Resolución de problemas",
     "description": "Troubleshooting heading"
   },
   "connect-with-batteries": {
-    "defaultMessage": "with batteries",
+    "defaultMessage": "con pilas",
     "description": "Under header 'Battery holder' this notes that batteries are required"
   },
   "connect-with-web-bluetooth": {
-    "defaultMessage": "Connect with Web Bluetooth",
+    "defaultMessage": "Conectar con Web Bluetooth",
     "description": "Connection dialog title"
   },
   "connecting": {
-    "defaultMessage": "Connecting…",
+    "defaultMessage": "Conectando...",
     "description": "Text shown while waiting for bluetooth/radio connection"
   },
   "continue-makecode-action": {
-    "defaultMessage": "Continue to MakeCode",
+    "defaultMessage": "Continuar a MakeCode",
     "description": "Continue to MakeCode editor button text"
   },
   "cookies-action": {
@@ -392,375 +392,375 @@
     "description": "Action to show dialog to choose website cookie preferences"
   },
   "copied": {
-    "defaultMessage": "Copied",
+    "defaultMessage": "Copiado",
     "description": "Displayed as copy button text briefly after successful copy action"
   },
   "copy-action": {
-    "defaultMessage": "Copy",
+    "defaultMessage": "Copiar",
     "description": "Copy button text"
   },
   "data-actions-menu": {
-    "defaultMessage": "Data actions",
+    "defaultMessage": "Acciones de datos",
     "description": "Aria label for menu"
   },
   "data-collection-microbit": {
-    "defaultMessage": "Data collection micro:bit",
+    "defaultMessage": "micro:bit de recogida de datos ",
     "description": "Data collection micro:bit image caption"
   },
   "data-collection-microbit-label": {
-    "defaultMessage": "diagram showing data collection micro:bit being connected to a person's wrist",
+    "defaultMessage": "diagrama del micro:bit de recogida de datos conectado a la muñeca de una persona",
     "description": "Aria label for data collection image"
   },
   "data-connection-region": {
-    "defaultMessage": "micro:bit data connection",
+    "defaultMessage": "conexión de datos del micro:bit",
     "description": "Region label for data connection area"
   },
   "data-features-hide-action": {
-    "defaultMessage": "Hide data features",
+    "defaultMessage": "Ocultar funciones de datos",
     "description": "Hide data features button text"
   },
   "data-features-show-action": {
-    "defaultMessage": "Show data features",
+    "defaultMessage": "Mostrar características de los datos",
     "description": "Show data features button text"
   },
   "data-samples-actions-region": {
-    "defaultMessage": "Data samples toolbar",
+    "defaultMessage": "Barra de herramientas de muestras de datos",
     "description": "Region label for data samples actions"
   },
   "data-samples-label": {
-    "defaultMessage": "Data samples",
+    "defaultMessage": "Muestras de datos",
     "description": "Heading for data samples column"
   },
   "data-samples-label-tooltip-aria": {
-    "defaultMessage": "Data samples tooltip",
+    "defaultMessage": "Información de herramienta de las muestras de datos",
     "description": "Aria label for data samples tooltip icon"
   },
   "data-samples-status-count": {
-    "defaultMessage": "{numSamples} samples recorded",
+    "defaultMessage": "{numSamples} muestras grabadas",
     "description": "Data samples status text"
   },
   "data-samples-status-not-enough": {
-    "defaultMessage": "At least 3 required",
+    "defaultMessage": "Se requieren al menos 3",
     "description": "Data samples status text"
   },
   "data-samples-title": {
-    "defaultMessage": "Data samples",
+    "defaultMessage": "Muestras de datos",
     "description": "Data samples page title"
   },
   "data-samples-tooltip": {
-    "defaultMessage": "Short collections of movement data lasting 1 second. Your data samples are only stored on your computer, they do not get sent to anyone else.",
+    "defaultMessage": "Breves recopilaciones de datos de movimiento que duran 1 segundo. Tus muestras de datos solo se almacenan en tu ordenador, no se envían a nadie más.",
     "description": "Tooltip for data samples heading"
   },
   "default-project-name": {
-    "defaultMessage": "Untitled",
+    "defaultMessage": "Sin título",
     "description": "Default project name"
   },
   "delete-action-aria": {
-    "defaultMessage": "Delete action \"{action}\"",
+    "defaultMessage": "Eliminar acción \"{action}\"",
     "description": "Aria label for action delete icon"
   },
   "delete-action-confirm-heading": {
-    "defaultMessage": "Confirm delete action",
+    "defaultMessage": "Confirmar la acción de eliminar",
     "description": "Confirmation dialog heading"
   },
   "delete-action-confirm-text": {
-    "defaultMessage": "Are you sure you want to delete the action \"{action}\"?",
+    "defaultMessage": "¿Realmente quieres eliminar la acción \"{action}\"?",
     "description": "Confirmation dialog text"
   },
   "delete-data-samples-action": {
-    "defaultMessage": "Delete all data samples",
+    "defaultMessage": "Eliminar todas las muestras de datos",
     "description": "Menu item to delete data samples"
   },
   "delete-data-samples-confirm-heading": {
-    "defaultMessage": "Confirm delete all data samples",
+    "defaultMessage": "Confirmar la eliminación de todas las muestras de datos",
     "description": "Confirmation dialog heading"
   },
   "delete-data-samples-confirm-text": {
-    "defaultMessage": "Are you sure you want to delete all data samples?",
+    "defaultMessage": "¿Estás seguro de que quieres eliminar todas las muestras de datos?",
     "description": "Confirmation dialog text"
   },
   "delete-recording-aria": {
-    "defaultMessage": "Delete recording {sample} of {numSamples} for action \"{action}\"",
+    "defaultMessage": "Eliminar la grabación {sample} de {numSamples} para la acción \"{action}\"",
     "description": "Aria label for data sample delete action"
   },
   "disconnect-action": {
-    "defaultMessage": "Disconnect",
+    "defaultMessage": "Desconectar",
     "description": "Disconnect (from bluetooth/radio) action"
   },
   "disconnected-during-recording": {
-    "defaultMessage": "micro:bit disconnected during recording",
+    "defaultMessage": "micro:bit desconectado durante la grabación",
     "description": "Error when the micro:bit is disconnected during recording"
   },
   "disconnected-warning-bluetooth-heading": {
-    "defaultMessage": "Data collection micro:bit connection lost",
+    "defaultMessage": "Se ha perdido la conexión con el micro:bit de recogida de datos",
     "description": "Dialog heading"
   },
   "disconnected-warning-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit has been lost.",
+    "defaultMessage": "Se ha perdido la conexión con el micro:bit de recogida de datos.",
     "description": "Dialog text"
   },
   "disconnected-warning-bluetooth2": {
-    "defaultMessage": "Please check that the micro:bit:",
+    "defaultMessage": "Comprueba que el micro:bit:",
     "description": "Heading for list of things to check"
   },
   "disconnected-warning-bluetooth3": {
-    "defaultMessage": "is powered on (the red light on the back of the micro:bit should be on)",
+    "defaultMessage": "está encendido (la luz roja de la parte posterior del micro:bit debe estar encendida)",
     "description": "List item, one of several things to check about the micro:bit"
   },
   "disconnected-warning-bluetooth4": {
-    "defaultMessage": "is close to the computer",
+    "defaultMessage": "está cerca del ordenador",
     "description": "List item, one of several things to check about the micro:bit"
   },
   "disconnected-warning-bridge-heading": {
-    "defaultMessage": "Radio link micro:bit connection lost",
+    "defaultMessage": "Se ha perdido la conexión con el micro:bit con enlace de radio",
     "description": "Connection error dialog"
   },
   "disconnected-warning-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer has been lost.",
+    "defaultMessage": "Se ha perdido la conexión con el micro:bit conectado a tu ordenador.",
     "description": "Connection error dialog"
   },
   "disconnected-warning-remote-heading": {
-    "defaultMessage": "Data collection micro:bit connection lost",
+    "defaultMessage": "Se ha perdido la conexión para la recogida de datos del micro:bit",
     "description": "Connection error dialog"
   },
   "disconnected-warning-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit has been lost.",
+    "defaultMessage": "La conexión para la recogida de datos del micro:bit se ha perdido.",
     "description": "Connection error dialog"
   },
   "dont-show-again": {
-    "defaultMessage": "Don't show this again",
+    "defaultMessage": "No volver a mostrar",
     "description": "Text to never show a dialog again"
   },
   "download-data-samples-action": {
-    "defaultMessage": "Download all data samples",
+    "defaultMessage": "Descargar todas las muestras de datos",
     "description": "Download action"
   },
   "download-project-choose-microbit-subtitle": {
-    "defaultMessage": "Downloading your project on to the same micro:bit will disconnect the micro:bit from the tool. You will need to reconnect the micro:bit if you want to record more data samples.",
+    "defaultMessage": "Si descargas tu proyecto en el mismo micro:bit, este se desconectará de la herramienta. Tendrás que volver a conectar el micro:bit si quieres grabar más muestras de datos.",
     "description": "Download project choose micro:bit dialog subtitle"
   },
   "download-project-choose-microbit-title": {
-    "defaultMessage": "Which micro:bit do you want to use?",
+    "defaultMessage": "¿Qué micro:bit quieres utilizar?",
     "description": "Download project choose micro:bit dialog title"
   },
   "download-project-different-microbit-option": {
-    "defaultMessage": "Different micro:bit",
+    "defaultMessage": "micro:bit diferente",
     "description": "Download project different micro:bit option"
   },
   "download-project-intro-description": {
-    "defaultMessage": "Your program includes the machine learning model you created. The model runs on the micro:bit so you can use it without being connected to {appNameFull}.",
+    "defaultMessage": "Tu programa incluye el modelo de aprendizaje automático que has creado. El modelo se ejecuta en el micro:bit, por lo que puedes utilizarlo sin estar conectado a {appNameFull}.",
     "description": "Download project intro dialog description"
   },
   "download-project-intro-title": {
-    "defaultMessage": "Download your machine learning MakeCode project",
+    "defaultMessage": "Descarga tu proyecto de MakeCode de aprendizaje automático",
     "description": "Download project intro dialog title"
   },
   "download-project-same-microbit-option": {
-    "defaultMessage": "Same micro:bit",
+    "defaultMessage": "El mismo micro:bit",
     "description": "Download project same micro:bit option"
   },
   "downloading-data-collection-header": {
-    "defaultMessage": "Downloading the data collection program",
+    "defaultMessage": "Descargar el programa de recogida de datos",
     "description": "Progress text"
   },
   "downloading-header": {
-    "defaultMessage": "Downloading program to micro:bit",
+    "defaultMessage": "Descargando el programa al micro:bit",
     "description": "Progress text"
   },
   "downloading-radio-link-header": {
-    "defaultMessage": "Downloading the radio link program",
+    "defaultMessage": "Descargando el programa de enlace de radio",
     "description": "Progress text"
   },
   "downloading-subtitle": {
-    "defaultMessage": "Please wait. Downloading program to micro:bit.",
+    "defaultMessage": "Espera, por favor. Descargando el programa al micro:bit.",
     "description": "Progress text"
   },
   "edit-in-makecode-action": {
-    "defaultMessage": "Edit in MakeCode",
+    "defaultMessage": "Editar en MakeCode",
     "description": "Edit in MakeCode button text"
   },
   "estimated-action-aria": {
-    "defaultMessage": "Estimated action: \"{action}\"",
+    "defaultMessage": "Acción estimada: \"{action}\"",
     "description": "Aria live text for the current estimated action"
   },
   "estimated-action-label": {
-    "defaultMessage": "Estimated action",
+    "defaultMessage": "Acción estimada",
     "description": "Heading for estimated action area next to the live graph"
   },
   "estimated-action-label-tooltip-aria": {
-    "defaultMessage": "Estimated action tooltip",
+    "defaultMessage": "Información de herramienta de la acción estimada",
     "description": "Aria label for estimated action tooltip icon"
   },
   "estimated-action-tooltip": {
-    "defaultMessage": "This is the action the model thinks you are currently doing.",
+    "defaultMessage": "Esta es la acción que el modelo cree que estás haciendo actualmente.",
     "description": "Tooltip for the estimated action heading"
   },
   "feedback": {
-    "defaultMessage": "Feedback",
+    "defaultMessage": "Comentarios",
     "description": "Action to open a feedback dialog"
   },
   "fingerprint-acc-x-tooltip": {
-    "defaultMessage": "Sum of x-direction data",
+    "defaultMessage": "Suma de los datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-acc-y-tooltip": {
-    "defaultMessage": "Sum of y-direction data",
+    "defaultMessage": "Suma de los datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-acc-z-tooltip": {
-    "defaultMessage": "Sum of z-direction data",
+    "defaultMessage": "Suma de los datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-x-tooltip": {
-    "defaultMessage": "Maximum point among all x-direction data points",
+    "defaultMessage": "Punto máximo entre todos los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-y-tooltip": {
-    "defaultMessage": "Maximum point among all y-direction data points",
+    "defaultMessage": "Punto máximo entre todos los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-z-tooltip": {
-    "defaultMessage": "Maximum point among all z-direction data points",
+    "defaultMessage": "Punto máximo entre todos los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-x-tooltip": {
-    "defaultMessage": "Mean value for x-direction data",
+    "defaultMessage": "Valor medio de los datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-y-tooltip": {
-    "defaultMessage": "Mean value for y-direction data",
+    "defaultMessage": "Valor medio de los datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-z-tooltip": {
-    "defaultMessage": "Mean value for z-direction data",
+    "defaultMessage": "Valor medio de los datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-x-tooltip": {
-    "defaultMessage": "Minimum point among all x-direction data points",
+    "defaultMessage": "Punto mínimo entre todos los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-y-tooltip": {
-    "defaultMessage": "Minimum point among all y-direction data points",
+    "defaultMessage": "Punto mínimo entre todos los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-z-tooltip": {
-    "defaultMessage": "Minimum point among all z-direction data points",
+    "defaultMessage": "Punto mínimo entre todos los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-x-tooltip": {
-    "defaultMessage": "Number of extremes among all x-direction data points",
+    "defaultMessage": "Número de extremos entre todos los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-y-tooltip": {
-    "defaultMessage": "Number of extremes among all y-direction data points",
+    "defaultMessage": "Número de extremos entre todos los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-z-tooltip": {
-    "defaultMessage": "Number of extremes among all z-direction data points",
+    "defaultMessage": "Número de extremos entre todos los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-x-tooltip": {
-    "defaultMessage": "Root mean square value for all x-direction data points",
+    "defaultMessage": "Valor cuadrático medio de todos los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-y-tooltip": {
-    "defaultMessage": "Root mean square value for all y-direction data points",
+    "defaultMessage": "Valor cuadrático medio de todos los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-z-tooltip": {
-    "defaultMessage": "Root mean square value for all z-direction data points",
+    "defaultMessage": "Valor cuadrático medio de todos los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-x-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all x-direction data points",
+    "defaultMessage": "Desviación media respecto a 0 entre todos los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-y-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all y-direction data points",
+    "defaultMessage": "Desviación media respecto a 0 entre todos los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-z-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all z-direction data points",
+    "defaultMessage": "Desviación media respecto a 0 entre todos los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-x-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for x-direction data points",
+    "defaultMessage": "Velocidad a la que la aceleración pasa de positiva a negativa para los puntos de datos de la dirección x",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-y-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for y-direction data points",
+    "defaultMessage": "Velocidad a la que la aceleración pasa de positiva a negativa para los puntos de datos de la dirección y",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-z-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for z-direction data points",
+    "defaultMessage": "Velocidad a la que la aceleración pasa de positiva a negativa para los puntos de datos de la dirección z",
     "description": "Tooltip for data feature of a recording"
   },
   "firmware-outdated-content1": {
-    "defaultMessage": "Connecting to the micro:bit failed because the firmware on your micro:bit is too old.",
+    "defaultMessage": "La conexión al micro:bit ha fallado porque el firmware del micro:bit es demasiado antiguo.",
     "description": "Connection error dialog"
   },
   "firmware-outdated-content2": {
-    "defaultMessage": "You must <link>update your firmware</link> before you can connect to this micro:bit.",
+    "defaultMessage": "Debes <link>actualizar el firmware</link> para poder conectar a este micro:bit.",
     "description": "Connection error dialog"
   },
   "firmware-outdated-heading": {
-    "defaultMessage": "Firmware update required",
+    "defaultMessage": "Es necesario actualizar el firmware",
     "description": "Connection error dialog"
   },
   "get-started-action": {
-    "defaultMessage": "Get started",
+    "defaultMessage": "Empieza",
     "description": "Get started action"
   },
   "go-action": {
-    "defaultMessage": "Go",
+    "defaultMessage": "Ir",
     "description": "Go action"
   },
   "graph-color-scheme": {
-    "defaultMessage": "Graph colour scheme",
+    "defaultMessage": "Esquema de colores del gráfico",
     "description": "Graph colour scheme setting label"
   },
   "graph-color-scheme-color-blind-1": {
-    "defaultMessage": "Colour blind alternative 1",
+    "defaultMessage": "Alternativa 1 para daltónicos",
     "description": "Graph colour scheme option"
   },
   "graph-color-scheme-color-blind-2": {
-    "defaultMessage": "Colour blind alternative 2",
+    "defaultMessage": "Alternativa 2 para daltónicos",
     "description": "Graph colour scheme option"
   },
   "graph-color-scheme-default": {
-    "defaultMessage": "Default (red, blue, green)",
+    "defaultMessage": "Por defecto (rojo, azul, verde)",
     "description": "Graph colour scheme option"
   },
   "graph-line-scheme": {
-    "defaultMessage": "Graph line style",
+    "defaultMessage": "Estilo de línea gráfica",
     "description": "Graph line scheme setting label"
   },
   "graph-line-scheme-accessible": {
-    "defaultMessage": "Accessible lines (solid, dashed, dots)",
+    "defaultMessage": "Líneas accesibles (continuas, discontinuas, puntos)",
     "description": "Graph line scheme option"
   },
   "graph-line-scheme-solid": {
-    "defaultMessage": "Solid lines",
+    "defaultMessage": "Líneas continuas",
     "description": "Graph line scheme option"
   },
   "graph-line-weight": {
-    "defaultMessage": "Graph line thickness",
+    "defaultMessage": "Grosor de la línea gráfica",
     "description": "Graph line weight setting label"
   },
   "graph-line-weight-default": {
-    "defaultMessage": "Default",
+    "defaultMessage": "Por defecto",
     "description": "Graph line weight option"
   },
   "graph-line-weight-thick": {
-    "defaultMessage": "Thick",
+    "defaultMessage": "Grosor",
     "description": "Graph line weight option"
   },
   "help-label": {
-    "defaultMessage": "Help",
+    "defaultMessage": "Ayuda",
     "description": "Help icon aria label"
   },
   "help-support": {
-    "defaultMessage": "Help & support",
+    "defaultMessage": "Ayuda y asistencia",
     "description": "Link or menu item link to support site"
   },
   "help-translate": {
@@ -768,171 +768,171 @@
     "description": "Help translate  menu option text"
   },
   "home-action": {
-    "defaultMessage": "Home",
+    "defaultMessage": "Inicio",
     "description": "Home button text"
   },
   "homepage": {
-    "defaultMessage": "Home page",
+    "defaultMessage": "Página de inicio",
     "description": "Link to home page"
   },
   "homepage-alt": {
-    "defaultMessage": "graph showing x, y, z graph lines representing micro:bit accelerometer data with clapping hands overlaid",
+    "defaultMessage": "gráfico que muestra las líneas gráficas x, y, z que representan los datos del acelerómetro del micro:bit con palmas superpuestas",
     "description": "Alt text for image in homepage"
   },
   "homepage-alt-graph": {
-    "defaultMessage": "graph showing x, y, z graph lines representing micro:bit accelerometer data",
+    "defaultMessage": "gráfico que muestra las líneas gráficas x, y, z que representan los datos del acelerómetro del micro:bit",
     "description": "Alt text for image in homepage"
   },
   "homepage-alt-hands": {
-    "defaultMessage": "clapping hands",
+    "defaultMessage": "palmas aplaudiendo",
     "description": "Alt text for image in homepage"
   },
   "homepage-description": {
-    "defaultMessage": "Train a machine learning model on your own movement data and run it on your micro:bit.",
+    "defaultMessage": "Entrena un modelo de aprendizaje automático con tus propios datos de movimiento y ejecútalo en tu micro:bit.",
     "description": "Home page description"
   },
   "homepage-how-it-works": {
-    "defaultMessage": "How it works",
+    "defaultMessage": "Cómo funciona",
     "description": "Home page section heading"
   },
   "homepage-how-it-works-paragraph": {
-    "defaultMessage": "Watch the video to get started. Learn more in the <link>user guide</link>.",
+    "defaultMessage": "Mira el vídeo para empezar. Más información en la <link>guía del usuario</link>.",
     "description": "Home page content under the video"
   },
   "homepage-projects": {
-    "defaultMessage": "Projects",
+    "defaultMessage": "Proyectos",
     "description": "Home page section heading"
   },
   "homepage-projects-more": {
-    "defaultMessage": "Explore more <link>content and resources about micro:bit and AI</link>.",
+    "defaultMessage": "Explora más <link>contenidos y recursos sobre micro:bit e IA</link>.",
     "description": "Link back to AI landing page"
   },
   "homepage-step-by-step": {
-    "defaultMessage": "Step by step",
+    "defaultMessage": "Paso a paso",
     "description": "Home page section heading"
   },
   "homepage-subtitle": {
-    "defaultMessage": "Create AI on your BBC micro:bit using movement and machine learning.",
+    "defaultMessage": "Crea IA en tu BBC micro:bit utilizando el movimiento y el aprendizaje automático.",
     "description": "Home page subtitle"
   },
   "homepage-video-alt": {
-    "defaultMessage": "Introductory video",
+    "defaultMessage": "Vídeo de introducción",
     "description": "Home page video alt text"
   },
   "import-data-samples-action": {
-    "defaultMessage": "Import data samples",
+    "defaultMessage": "Importar muestras de datos",
     "description": "Data samples action"
   },
   "import-error-dialog-content": {
-    "defaultMessage": "Only MakeCode hex files or data samples files (.json) can be opened by {appNameFull}.",
+    "defaultMessage": "Solo los archivos hexadecimales MakeCode o los archivos de muestras de datos (.json) pueden ser abiertos por {appNameFull}.",
     "description": "Content of import error dialog"
   },
   "import-error-dialog-title": {
-    "defaultMessage": "Unsupported file type",
+    "defaultMessage": "Tipo de archivo no compatible",
     "description": "Title of import error dialog"
   },
   "incompatible-device-body-alt": {
-    "defaultMessage": "Go back to select a different micro:bit, or <link>save the project hex</link> which can be downloaded onto a micro:bit V2 later.",
+    "defaultMessage": "Vuelve atrás para seleccionar un micro:bit diferente o <link>guarda el hexadecimal del proyecto</link> para poder descargarlo más tarde en un micro:bit V2.",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-body1": {
-    "defaultMessage": "Continue to MakeCode to edit the program. You can then save the project hex which can be downloaded onto a micro:bit V2.",
+    "defaultMessage": "Continúa en MakeCode para editar el programa. A continuación, puedes guardar el hexadecimal del proyecto que se puede descargar en un micro:bit V2.",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-body2": {
-    "defaultMessage": "Alternatively, <link>save the project hex</link> without using MakeCode.",
+    "defaultMessage": "Como alternativa, <link>guarda el hexadecimal del proyecto</link> sin utilizar MakeCode.",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-heading": {
-    "defaultMessage": "Incompatible device",
+    "defaultMessage": "Dispositivo incompatible",
     "description": "Incompatible device dialog heading"
   },
   "incompatible-device-subtitle": {
-    "defaultMessage": "You are using a micro:bit V1, but machine learning projects need the faster processor on a micro:bit V2. <link>Learn more about micro:bit versions.</link>",
+    "defaultMessage": "Estás utilizando un micro:bit V1, pero los proyectos de aprendizaje automático necesitan el procesador más rápido de un micro:bit V2. <link>Más información sobre las versiones del micro:bit.</link>",
     "description": "Incompatible device dialog subtitle"
   },
   "insufficient-data-body": {
-    "defaultMessage": "You need at least 3 data samples for 2 actions to train the model.",
+    "defaultMessage": "Necesitas al menos 3 muestras de datos de 2 acciones para entrenar el modelo.",
     "description": "Insufficient data modal content"
   },
   "insufficient-data-title": {
-    "defaultMessage": "You don't have enough data",
+    "defaultMessage": "No tienes suficientes datos",
     "description": "Insufficient data modal title"
   },
   "language": {
-    "defaultMessage": "Language",
+    "defaultMessage": "Idioma",
     "description": "Language option text"
   },
   "learn-about-firewall-requirements-action": {
-    "defaultMessage": "Learn about firewall requirements",
+    "defaultMessage": "Conoce los requisitos del cortafuegos",
     "description": "Link to support article for firewall requirements"
   },
   "led-icon-option-angry": {
-    "defaultMessage": "Angry",
+    "defaultMessage": "Enfadado",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-asleep": {
-    "defaultMessage": "Asleep",
+    "defaultMessage": "Dormido",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-butterfly": {
-    "defaultMessage": "Butterfly",
+    "defaultMessage": "Mariposa",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-chessboard": {
-    "defaultMessage": "Chessboard",
+    "defaultMessage": "Tablero de ajedrez",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-confused": {
-    "defaultMessage": "Confused",
+    "defaultMessage": "Confundido",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-cow": {
-    "defaultMessage": "Cow",
+    "defaultMessage": "Vaca",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-diamond": {
-    "defaultMessage": "Diamond",
+    "defaultMessage": "Diamante",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-duck": {
-    "defaultMessage": "Duck",
+    "defaultMessage": "Pato",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-eighthnote": {
-    "defaultMessage": "Eighth Note",
+    "defaultMessage": "Octava nota",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-fabulous": {
-    "defaultMessage": "Fabulous",
+    "defaultMessage": "Fabuloso",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-ghost": {
-    "defaultMessage": "Ghost",
+    "defaultMessage": "Fantasma",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-giraffe": {
-    "defaultMessage": "Giraffe",
+    "defaultMessage": "Jirafa",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-happy": {
-    "defaultMessage": "Happy",
+    "defaultMessage": "Feliz",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-heart": {
-    "defaultMessage": "Heart",
+    "defaultMessage": "Corazón",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-house": {
-    "defaultMessage": "House",
+    "defaultMessage": "Casa - House",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-lefttriangle": {
-    "defaultMessage": "Left Triangle",
+    "defaultMessage": "Triángulo izquierdo",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-meh": {
-    "defaultMessage": "Meh",
+    "defaultMessage": "Indiferente",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-no": {
@@ -940,123 +940,123 @@
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-off": {
-    "defaultMessage": "Off",
+    "defaultMessage": "Apagado",
     "description": "Icon option."
   },
   "led-icon-option-pitchfork": {
-    "defaultMessage": "Pitchfork",
+    "defaultMessage": "Horca",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-quarternote": {
-    "defaultMessage": "Quarter Note",
+    "defaultMessage": "Nota musical negra",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-rabbit": {
-    "defaultMessage": "Rabbit",
+    "defaultMessage": "Conejo",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-rollerskate": {
-    "defaultMessage": "Rollerskate",
+    "defaultMessage": "Patín",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-sad": {
-    "defaultMessage": "Sad",
+    "defaultMessage": "Triste",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-scissors": {
-    "defaultMessage": "Scissors",
+    "defaultMessage": "Tijeras",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-silly": {
-    "defaultMessage": "Silly",
+    "defaultMessage": "Tonto",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-skull": {
-    "defaultMessage": "Skull",
+    "defaultMessage": "Calavera",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smalldiamond": {
-    "defaultMessage": "Small Diamond",
+    "defaultMessage": "Diamante pequeño",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smallheart": {
-    "defaultMessage": "Small Heart",
+    "defaultMessage": "Corazón pequeño",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smallsquare": {
-    "defaultMessage": "Small Square",
+    "defaultMessage": "Cuadrado pequeño",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-snake": {
-    "defaultMessage": "Snake",
+    "defaultMessage": "Serpiente",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-square": {
-    "defaultMessage": "Square",
+    "defaultMessage": "Cuadrado",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-stickfigure": {
-    "defaultMessage": "Stick Figure",
+    "defaultMessage": "Figura de palo",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-surprised": {
-    "defaultMessage": "Surprised",
+    "defaultMessage": "Sorprendido",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-sword": {
-    "defaultMessage": "Sword",
+    "defaultMessage": "Espada",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-target": {
-    "defaultMessage": "Target",
+    "defaultMessage": "Objetivo",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-tortoise": {
-    "defaultMessage": "Tortoise",
+    "defaultMessage": "Tortuga",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-triangle": {
-    "defaultMessage": "Triangle",
+    "defaultMessage": "Triángulo",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-tshirt": {
-    "defaultMessage": "T-Shirt",
+    "defaultMessage": "Camiseta",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-umbrella": {
-    "defaultMessage": "Umbrella",
+    "defaultMessage": "Paraguas",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-yes": {
-    "defaultMessage": "Yes",
+    "defaultMessage": "Sí",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "live-data-graph": {
-    "defaultMessage": "Live data graph",
+    "defaultMessage": "Gráfico de datos en directo",
     "description": "Title for live data graph"
   },
   "live-graph": {
-    "defaultMessage": "Live graph",
+    "defaultMessage": "Gráfico en directo",
     "description": "Heading for live graph"
   },
   "live-graph-tooltip": {
-    "defaultMessage": "This graph shows movement data from the micro:bit's accelerometer in real time. Try moving your data collection micro:bit to see the X, Y and Z axes change. Each coloured line represents a different direction (dimension) you are moving the micro:bit in.",
+    "defaultMessage": "Este gráfico muestra los datos de movimiento del acelerómetro del micro:bit en tiempo real. Intenta mover tu micro:bit de recogida de datos para ver cómo cambian los ejes X, Y y Z. Cada línea de color representa una dirección (dimensión) diferente en la que estás moviendo el micro:bit.",
     "description": "Tooltip for live graph heading"
   },
   "live-graph-tooltip-aria": {
-    "defaultMessage": "Live graph tooltip",
+    "defaultMessage": "Información de herramienta del gráfico en directo",
     "description": "Aria label for live graph tooltip icon"
   },
   "loading": {
-    "defaultMessage": "Loading",
+    "defaultMessage": "Cargando",
     "description": "Aria label for loading spinner"
   },
   "main-menu": {
-    "defaultMessage": "Main menu",
+    "defaultMessage": "Menú principal",
     "description": "Main menu label"
   },
   "makecode-back-alt": {
-    "defaultMessage": "Left arrow icon for MakeCode back",
+    "defaultMessage": "Icono de flecha izquierda para volver a MakeCode",
     "description": "Testing model page title"
   },
   "makecode-block-alt-prefix": {
@@ -1064,479 +1064,479 @@
     "description": "Makecode block alt text prefix"
   },
   "makecode-block-show-icon": {
-    "defaultMessage": "show icon",
+    "defaultMessage": "mostrar icono",
     "description": "Makecode block text. The translation should match MakeCode translations."
   },
   "makecode-load-error-dialog-body": {
-    "defaultMessage": "{appNameFull} has failed to load MakeCode. Please check your internet connection, reload the page then try again.",
+    "defaultMessage": "{appNameFull} no ha podido cargar MakeCode. Comprueba tu conexión a Internet, recarga la página e inténtalo de nuevo.",
     "description": "Content of MakeCode load error dialog"
   },
   "makecode-load-error-dialog-title": {
-    "defaultMessage": "Could not load Microsoft MakeCode",
+    "defaultMessage": "No se ha podido cargar Microsoft MakeCode",
     "description": "Title of MakeCode load error dialog"
   },
   "microbit-not-connected": {
-    "defaultMessage": "Your micro:bit is not connected",
+    "defaultMessage": "Tu micro:bit no está conectado",
     "description": "Live graph disconnected micro:bit status message"
   },
   "ml.onStart|block": {
-    "defaultMessage": "on ML $event start",
+    "defaultMessage": "al iniciar ML $event",
     "description": "This string should be a Crowdin duplicate of the MakeCode extension block with the same text and use the same translation."
   },
   "more-edit-in-makecode-options": {
-    "defaultMessage": "More edit in MakeCode options",
+    "defaultMessage": "Más edición en opciones de MakeCode",
     "description": "Aria label for the additional actions menu to the right of the Edit in MakeCode button"
   },
   "name-action-hint": {
-    "defaultMessage": "Name an action you want the micro:bit to recognise",
+    "defaultMessage": "Nombra una acción que quieras que reconozca el micro:bit",
     "description": "Hint shown when you have an unnamed action"
   },
   "name-project": {
-    "defaultMessage": "Name your project",
+    "defaultMessage": "Pon un nombre al proyecto",
     "description": "Name your project header"
   },
   "name-text": {
-    "defaultMessage": "Name",
+    "defaultMessage": "Nombre",
     "description": "Header for name field"
   },
   "name-used-when": {
-    "defaultMessage": "The name is used when you save a file.",
+    "defaultMessage": "El nombre se usa al guardar un archivo HEX.",
     "description": "Text under project name field"
   },
   "new-session-setup-description": {
-    "defaultMessage": "Starting a new session will overwrite your existing session. You may want to <link>save your existing session</link> first.",
+    "defaultMessage": "Al iniciar una nueva sesión, se sobrescribirá la sesión existente. Es posible que quieras <link>guardar primero tu sesión actual</link>.",
     "description": "New session setup description"
   },
   "new-session-setup-title": {
-    "defaultMessage": "New session setup",
+    "defaultMessage": "Nueva configuración de sesión",
     "description": "New session setup title"
   },
   "newpage-continue-session-subtitle": {
-    "defaultMessage": "Use a hex file or data samples file you saved to your computer to continue a session.",
+    "defaultMessage": "Utiliza un archivo hexadecimal o un archivo de muestras de datos que hayas guardado en tu ordenador para continuar una sesión.",
     "description": "Continue session subtitle"
   },
   "newpage-continue-session-title": {
-    "defaultMessage": "Continue a saved session",
+    "defaultMessage": "Continúa con una sesión guardada",
     "description": "Continue session title"
   },
   "newpage-last-session-date": {
-    "defaultMessage": "<strong>Date:</strong> {date}",
+    "defaultMessage": "<strong>Fecha:</strong> {date}",
     "description": "Last session date label"
   },
   "newpage-last-session-name": {
-    "defaultMessage": "<strong>Name:</strong> {name}",
+    "defaultMessage": "<strong>Nombre:</strong> {name}",
     "description": "Last session name label"
   },
   "newpage-last-session-none": {
-    "defaultMessage": "No session found",
+    "defaultMessage": "Sesión no encontrada",
     "description": "Last session not found text"
   },
   "newpage-last-session-title": {
-    "defaultMessage": "Open last session",
+    "defaultMessage": "Abrir la última sesión",
     "description": "Open last session title"
   },
   "newpage-new-session-subtitle": {
-    "defaultMessage": "Connect your micro:bit and collect movement data to build a machine learning model.",
+    "defaultMessage": "Conecta tu micro:bit y recoge datos de movimiento para construir un modelo de aprendizaje automático.",
     "description": "Start new session subtitle"
   },
   "newpage-new-session-title": {
-    "defaultMessage": "New session",
+    "defaultMessage": "Nueva sesión",
     "description": "Start new session title"
   },
   "newpage-section-one-title": {
-    "defaultMessage": "Pick up where you left off",
+    "defaultMessage": "Continúa donde lo dejaste",
     "description": "Homepage section one title"
   },
   "newpage-section-two-title": {
-    "defaultMessage": "Start something new",
+    "defaultMessage": "Empieza algo nuevo",
     "description": "Homepage section two title"
   },
   "newpage-title": {
-    "defaultMessage": "New session",
+    "defaultMessage": "Nueva sesión",
     "description": "New page title"
   },
   "next-action": {
-    "defaultMessage": "Next",
+    "defaultMessage": "Siguiente",
     "description": "Next button text for dialogs and similar"
   },
   "no-data-samples": {
-    "defaultMessage": "No data samples",
+    "defaultMessage": "No hay muestras de datos",
     "description": "Empty data samples page status text"
   },
   "not-create-ai-hex-import-dialog-content": {
-    "defaultMessage": "This project did not contain any data samples, so only the code has been opened. You need to train a model before you can use the code.",
+    "defaultMessage": "Este proyecto no contenía ninguna muestra de datos, por lo que sólo se ha abierto el código. Necesitas entrenar un modelo antes de poder utilizar el código.",
     "description": "Content of import non-CreateAI hex dialog"
   },
   "not-create-ai-hex-import-dialog-title": {
-    "defaultMessage": "Your MakeCode project has been imported",
+    "defaultMessage": "Tu proyecto de MakeCode ha sido importado",
     "description": "Title of import non-CreateAI hex dialog"
   },
   "not-found": {
-    "defaultMessage": "{appNameFull} home page",
+    "defaultMessage": "Página de inicio de {appNameFull}",
     "description": "Page not found link text"
   },
   "not-found-title": {
-    "defaultMessage": "Page not found",
+    "defaultMessage": "Página no encontrada",
     "description": "Page not found page title"
   },
   "open-file-action": {
-    "defaultMessage": "Open…",
+    "defaultMessage": "Abrir…",
     "description": "Open file button text"
   },
   "open-file-dropped": {
-    "defaultMessage": "Open file when dropped",
+    "defaultMessage": "Abrir archivo al soltarlo",
     "description": "Aria label for file drop target"
   },
   "other-tabs-body1": {
-    "defaultMessage": "Another process is connected to this device.",
+    "defaultMessage": "Otro proceso está conectado a este dispositivo.",
     "description": "Connection error dialog"
   },
   "other-tabs-body2": {
-    "defaultMessage": "Close any other tabs that may be using WebUSB (e.g. MakeCode, Python Editor, {appNameShort}), or unplug and replug the micro:bit before trying again.",
+    "defaultMessage": "Cierra cualquier otra pestaña que pueda estar utilizando WebUSB (por ejemplo, MakeCode, Python Editor, {appNameShort}), o desconecta y vuelve a conectar el micro:bit antes de intentarlo de nuevo.",
     "description": "Connection error dialog"
   },
   "other-tabs-heading": {
-    "defaultMessage": "Connect using WebUSB",
+    "defaultMessage": "Conectar mediante WebUSB",
     "description": "Connection error dialog"
   },
   "privacy": {
-    "defaultMessage": "Privacy policy",
+    "defaultMessage": "Política de privacidad",
     "description": "Link to view privacy policy"
   },
   "project-loaded": {
-    "defaultMessage": "Project loaded",
+    "defaultMessage": "Proyecto cargado",
     "description": "Toast when a new project is loaded"
   },
   "project-name-not-empty": {
-    "defaultMessage": "The project name cannot be empty",
+    "defaultMessage": "El nombre del proyecto no puede estar en blanco",
     "description": "Validation message for project name"
   },
   "radio-link-microbit": {
-    "defaultMessage": "Radio link micro:bit",
+    "defaultMessage": "micro:bit con enlace de radio",
     "description": "Radio link micro:bit image caption"
   },
   "radio-link-microbit-label": {
-    "defaultMessage": "diagram showing radio link micro:bit being connected with a computer",
+    "defaultMessage": "diagrama que muestra un micro:bit con enlace de radio conectado con un ordenador",
     "description": "Aria label for radio link image"
   },
   "recognition-point-label": {
-    "defaultMessage": "Recognition point:",
+    "defaultMessage": "Punto de reconocimiento:",
     "description": "Label for the slider for the recognition point"
   },
   "reconnect-action": {
-    "defaultMessage": "Reconnect",
+    "defaultMessage": "Reconectar",
     "description": "Button text to reconnect a micro:bit over Bluetooth/radio"
   },
   "reconnect-failed-bluetooth-heading": {
-    "defaultMessage": "Failed to reconnect to data collection micro:bit",
+    "defaultMessage": "Error al volver a conectar con el micro:bit de recogida de datos ",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be re-established.",
+    "defaultMessage": "No se pudo restablecer la conexión con el micro:bit de recogida de datos.",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bridge-heading": {
-    "defaultMessage": "Failed to reconnect to radio link micro:bit",
+    "defaultMessage": "No se ha podido reconectar al micro:bit con enlace de radio",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer could not be re-established.",
+    "defaultMessage": "No se ha podido restablecer la conexión con el micro:bit conectado a tu ordenador.",
     "description": "Connection error dialog"
   },
   "reconnect-failed-radio-heading": {
-    "defaultMessage": "Failed to reconnect to micro:bits",
+    "defaultMessage": "No se ha podido reconectar a micro:bits",
     "description": "Connection error dialog"
   },
   "reconnect-failed-remote-heading": {
-    "defaultMessage": "Failed to reconnect to data collection micro:bit",
+    "defaultMessage": "Error al volver a conectar con el micro:bit de recogida de datos ",
     "description": "Connection error dialog"
   },
   "reconnect-failed-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be re-established.",
+    "defaultMessage": "No se pudo restablecer la conexión con el micro:bit de recogida de datos.",
     "description": "Connection error dialog"
   },
   "reconnect-failed-subtitle": {
-    "defaultMessage": "Follow these instructions to restart the connection process.",
+    "defaultMessage": "Sigue estas instrucciones para reiniciar el proceso de conexión.",
     "description": "Connection error dialog"
   },
   "reconnecting": {
-    "defaultMessage": "Reconnecting…",
+    "defaultMessage": "Reconectando...",
     "description": "Shown while reconnecting"
   },
   "record-action": {
-    "defaultMessage": "Record",
+    "defaultMessage": "Grabar",
     "description": "Record button text"
   },
   "record-action-aria": {
-    "defaultMessage": "Record data for action \"{action}\"",
+    "defaultMessage": "Grabar datos para la acción \"{action}\"",
     "description": "Aria label for record button"
   },
   "record-hint": {
-    "defaultMessage": "Press to record a data sample.",
+    "defaultMessage": "Pulsa para grabar una muestra de datos.",
     "description": "Hint when you have named the first action but not recorded any data samples"
   },
   "record-hint-button-b": {
-    "defaultMessage": "Press to record a data sample or press button B on your data collection micro:bit.",
+    "defaultMessage": "Pulsa para grabar una muestra de datos o pulsa el botón B de tu micro:bit de recogida de datos.",
     "description": "Hint when you have named the first action but not recorded any data samples and have a micro:bit connected"
   },
   "record-samples": {
-    "defaultMessage": "Record {numSamples} samples",
+    "defaultMessage": "Grabar {numSamples} muestras",
     "description": "Additional recording action text"
   },
   "record-samples-help": {
-    "defaultMessage": "Each sample has its own countdown",
+    "defaultMessage": "Cada muestra tiene su propia cuenta atrás",
     "description": "Help text for additional recording action"
   },
   "record-seconds": {
-    "defaultMessage": "Record for {numSeconds} seconds",
+    "defaultMessage": "Grabar durante {numSeconds} segundos",
     "description": "Additional recording action text"
   },
   "record-seconds-help": {
-    "defaultMessage": "Move continuously to get {numSamples} samples",
+    "defaultMessage": "Muévete continuamente para conseguir {numSamples} muestras",
     "description": "Help text for additional recording action"
   },
   "recording": {
-    "defaultMessage": "Recording",
+    "defaultMessage": "Grabación",
     "description": "Shown during recording"
   },
   "recording-complete": {
-    "defaultMessage": "Done",
+    "defaultMessage": "Hecho",
     "description": "Text shown when data recording complete"
   },
   "recording-data-for": {
-    "defaultMessage": "Record data for action \"{action}\"",
+    "defaultMessage": "Grabar datos para la acción \"{action}\"",
     "description": "Text in recording dialog"
   },
   "recording-data-for-numbered": {
-    "defaultMessage": "Record {sample} of {numSamples} for action \"{action}\"",
+    "defaultMessage": "Grabar {sample} de {numSamples} para la acción \"{action}\"",
     "description": "Text in recording dialog"
   },
   "recording-fingerprint-label": {
-    "defaultMessage": "heatmap showing micro:bit x, y, z accelerometer data features for one recording",
+    "defaultMessage": "mapa de calor que muestra las características de los datos del acelerómetro x, y, z del micro:bit para una grabación",
     "description": "Label for recording fingerprint heatmap"
   },
   "recording-graph-label": {
-    "defaultMessage": "graph showing micro:bit x, y, z accelerometer data for one recording",
+    "defaultMessage": "gráfico que muestra los datos del acelerómetro x, y, z de micro:bit para una grabación",
     "description": "Label for recording graph"
   },
   "recording-options-aria": {
-    "defaultMessage": "More recording options for action \"{action}\"",
+    "defaultMessage": "Más opciones de grabación para la acción \"{action}\"",
     "description": "Aria label for more recording options button"
   },
   "reload-action": {
-    "defaultMessage": "Reload",
+    "defaultMessage": "Recargar",
     "description": "Reload button text"
   },
   "reset-to-default-action": {
-    "defaultMessage": "Reset to default blocks",
+    "defaultMessage": "Restablecer bloques por defecto",
     "description": "Reset to default blocks button text"
   },
   "restore-defaults-action": {
-    "defaultMessage": "Restore default values for all settings",
+    "defaultMessage": "Restaurar los valores por defecto de todos los ajustes",
     "description": "Restore default button text"
   },
   "restore-defaults-confirm-action": {
-    "defaultMessage": "Restore defaults",
+    "defaultMessage": "Restaurar valores por defecto",
     "description": "Restore default settings confirm button text"
   },
   "restore-defaults-confirm-body": {
-    "defaultMessage": "Are you sure you want to restore default values for all settings?",
+    "defaultMessage": "¿Realmente quieres restaurar los valores por defecto de todos los ajustes?",
     "description": "Restore default settings confirmation dialog body text"
   },
   "restore-defaults-confirm-heading": {
-    "defaultMessage": "Restore default settings",
+    "defaultMessage": "Restablecer ajustes por defecto",
     "description": "Restore default settings confirmation dialog title"
   },
   "restore-defaults-helper": {
-    "defaultMessage": "Previously dismissed help content may be shown again.",
+    "defaultMessage": "El contenido de ayuda previamente descartado puede volver a mostrarse.",
     "description": "Restore default settings helper text"
   },
   "save-action": {
-    "defaultMessage": "Save",
+    "defaultMessage": "Guardar",
     "description": "Label for action that saves the project as a file the user downloads"
   },
   "save-hex-dialog-heading": {
-    "defaultMessage": "Save project as a hex file",
+    "defaultMessage": "Guardar proyecto como archivo hexadecimal",
     "description": "Heading for the dialog shown when saving a hex file"
   },
   "save-hex-dialog-message1": {
-    "defaultMessage": "The download contains your actions, data samples and your MakeCode project. Open it in {appNameFull} to continue working.",
+    "defaultMessage": "La descarga contiene tus acciones, muestras de datos y tu proyecto de MakeCode. Ábrelo en {appNameFull} para seguir trabajando.",
     "description": "Text in the dialog shown when saving a hex file"
   },
   "save-hex-dialog-message2": {
-    "defaultMessage": "You can also open it with Microsoft MakeCode if you don't need to change the actions and data samples.",
+    "defaultMessage": "También puedes abrirlo con Microsoft MakeCode si no necesitas cambiar las acciones y las muestras de datos.",
     "description": "Text in the dialog shown when saving a hex file"
   },
   "saving-description": {
-    "defaultMessage": "Your download will be ready soon.",
+    "defaultMessage": "Tu descarga estará lista en breve.",
     "description": "Saving progress dialog text"
   },
   "saving-title": {
-    "defaultMessage": "Saving…",
+    "defaultMessage": "Guardando…",
     "description": "Saving progress title"
   },
   "saving-toast-title": {
-    "defaultMessage": "Your hex file has been downloaded",
+    "defaultMessage": "Se ha descargado tu archivo hexadecimal",
     "description": "Notification after a hex file has been downloaded"
   },
   "select-icon-action-aria": {
-    "defaultMessage": "Pick icon for action \"{action}\"",
+    "defaultMessage": "Elige un icono para la acción \"{action}\"",
     "description": "Aria label for pick icon button"
   },
   "select-icon-action-untitled-aria": {
-    "defaultMessage": "Pick icon for untitled action",
+    "defaultMessage": "Elegir icono para acción sin título",
     "description": "Aria label for pick icon button"
   },
   "select-icon-option-action-aria": {
-    "defaultMessage": "Select \"{iconName}\" icon",
+    "defaultMessage": "Selecciona el icono \"{iconName}\"",
     "description": "Aria label for icon option"
   },
   "settings": {
-    "defaultMessage": "Settings",
+    "defaultMessage": "Configuración",
     "description": "Text for settings dialog header and menu item"
   },
   "settings-menu-action": {
-    "defaultMessage": "Settings actions menu",
+    "defaultMessage": "Menú de acciones de configuración",
     "description": "Label for settings actions menu button"
   },
   "show-graphs-checkbox-label-text": {
-    "defaultMessage": "Show graphs",
+    "defaultMessage": "Mostrar gráficos",
     "description": "Show graphs checkbox label text"
   },
   "simple-ai-exercise-timer-resource-title": {
-    "defaultMessage": "Simple AI exercise timer",
+    "defaultMessage": "Sencillo temporizador de ejercicios con IA",
     "description": "Home page resource card title"
   },
   "skip-tour-action": {
-    "defaultMessage": "Skip tour",
+    "defaultMessage": "Saltar el recorrido",
     "description": "Skip tour button text"
   },
   "software-versions": {
-    "defaultMessage": "Software versions",
+    "defaultMessage": "Versiones de software",
     "description": "Software versions text"
   },
   "start-session-action": {
-    "defaultMessage": "Start session",
+    "defaultMessage": "Iniciar sesión",
     "description": "Start session button text"
   },
   "start-training-action": {
-    "defaultMessage": "Start training",
+    "defaultMessage": "Empieza a entrenar",
     "description": "Start training button text"
   },
   "steps-alt": {
-    "defaultMessage": "diagram showing the iterative process of collecting data, training a model, testing the model, and improving the model by improving the data collected before finally coding using the model.",
+    "defaultMessage": "diagrama que muestra el proceso iterativo de recogida de datos, entrenamiento de un modelo, prueba del modelo y mejora del modelo mediante la mejora de los datos recogidos antes de programar finalmente utilizando el modelo.",
     "description": "Alt text for the step-by-step home page diagram"
   },
   "steps-code": {
-    "defaultMessage": "Code",
+    "defaultMessage": "Programa",
     "description": "Step in home page diagram"
   },
   "steps-collect-data": {
-    "defaultMessage": "Collect data",
+    "defaultMessage": "Recoger datos",
     "description": "Step in home page diagram"
   },
   "steps-improve": {
-    "defaultMessage": "Improve",
+    "defaultMessage": "Mejorar",
     "description": "Step in home page diagram"
   },
   "steps-test-model": {
-    "defaultMessage": "Test model",
+    "defaultMessage": "Probar modelo",
     "description": "Step in home page diagram"
   },
   "steps-train": {
-    "defaultMessage": "Train",
+    "defaultMessage": "Entrenar",
     "description": "Step in home page diagram"
   },
   "stop-recording-action": {
-    "defaultMessage": "Stop recording",
+    "defaultMessage": "Detener la grabación",
     "description": "Button label to stop recording movement data while recording multiple samples"
   },
   "support-request": {
-    "defaultMessage": "Please consider <link>raising a support request</link>.",
+    "defaultMessage": "Por favor considere <link>una solicitud de soporte</link>.",
     "description": "Support request link text"
   },
   "terms": {
-    "defaultMessage": "Terms of use",
+    "defaultMessage": "Términos de uso",
     "description": "Link or menu item link to view terms of use"
   },
   "testing-model-actions-region": {
-    "defaultMessage": "Testing model toolbar",
+    "defaultMessage": "Barra de herramientas del modelo de pruebas",
     "description": "Region label for testing model actions"
   },
   "testing-model-title": {
-    "defaultMessage": "Testing model",
+    "defaultMessage": "Modelo de pruebas",
     "description": "Testing model page title"
   },
   "tour-action": {
-    "defaultMessage": "Tour",
+    "defaultMessage": "Recorrido",
     "description": "Button label that starts a tour of the app's features"
   },
   "tour-collect-addActions-content": {
-    "defaultMessage": "Decide what your other actions will be and what you will name them. You need at least 2 actions with 3 data samples to train the model. Your data samples are only stored on your computer, they do not get sent to anyone else.",
+    "defaultMessage": "Decide cuáles serán tus otras acciones y cómo las llamarás. Necesitas al menos 2 acciones con 3 muestras de datos para entrenar el modelo. Tus muestras de datos solo se almacenan en tu ordenador. No se envían a nadie más.",
     "description": "Tour step description"
   },
   "tour-collect-addActions-title": {
-    "defaultMessage": "Add more actions",
+    "defaultMessage": "Añadir más acciones",
     "description": "Tour step title"
   },
   "tour-collect-afterFirst-content": {
-    "defaultMessage": "To train the machine learning model you need at least 3 data samples for 2 different actions.",
+    "defaultMessage": "Para entrenar el modelo de aprendizaje automático necesitas al menos 3 muestras de datos de 2 acciones diferentes.",
     "description": "Tour step description"
   },
   "tour-collect-afterFirst-title": {
-    "defaultMessage": "You’ve recorded your first {recordingCount, plural, one {sample} other {samples}}!",
+    "defaultMessage": "¡Has grabado tu primera {recordingCount, plural, one {sample} other {samples}}!",
     "description": "Tour step title. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "tour-collect-collectMore-explanation-content": {
-    "defaultMessage": "Collecting more samples should result in a better machine learning model.",
+    "defaultMessage": "Recoger más muestras debería dar lugar a un mejor modelo de aprendizaje automático.",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-hasRecordings-content": {
-    "defaultMessage": "Record data samples for your actions.",
+    "defaultMessage": "Graba muestras de datos para tus acciones.",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-noRecordings-content": {
-    "defaultMessage": "Record more samples for this action.",
+    "defaultMessage": "Graba más muestras para esta acción.",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-title": {
-    "defaultMessage": "Collect more data samples",
+    "defaultMessage": "Recoge más muestras de datos",
     "description": "Tour step title"
   },
   "tour-collect-trainModel-content": {
-    "defaultMessage": "When you have collected enough data samples you can train the machine learning model. You can come back later to remove or add more data and re-train to make the model more reliable.",
+    "defaultMessage": "Cuando hayas recogido suficientes muestras de datos, podrás entrenar el modelo de aprendizaje automático. Puedes volver más tarde para eliminar o añadir más datos y volver a entrenar para que el modelo sea más fiable.",
     "description": "Tour step description"
   },
   "tour-dataSamples-actions-common-content": {
-    "defaultMessage": "An action is the type of movement you want the machine learning model to recognise e.g. ‘waving’ or ‘clapping’.",
+    "defaultMessage": "Una acción es el tipo de movimiento que quieres que reconozca el modelo de aprendizaje automático, por ejemplo, «saludar» o «aplaudir».",
     "description": "Tour step content"
   },
   "tour-dataSamples-actions-noRecordings-content": {
-    "defaultMessage": "Decide what your first action will be, name it and then start recording data samples.",
+    "defaultMessage": "Decide cuál será tu primera acción, ponle un nombre y empieza a grabar muestras de datos.",
     "description": "Tour step content"
   },
   "tour-dataSamples-connected-content": {
-    "defaultMessage": "Now you can start collecting data samples to train a machine learning (ML) model to recognise different movements, or actions.",
+    "defaultMessage": "Ahora puedes empezar a recoger muestras de datos para entrenar un modelo de aprendizaje automático (ML) que reconozca diferentes movimientos o acciones.",
     "description": "Tour step content"
   },
   "tour-dataSamples-connected-title": {
-    "defaultMessage": "Your data collection micro:bit is connected!",
+    "defaultMessage": "¡Tu micro:bit de recogida de datos está conectado!",
     "description": "Tour step title"
   },
   "tour-dataSamples-liveGraph-content": {
-    "defaultMessage": "The graph shows movement data from the micro:bit’s accelerometer. Move your data collection micro:bit and see how the graph changes.",
+    "defaultMessage": "El gráfico muestra los datos de movimiento del acelerómetro del micro:bit. Mueve tu micro:bit de recogida de datos y observa cómo cambia el gráfico.",
     "description": "Tour step content"
   },
   "tour-makecode-intro-content1": {
-    "defaultMessage": "Download the model and code to test your project on a micro:bit. You can also add more code blocks to create your own programs using your model.",
+    "defaultMessage": "Descarga el modelo y el código para probar tu proyecto en un micro:bit. También puedes añadir más bloques de código para crear tus propios programas utilizando tu modelo.",
     "description": "Tour step description"
   },
   "tour-makecode-intro-content2": {
-    "defaultMessage": "Need to improve the ML model? ",
+    "defaultMessage": "¿Necesitas mejorar el modelo de ML? ",
     "description": "Tour step description"
   },
   "tour-makecode-intro-content3": {
-    "defaultMessage": "Use this back button in the top left.",
+    "defaultMessage": "Utiliza el botón de retroceso de la parte superior izquierda.",
     "description": "Tour step description"
   },
   "tour-makecode-intro-title": {
@@ -1544,143 +1544,143 @@
     "description": "Tour step title"
   },
   "tour-trainModel-afterTrain-alreadyConnected-title": {
-    "defaultMessage": "You’ve trained an ML model!",
+    "defaultMessage": "¡Has entrenado un modelo de ML!",
     "description": "Tour step title"
   },
   "tour-trainModel-afterTrain-content": {
-    "defaultMessage": "Now test your machine learning model. Try each action by moving your data collection micro:bit. Does the model correctly estimate each action?",
+    "defaultMessage": "Ahora prueba tu modelo de aprendizaje automático. Prueba cada acción moviendo tu micro:bit de recogida de datos. ¿El modelo estima correctamente cada acción?",
     "description": "Tour step description"
   },
   "tour-trainModel-afterTrain-delayedUntilConnected-title": {
-    "defaultMessage": "Test your ML model",
+    "defaultMessage": "Prueba tu modelo de ML",
     "description": "Tour step title"
   },
   "tour-trainModel-certaintyRecognition-content": {
-    "defaultMessage": "The bar graph shows how confident the model is that you are doing each action. Move the slider to adjust the recognition point, or threshold.",
+    "defaultMessage": "El gráfico de barras muestra el grado de confianza del modelo en que estás realizando cada acción. Mueve el control deslizante para ajustar el punto de reconocimiento o umbral.",
     "description": "Tour step description"
   },
   "tour-trainModel-certaintyRecognition-title": {
-    "defaultMessage": "Certainty and recognition point",
+    "defaultMessage": "Punto de certeza y reconocimiento",
     "description": "Tour step title"
   },
   "tour-trainModel-editInMakeCode-content": {
-    "defaultMessage": "Open your project in MakeCode to download the program and your machine learning model to a micro:bit. You can add more blocks to create your own programs using your model.",
+    "defaultMessage": "Abre tu proyecto en MakeCode para descargar el programa y tu modelo de aprendizaje automático en un micro:bit. Puedes añadir más bloques para crear tus propios programas utilizando tu modelo.",
     "description": "Tour step description"
   },
   "tour-trainModel-estimatedAction-content": {
-    "defaultMessage": "The action the model estimates you are currently doing is shown below the micro:bit icon for that action.",
+    "defaultMessage": "La acción que el modelo estima que estás realizando en ese momento se muestra debajo del icono del micro:bit de esa acción.",
     "description": "Tour step description"
   },
   "tour-trainModel-makeCodeBlocks-content": {
-    "defaultMessage": "These MakeCode blocks will show icons for each action detected when you transfer your code and model to a micro:bit.",
+    "defaultMessage": "Estos bloques de MakeCode mostrarán iconos para cada acción detectada cuando transfieras tu código y modelo a un micro:bit.",
     "description": "Tour step description"
   },
   "tour-trainModel-makeCodeBlocks-title": {
-    "defaultMessage": "Microsoft MakeCode blocks",
+    "defaultMessage": "Bloques de MakeCode de Microsoft",
     "description": "Tour step title"
   },
   "train-description": {
-    "defaultMessage": "The computer program spots patterns or differences in your data samples, and uses these to build a mathematical model that allows {appNameFull} to recognise different actions when you move your micro:bit.",
+    "defaultMessage": "El programa informático detecta patrones o diferencias en tus muestras de datos, y los utiliza para construir un modelo matemático que permite a {appNameFull} reconocer diferentes acciones cuando mueves tu micro:bit.",
     "description": "Explanation on training dialog"
   },
   "train-error-body": {
-    "defaultMessage": "The training did not result in a usable model. The reason for this is most likely the data used for training. If the data samples for different actions are too similar, this can result in issues in the training process.",
+    "defaultMessage": "El entrenamiento no dio como resultado un modelo utilizable. Lo más probable es que el motivo sean los datos utilizados para el entrenamiento. Si las muestras de datos de las distintas acciones son demasiado similares, pueden surgir problemas en el proceso de entrenamiento.",
     "description": "Training error dialog"
   },
   "train-error-header": {
-    "defaultMessage": "Training failed",
+    "defaultMessage": "Entrenamiento fallido",
     "description": "Training error dialog"
   },
   "train-error-todo": {
-    "defaultMessage": "Return to the Add data page and change your data.",
+    "defaultMessage": "Vuelve a la página Añadir datos y modifica tus datos.",
     "description": "Training error dialog"
   },
   "train-header": {
-    "defaultMessage": "Training a model",
+    "defaultMessage": "Entrenar un modelo",
     "description": "Training dialog"
   },
   "train-model": {
-    "defaultMessage": "Train model",
+    "defaultMessage": "Entrenar modelo",
     "description": "Action to train a model"
   },
   "training-model": {
-    "defaultMessage": "Training model…",
+    "defaultMessage": "Entrenando modelo…",
     "description": "Progress title"
   },
   "transfer-hex-alt": {
-    "defaultMessage": "animation of dragging a hex file from the downloads folder onto the micro:bit drive or device listed in the file explorer",
+    "defaultMessage": "animación de arrastrar un archivo hexadecimal desde la carpeta de descargas a la unidad o dispositivo micro:bit que aparece en el explorador de archivos",
     "description": "Alt text"
   },
   "transfer-hex-heading": {
-    "defaultMessage": "Transfer saved hex file to micro:bit",
+    "defaultMessage": "Transferir archivo HEX guardado a micro:bit",
     "description": "Dialog shown when WebUSB fails"
   },
   "transfer-hex-manual-download": {
-    "defaultMessage": "If the file did not automatically download then <link>please download the file here</link>.",
+    "defaultMessage": "Si el archivo no se ha descargado automáticamente, <link>descarga el archivo aquí</link>.",
     "description": "Dialog shown when WebUSB fails"
   },
   "transfer-hex-message": {
-    "defaultMessage": "Drag the hex file from your Downloads folder to the MICROBIT drive.",
+    "defaultMessage": "Arrastra el archivo hexadecimal desde tu carpeta Descargas a la unidad MICROBIT.",
     "description": "Dialog shown when WebUSB fails"
   },
   "try-again-action": {
-    "defaultMessage": "Try again",
+    "defaultMessage": "Inténtalo de nuevo",
     "description": "Button label"
   },
   "unknown": {
-    "defaultMessage": "unknown",
+    "defaultMessage": "desconocido",
     "description": "Label for unknown ML event"
   },
   "unplug-radio-link-microbit-description": {
-    "defaultMessage": "Unplug the radio link micro:bit from the computer. You will need to reconnect the micro:bit if you want to record more data samples.",
+    "defaultMessage": "Desconecta el micro:bit con enlace de radio del ordenador. Tendrás que volver a conectar el micro:bit si quieres grabar más muestras de datos.",
     "description": "Unplug radio link micro:bit dialog description"
   },
   "unplug-radio-link-microbit-label": {
-    "defaultMessage": "animation showing a USB cable being disconnected from the top of a micro:bit",
+    "defaultMessage": "animación que muestra cómo se desconecta un cable USB de la parte superior de un micro:bit",
     "description": "Unplug radio link micro:bit dialog aria label"
   },
   "unplug-radio-link-microbit-title": {
-    "defaultMessage": "Unplug the radio link micro:bit",
+    "defaultMessage": "Desenchufa el micro:bit con enlace de radio",
     "description": "Unplug radio link micro:bit dialog title"
   },
   "unsupported-device-explain": {
-    "defaultMessage": "Unfortunately, we only support using micro:bit V2 when connecting using micro:bit radio. You have connected a <link>micro:bit V1</link>.",
+    "defaultMessage": "Lamentablemente, sólo admitimos el uso de micro:bit V2 cuando se conecta mediante la radio del micro:bit. Has conectado un <link>micro:bit V1</link>.",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-header": {
-    "defaultMessage": "micro:bit radio connections do not support micro:bit V1",
+    "defaultMessage": "las conexiones de radio del micro:bit no son compatibles con micro:bit V1",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-with-bluetooth": {
-    "defaultMessage": "Please use Web Bluetooth to connect to your micro:bit V1 instead.",
+    "defaultMessage": "Utiliza Web Bluetooth para conectarte a tu micro:bit V1 en su lugar.",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-without-bluetooth": {
-    "defaultMessage": "You can connect to micro:bit V1 using Web Bluetooth, however, this browser or device does not have Bluetooth enabled. <link>How to enable Bluetooth</link>.",
+    "defaultMessage": "Puedes conectarte a micro:bit V1 utilizando Web Bluetooth, sin embargo, este navegador o dispositivo no tiene Bluetooth activado. <link>Cómo activar el Bluetooth</link>.",
     "description": "Unsupported device dialog"
   },
   "user-guide": {
-    "defaultMessage": "User guide",
+    "defaultMessage": "Guía del usuario",
     "description": "Used for link to user guide page on microbit.org"
   },
   "webusb-retry-no-select": {
-    "defaultMessage": "You didn't select a micro:bit. Do you want to try again?",
+    "defaultMessage": "No has seleccionado un micro:bit. ¿Quieres volver a intentarlo?",
     "description": "Shown if the user fails to choose a micro:bit"
   },
   "webusb-retry-replug1": {
-    "defaultMessage": "A WebUSB error occurred.",
+    "defaultMessage": "Se ha producido un error WebUSB.",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug2": {
-    "defaultMessage": "Please:",
+    "defaultMessage": "Por favor:",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug3": {
-    "defaultMessage": "check that this micro:bit does not have a battery pack connected",
+    "defaultMessage": "comprueba que este micro:bit no tiene una batería conectada",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug4": {
-    "defaultMessage": "unplug and replug the USB cable",
+    "defaultMessage": "desenchufa y vuelve a enchufar el cable USB",
     "description": "WebUSB error dialog"
   }
 }

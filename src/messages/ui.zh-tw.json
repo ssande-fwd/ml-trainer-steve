@@ -2,59 +2,63 @@
   "aarhus-university-alt": [
     {
       "type": 0,
-      "value": "Aarhus University"
+      "value": "奧胡斯大學"
     }
   ],
   "about": [
     {
       "type": 0,
-      "value": "About"
+      "value": "關於"
     }
   ],
   "about-dialog-alt": [
     {
       "type": 0,
-      "value": "micro:bit board showing a heart on the LED display"
+      "value": "micro:bit 開發板在 LED 顯示器上顯示一顆心"
     }
   ],
   "about-dialog-title": [
     {
       "type": 0,
-      "value": "Developed in partnership with "
+      "value": "與"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Center for Computational Thinking and Design, Aarhus University"
+          "value": " 奧胡斯大學運算思維與設計中心"
         }
       ],
       "type": 8,
       "value": "link"
+    },
+    {
+      "type": 0,
+      "value": "合作開發"
     }
   ],
   "accelerometer-image-alt": [
     {
       "type": 0,
-      "value": "micro:bit showing X axis going across the front, Y axis going down and up, Z axis going back to front"
+      "value": "micro:bit 會顯示 X 軸穿過前方，Y 軸向下和向上，Z 軸回到前方"
     }
   ],
   "action-label": [
     {
       "type": 0,
-      "value": "Action"
+      "value": "動作"
     }
   ],
   "action-label-tooltip-aria": [
     {
       "type": 0,
-      "value": "Action tooltip"
+      "value": "動作工具提示"
     }
   ],
   "action-length-error": [
     {
       "type": 0,
-      "value": "Action names cannot be longer than "
+      "value": "動作名稱的長度不能超過 "
     },
     {
       "type": 1,
@@ -62,19 +66,19 @@
     },
     {
       "type": 0,
-      "value": " characters."
+      "value": " 個字元。"
     }
   ],
   "action-name-placeholder": [
     {
       "type": 0,
-      "value": "Name of action"
+      "value": "動作名稱"
     }
   ],
   "action-region": [
     {
       "type": 0,
-      "value": "Action \""
+      "value": "動作「"
     },
     {
       "type": 1,
@@ -82,13 +86,13 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」"
     }
   ],
   "action-tooltip": [
     {
       "type": 0,
-      "value": "The type of movement you want "
+      "value": "您希望 "
     },
     {
       "type": 1,
@@ -96,99 +100,95 @@
     },
     {
       "type": 0,
-      "value": " to recognise e.g. ‘waving’ or ‘clapping’."
+      "value": " 辨識的移動類型，例如「揮手」或「鼓掌」。"
     }
   ],
   "actions-label": [
     {
       "type": 0,
-      "value": "Actions"
+      "value": "動作"
     }
   ],
   "add-action-action": [
     {
       "type": 0,
-      "value": "Add action"
+      "value": "新增動作"
     }
   ],
   "ai-activity-timer-resource-title": [
     {
       "type": 0,
-      "value": "AI activity timer"
+      "value": "AI 活動計時器"
     }
   ],
   "ai-storytelling-friend-resource-title": [
     {
       "type": 0,
-      "value": "AI storytelling friend"
+      "value": "AI 說故事夥伴"
     }
   ],
   "back-action": [
     {
       "type": 0,
-      "value": "Back"
+      "value": "返回"
     }
   ],
   "back-to-data-samples-action": [
     {
       "type": 0,
-      "value": "Edit data samples"
+      "value": "編輯數據樣本"
     }
   ],
   "bluetooth-unsupported-advice": [
     {
       "type": 0,
-      "value": "We recommend Google Chrome or Microsoft Edge so you can connect directly to your micro:bit."
+      "value": "我們建議您使用 Google Chrome 或 Microsoft Edge，以便您能夠直接連線到您的 micro:bit。"
     }
   ],
   "bluetooth-unsupported-explain": [
     {
       "type": 0,
-      "value": "Unfortunately, WebUSB and Web Bluetooth are not supported by this browser. This means you cannot connect to a micro:bit to record the data samples needed to train a machine learning model."
+      "value": "很遺憾，此瀏覽器不支援 WebUSB 和 Web 藍牙。這表示您無法連線到 micro:bit 來記錄訓練機器學習模型所需要的數據樣本。"
     }
   ],
   "bluetooth-unsupported-header": [
     {
       "type": 0,
-      "value": "This browser is not supported"
+      "value": "此瀏覽器不受支援"
     }
   ],
   "cancel-action": [
     {
       "type": 0,
-      "value": "Cancel"
+      "value": "取消"
     }
   ],
   "cancel-recording-action": [
     {
       "type": 0,
-      "value": "Cancel recording"
+      "value": "取消錄製"
     }
   ],
   "certainty-label": [
     {
       "type": 0,
-      "value": "Certainty"
+      "value": "確定性"
     }
   ],
   "certainty-label-tooltip-aria": [
     {
       "type": 0,
-      "value": "Certainty tooltip"
+      "value": "確定性工具提示"
     }
   ],
   "certainty-percentage-label": [
-    {
-      "type": 0,
-      "value": "certainty for "
-    },
     {
       "type": 1,
       "value": "action"
     },
     {
       "type": 0,
-      "value": ": "
+      "value": " 的確定性："
     },
     {
       "type": 1,
@@ -196,235 +196,235 @@
     },
     {
       "type": 0,
-      "value": " percent"
+      "value": "%"
     }
   ],
   "certainty-tooltip": [
     {
       "type": 0,
-      "value": "How confident the model is that you are currently doing each action."
+      "value": "模型對您目前正在執行的各個動作的信心程度。"
     }
   ],
   "click-to-reload-page-action": [
     {
       "type": 0,
-      "value": "Click to reload the page"
+      "value": "點擊重新載入頁面"
     }
   ],
   "close-action": [
     {
       "type": 0,
-      "value": "Close"
+      "value": "關閉"
     }
   ],
   "code-download-error": [
     {
       "type": 0,
-      "value": "Error downloading the project code"
+      "value": "下載專案程式碼時發生錯誤"
     }
   ],
   "code-label": [
     {
       "type": 0,
-      "value": "Code"
+      "value": "編程"
     }
   ],
   "code-label-tooltip-aria": [
     {
       "type": 0,
-      "value": "Code tooltip"
+      "value": "程式碼工具提示"
     }
   ],
   "code-tooltip": [
     {
       "type": 0,
-      "value": "These are the MakeCode blocks for each detected action when you transfer your ML model and code to a micro:bit"
+      "value": "這些是對於當您將您的 ML 模型和程式碼傳輸到 micro:bit 時，各個偵測動作 MakeCode 區塊"
     }
   ],
   "confirm-action": [
     {
       "type": 0,
-      "value": "Confirm"
+      "value": "確認"
     }
   ],
   "confirm-save-action": [
     {
       "type": 0,
-      "value": "Confirm and save"
+      "value": "確認並儲存"
     }
   ],
   "connect-action": [
     {
       "type": 0,
-      "value": "Connect"
+      "value": "連線"
     }
   ],
   "connect-action-aria": [
     {
       "type": 0,
-      "value": "Connect to micro:bit"
+      "value": "連接到 micro:bit"
     }
   ],
   "connect-battery-heading": [
     {
       "type": 0,
-      "value": "Disconnect USB and connect battery pack"
+      "value": "中斷 USB 並連接電池組"
     }
   ],
   "connect-battery-holder": [
     {
       "type": 0,
-      "value": "Battery holder"
+      "value": "電池座"
     }
   ],
   "connect-battery-link": [
     {
       "type": 0,
-      "value": "You can attach the micro:bit to your wrist or an object"
+      "value": "您可以將 micro:bit 連接到您的手腕或物件上"
     }
   ],
   "connect-battery-subtitle": [
     {
       "type": 0,
-      "value": "Disconnect the micro:bit from the computer and connect the battery pack."
+      "value": "中斷 micro:bit 與電腦的連線並連接電池組。"
     }
   ],
   "connect-bluetooth-cancelled-connection": [
     {
       "type": 0,
-      "value": "You didn't choose a micro:bit. Do you want to try again?"
+      "value": "您沒有選擇 micro:bit。您想再試一次嗎？"
     }
   ],
   "connect-bluetooth-heading": [
     {
       "type": 0,
-      "value": "Connect using Web Bluetooth"
+      "value": "使用網路藍牙來連線"
     }
   ],
   "connect-bluetooth-invalid-pattern": [
     {
       "type": 0,
-      "value": "The pattern you have drawn is invalid."
+      "value": "您繪製的圖案無效。"
     }
   ],
   "connect-bluetooth-start-heading": [
     {
       "type": 0,
-      "value": "What you need to connect using Web Bluetooth"
+      "value": "使用網路藍牙連線需要什麼"
     }
   ],
   "connect-bluetooth-start-requirements1": [
     {
       "type": 0,
-      "value": "1 micro:bit"
+      "value": "一個 micro:bit"
     }
   ],
   "connect-bluetooth-start-requirements2-subtitle": [
     {
       "type": 0,
-      "value": "with Internet, a USB port & Web Bluetooth"
+      "value": "需要網際網路、USB 連接埠和網路藍牙"
     }
   ],
   "connect-bluetooth-start-switch-radio": [
     {
       "type": 0,
-      "value": "Connect using micro:bit radio instead"
+      "value": "改用 micro:bit 無線電來連線"
     }
   ],
   "connect-cable-alt": [
     {
       "type": 0,
-      "value": "animation showing a USB cable being connected to the top of a micro:bit"
+      "value": "顯示將 USB 纜線連接至 micro:bit 頂部的動畫"
     }
   ],
   "connect-cable-download-project-subtitle": [
     {
       "type": 0,
-      "value": "Connect a micro:bit to this computer with a USB cable to download your machine learning MakeCode program to it."
+      "value": "使用 USB 纜線將 micro:bit 連線到這台電腦以將機器學習 MakeCode 程式下載到其中。"
     }
   ],
   "connect-cable-heading": [
     {
       "type": 0,
-      "value": "Connect USB cable to micro:bit"
+      "value": "將 USB 纜線連接至 micro:bit"
     }
   ],
   "connect-cable-skip": [
     {
       "type": 0,
-      "value": "Skip: program already downloaded?"
+      "value": "跳過：程式已經下載？"
     }
   ],
   "connect-cable-subtitle": [
     {
       "type": 0,
-      "value": "Connect the micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it."
+      "value": "使用 USB 纜線將 micro:bit 連線到這台電腦，以便將數據收集程式下載到其中。"
     }
   ],
   "connect-computer": [
     {
       "type": 0,
-      "value": "Computer"
+      "value": "電腦"
     }
   ],
   "connect-data-collection-heading": [
     {
       "type": 0,
-      "value": "Connect USB cable to micro:bit 1"
+      "value": "將 USB 纜線連接至 micro:bit 1"
     }
   ],
   "connect-data-collection-subtitle": [
     {
       "type": 0,
-      "value": "Connect the first micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it. This is the micro:bit you will use to collect data samples."
+      "value": "利用 USB 纜線將第一台 micro:bit 連線到這台電腦，以便將數據收集程式下載到其上。這是您將用來收集數據樣本的 micro:bit。"
     }
   ],
   "connect-failed-bluetooth-heading": [
     {
       "type": 0,
-      "value": "Failed to connect to micro:bit"
+      "value": "無法連線到 micro:bit"
     }
   ],
   "connect-failed-bluetooth1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit could not be established."
+      "value": "無法建立與數據收集 micro:bit 的連線。"
     }
   ],
   "connect-failed-bridge-heading": [
     {
       "type": 0,
-      "value": "Failed to connect to radio link micro:bit"
+      "value": "無法連線到無線電連結 micro:bit"
     }
   ],
   "connect-failed-bridge1": [
     {
       "type": 0,
-      "value": "The connection to the micro:bit connected to your computer could not be established."
+      "value": "無法建立與您的電腦連線的 micro:bit 的連線。"
     }
   ],
   "connect-failed-remote-heading": [
     {
       "type": 0,
-      "value": "Failed to connect to data collection micro:bit"
+      "value": "無法連線至數據收集 micro:bit"
     }
   ],
   "connect-failed-remote1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit could not be established."
+      "value": "無法建立與數據收集 micro:bit 的連線。"
     }
   ],
   "connect-help-alt": [
     {
       "type": 0,
-      "value": "WebUSB connection dialog with BBC micro:bit entry labelled 1 and Connect button labelled 2"
+      "value": "WebUSB 連線對話框，帶有標記為 1 的 BBC micro:bit 項目和標記為 2 的「連線」按鈕"
     }
   ],
   "connect-micro-usb-cable": [
     {
       "type": 0,
-      "value": "Micro USB cable"
+      "value": "微型 USB 纜線"
     }
   ],
   "connect-or-import": [
@@ -432,7 +432,7 @@
       "children": [
         {
           "type": 0,
-          "value": "Connect a data collection micro:bit"
+          "value": "連線數據收集用的 micro:bit"
         }
       ],
       "type": 8,
@@ -440,13 +440,13 @@
     },
     {
       "type": 0,
-      "value": " or "
+      "value": " 或"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "import data samples"
+          "value": "匯入數據樣本"
         }
       ],
       "type": 8,
@@ -456,13 +456,13 @@
   "connect-pattern-heading": [
     {
       "type": 0,
-      "value": "Copy pattern"
+      "value": "複製圖案"
     }
   ],
   "connect-pattern-input-label": [
     {
       "type": 0,
-      "value": "Column "
+      "value": "第 "
     },
     {
       "type": 1,
@@ -470,305 +470,309 @@
     },
     {
       "type": 0,
-      "value": " - number of LEDs lit on the micro:bit display"
+      "value": " 欄 - micro:bit 顯示器上亮起的 LED 數量"
     }
   ],
   "connect-pattern-subtitle": [
     {
       "type": 0,
-      "value": "Copy the pattern displayed on the micro:bit."
+      "value": "複製 micro:bit 上顯示的圖案。"
     }
   ],
   "connect-popup": [
     {
       "type": 0,
-      "value": "Select micro:bit"
+      "value": "選擇 micro:bit"
     }
   ],
   "connect-popup-bluetooth-alt": [
     {
       "type": 0,
-      "value": "Web Bluetooth connection dialog with BBC micro:bit entry labelled 1 and Pair button labelled 2"
+      "value": "網路藍牙連線對話框，帶有標記為 1 的 BBC micro:bit 項目和標記為 2 的「配對」按鈕"
     }
   ],
   "connect-popup-bluetooth-instruction2": [
     {
       "type": 0,
-      "value": "Select 'Pair'"
+      "value": "選擇「配對」"
     }
   ],
   "connect-popup-bluetooth-title": [
     {
       "type": 0,
-      "value": "Connect to micro:bit using Web Bluetooth"
+      "value": "使用網路藍牙連線至 micro:bit"
     }
   ],
   "connect-popup-instruction-heading": [
     {
       "type": 0,
-      "value": "In the next popup"
+      "value": "在下一個快顯視窗內"
     }
   ],
   "connect-popup-instruction1": [
     {
       "type": 0,
-      "value": "Choose your micro:bit"
+      "value": "選擇您的 micro:bit"
     }
   ],
   "connect-popup-usb-bluetooth-data-collection-title": [
     {
       "type": 0,
-      "value": "Download data collection program to micro:bit"
+      "value": "將數據收集程式下載至 micro:bit"
     }
   ],
   "connect-popup-usb-radio-data-collection-title": [
     {
       "type": 0,
-      "value": "Download data collection program to micro:bit 1"
+      "value": "將數據收集程式下載至 micro:bit 1"
     }
   ],
   "connect-popup-usb-radio-link-title": [
     {
       "type": 0,
-      "value": "Download radio link program to micro:bit 2"
+      "value": "將無線電連結程式下載至 micro:bit 2"
     }
   ],
   "connect-popup-webusb-instruction2": [
     {
       "type": 0,
-      "value": "Select 'Connect'"
+      "value": "選擇「連線」"
     }
   ],
   "connect-radio-data-collection-microbit-description": [
     {
       "type": 0,
-      "value": "Connect the data collection micro:bit to this computer to download your machine learning MakeCode program to it. If you're wearing the data collection micro:bit, you may need to remove it."
+      "value": "將數據收集用的 micro:bit 連線至這台電腦，以將您的機器學習 MakeCode 程式下載到其中。如果您正在配戴數據收集 micro:bit，則可能需要將其移除。"
     }
   ],
   "connect-radio-data-collection-microbit-title": [
     {
       "type": 0,
-      "value": "Connect USB cable to the data collection micro:bit"
+      "value": "將 USB 纜線連線至數據收集用的 micro:bit"
     }
   ],
   "connect-radio-heading": [
     {
       "type": 0,
-      "value": "Connecting micro:bits"
+      "value": "連線到 micro:bits"
     }
   ],
   "connect-radio-link-heading": [
     {
       "type": 0,
-      "value": "Connect USB cable to micro:bit 2"
+      "value": "將 USB 纜線連接至 micro:bit 2"
     }
   ],
   "connect-radio-link-subtitle": [
     {
       "type": 0,
-      "value": "Connect a second micro:bit to this computer with a USB cable so that the radio link program can be downloaded to it. This radio link micro:bit will communicate with the data collection micro:bit."
+      "value": "使用 USB 電纜將第二個 micro:bit 連線至這台電腦，以下載無線電連結程式。此無線電連結 micro:bit 將與數據收集 micro:bit 通訊。"
     }
   ],
   "connect-radio-start-heading": [
     {
       "type": 0,
-      "value": "What you need to connect using micro:bit radio"
+      "value": "使用 micro:bit 無線電連線所需的條件"
     }
   ],
   "connect-radio-start-requirements1": [
     {
       "type": 0,
-      "value": "2 micro:bits"
+      "value": "2 片micro:bit"
     }
   ],
   "connect-radio-start-requirements1-subtitle": [
     {
       "type": 0,
-      "value": "V2 only"
+      "value": "僅限 V2"
     }
   ],
   "connect-radio-start-requirements2-subtitle": [
     {
       "type": 0,
-      "value": "with Internet & a USB port"
+      "value": "需要網際網路和 USB 連接埠"
     }
   ],
   "connect-radio-start-switch-bluetooth": [
     {
       "type": 0,
-      "value": "Connect using Web Bluetooth instead"
+      "value": "改用網路藍牙進行連線"
     }
   ],
   "connect-to-record": [
     {
       "type": 0,
-      "value": "Connect to record data samples"
+      "value": "連線以記錄數據樣本"
     }
   ],
   "connect-to-record-body": [
     {
       "type": 0,
-      "value": "Connect a micro:bit to record a data sample."
+      "value": "連線 micro:bit 以記錄數據樣本。"
     }
   ],
   "connect-to-test-model": [
     {
       "type": 0,
-      "value": "Connect to test your ML model"
+      "value": "連線以測試您的 ML 模型"
     }
   ],
   "connect-to-tour-body": [
     {
       "type": 0,
-      "value": "You need to connect a data collection micro:bit to view the tour."
+      "value": "您需要連線數據收集用的 micro:bit 才能檢視導覽內容。"
     }
   ],
   "connect-troubleshoot": [
     {
       "type": 0,
-      "value": "Troubleshoot problems with connecting to your micro:bit"
+      "value": "疑難排解連線至 micro:bit 的問題"
     }
   ],
   "connect-troubleshooting": [
     {
       "type": 0,
-      "value": "Troubleshooting"
+      "value": "疑難排解"
     }
   ],
   "connect-with-batteries": [
     {
       "type": 0,
-      "value": "with batteries"
+      "value": "需要電池"
     }
   ],
   "connect-with-web-bluetooth": [
     {
       "type": 0,
-      "value": "Connect with Web Bluetooth"
+      "value": "透過網路藍牙連線"
     }
   ],
   "connecting": [
     {
       "type": 0,
-      "value": "Connecting…"
+      "value": "正在連線…"
     }
   ],
   "continue-makecode-action": [
     {
       "type": 0,
-      "value": "Continue to MakeCode"
+      "value": "繼續前往 MakeCode"
     }
   ],
   "cookies-action": [
     {
       "type": 0,
-      "value": "Cookies"
+      "value": "餅乾"
     }
   ],
   "copied": [
     {
       "type": 0,
-      "value": "Copied"
+      "value": "複製的"
     }
   ],
   "copy-action": [
     {
       "type": 0,
-      "value": "Copy"
+      "value": "複製"
     }
   ],
   "data-actions-menu": [
     {
       "type": 0,
-      "value": "Data actions"
+      "value": "數據動作"
     }
   ],
   "data-collection-microbit": [
     {
       "type": 0,
-      "value": "Data collection micro:bit"
+      "value": "數據收集用的 micro:bit"
     }
   ],
   "data-collection-microbit-label": [
     {
       "type": 0,
-      "value": "diagram showing data collection micro:bit being connected to a person's wrist"
+      "value": "圖表顯示數據收集用的 micro:bit 被連線到一個人的手腕上"
     }
   ],
   "data-connection-region": [
     {
       "type": 0,
-      "value": "micro:bit data connection"
+      "value": "micro:bit 數據連線"
     }
   ],
   "data-features-hide-action": [
     {
       "type": 0,
-      "value": "Hide data features"
+      "value": "隱藏數據功能"
     }
   ],
   "data-features-show-action": [
     {
       "type": 0,
-      "value": "Show data features"
+      "value": "顯示數據功能"
     }
   ],
   "data-samples-actions-region": [
     {
       "type": 0,
-      "value": "Data samples toolbar"
+      "value": "數據樣本工具列"
     }
   ],
   "data-samples-label": [
     {
       "type": 0,
-      "value": "Data samples"
+      "value": "數據樣本"
     }
   ],
   "data-samples-label-tooltip-aria": [
     {
       "type": 0,
-      "value": "Data samples tooltip"
+      "value": "數據樣本工具提示"
     }
   ],
   "data-samples-status-count": [
+    {
+      "type": 0,
+      "value": "記錄了 "
+    },
     {
       "type": 1,
       "value": "numSamples"
     },
     {
       "type": 0,
-      "value": " samples recorded"
+      "value": " 個樣本"
     }
   ],
   "data-samples-status-not-enough": [
     {
       "type": 0,
-      "value": "At least 3 required"
+      "value": "至少需要 3 個"
     }
   ],
   "data-samples-title": [
     {
       "type": 0,
-      "value": "Data samples"
+      "value": "數據樣本"
     }
   ],
   "data-samples-tooltip": [
     {
       "type": 0,
-      "value": "Short collections of movement data lasting 1 second. Your data samples are only stored on your computer, they do not get sent to anyone else."
+      "value": "持續 1 秒的簡短移動數據集合。您的數據樣本僅儲存在您的電腦上，不會發送給其他任何人。"
     }
   ],
   "default-project-name": [
     {
       "type": 0,
-      "value": "Untitled"
+      "value": "未命名"
     }
   ],
   "delete-action-aria": [
     {
       "type": 0,
-      "value": "Delete action \""
+      "value": "刪除動作：「"
     },
     {
       "type": 1,
@@ -776,19 +780,19 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」"
     }
   ],
   "delete-action-confirm-heading": [
     {
       "type": 0,
-      "value": "Confirm delete action"
+      "value": "確認刪除動作"
     }
   ],
   "delete-action-confirm-text": [
     {
       "type": 0,
-      "value": "Are you sure you want to delete the action \""
+      "value": "您確定您要刪除動作「"
     },
     {
       "type": 1,
@@ -796,39 +800,39 @@
     },
     {
       "type": 0,
-      "value": "\"?"
+      "value": "」嗎？"
     }
   ],
   "delete-data-samples-action": [
     {
       "type": 0,
-      "value": "Delete all data samples"
+      "value": "刪除所有數據樣本"
     }
   ],
   "delete-data-samples-confirm-heading": [
     {
       "type": 0,
-      "value": "Confirm delete all data samples"
+      "value": "確認刪除所有數據樣本"
     }
   ],
   "delete-data-samples-confirm-text": [
     {
       "type": 0,
-      "value": "Are you sure you want to delete all data samples?"
+      "value": "您確定您要刪除所有的數據樣本嗎？"
     }
   ],
   "delete-recording-aria": [
     {
       "type": 0,
-      "value": "Delete recording "
+      "value": "刪除對於動作「"
     },
     {
       "type": 1,
-      "value": "sample"
+      "value": "action"
     },
     {
       "type": 0,
-      "value": " of "
+      "value": "」的 "
     },
     {
       "type": 1,
@@ -836,117 +840,113 @@
     },
     {
       "type": 0,
-      "value": " for action \""
+      "value": " 個記錄 "
     },
     {
       "type": 1,
-      "value": "action"
-    },
-    {
-      "type": 0,
-      "value": "\""
+      "value": "sample"
     }
   ],
   "disconnect-action": [
     {
       "type": 0,
-      "value": "Disconnect"
+      "value": "中斷連線"
     }
   ],
   "disconnected-during-recording": [
     {
       "type": 0,
-      "value": "micro:bit disconnected during recording"
+      "value": "micro:bit 在錄製過程中已斷線"
     }
   ],
   "disconnected-warning-bluetooth-heading": [
     {
       "type": 0,
-      "value": "Data collection micro:bit connection lost"
+      "value": "數據收集 micro:bit 連線遺失"
     }
   ],
   "disconnected-warning-bluetooth1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit has been lost."
+      "value": "與數據收集 micro:bit 的連線已遺失。"
     }
   ],
   "disconnected-warning-bluetooth2": [
     {
       "type": 0,
-      "value": "Please check that the micro:bit:"
+      "value": "請檢查 micro:bit："
     }
   ],
   "disconnected-warning-bluetooth3": [
     {
       "type": 0,
-      "value": "is powered on (the red light on the back of the micro:bit should be on)"
+      "value": "已開機（micro:bit 背面的紅燈應亮起）"
     }
   ],
   "disconnected-warning-bluetooth4": [
     {
       "type": 0,
-      "value": "is close to the computer"
+      "value": "靠近電腦"
     }
   ],
   "disconnected-warning-bridge-heading": [
     {
       "type": 0,
-      "value": "Radio link micro:bit connection lost"
+      "value": "無線電連結 micro:bit 連線遺失"
     }
   ],
   "disconnected-warning-bridge1": [
     {
       "type": 0,
-      "value": "The connection to the micro:bit connected to your computer has been lost."
+      "value": "與您的電腦連線的 micro:bit 的連線已遺失。"
     }
   ],
   "disconnected-warning-remote-heading": [
     {
       "type": 0,
-      "value": "Data collection micro:bit connection lost"
+      "value": "數據收集 micro:bit 連線遺失"
     }
   ],
   "disconnected-warning-remote1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit has been lost."
+      "value": "與數據收集 micro:bit 的連線已遺失。"
     }
   ],
   "dont-show-again": [
     {
       "type": 0,
-      "value": "Don't show this again"
+      "value": "不要再顯示"
     }
   ],
   "download-data-samples-action": [
     {
       "type": 0,
-      "value": "Download all data samples"
+      "value": "下載所有數據樣本"
     }
   ],
   "download-project-choose-microbit-subtitle": [
     {
       "type": 0,
-      "value": "Downloading your project on to the same micro:bit will disconnect the micro:bit from the tool. You will need to reconnect the micro:bit if you want to record more data samples."
+      "value": "將您的專案下載到相同的 micro:bit 將會中斷 micro:bit 與工具的連線。如果您想要記錄更多數據樣本，則您需要重新連線 micro:bit。"
     }
   ],
   "download-project-choose-microbit-title": [
     {
       "type": 0,
-      "value": "Which micro:bit do you want to use?"
+      "value": "您想使用哪一個 micro:bit？"
     }
   ],
   "download-project-different-microbit-option": [
     {
       "type": 0,
-      "value": "Different micro:bit"
+      "value": "不同的 micro:bit"
     }
   ],
   "download-project-intro-description": [
     {
       "type": 0,
-      "value": "Your program includes the machine learning model you created. The model runs on the micro:bit so you can use it without being connected to "
+      "value": "您的程式包含您建立的機器學習模型。模型在 micro:bit 上運行，因此您無需連線到 "
     },
     {
       "type": 1,
@@ -954,55 +954,55 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": " 即可使用它。"
     }
   ],
   "download-project-intro-title": [
     {
       "type": 0,
-      "value": "Download your machine learning MakeCode project"
+      "value": "下載您的機器學習 MakeCode 專案"
     }
   ],
   "download-project-same-microbit-option": [
     {
       "type": 0,
-      "value": "Same micro:bit"
+      "value": "相同的 micro:bit"
     }
   ],
   "downloading-data-collection-header": [
     {
       "type": 0,
-      "value": "Downloading the data collection program"
+      "value": "下載數據收集程式"
     }
   ],
   "downloading-header": [
     {
       "type": 0,
-      "value": "Downloading program to micro:bit"
+      "value": "將程式下載至 micro:bit"
     }
   ],
   "downloading-radio-link-header": [
     {
       "type": 0,
-      "value": "Downloading the radio link program"
+      "value": "下載無線電連結程式"
     }
   ],
   "downloading-subtitle": [
     {
       "type": 0,
-      "value": "Please wait. Downloading program to micro:bit."
+      "value": "請稍等。正在將程式下載至 micro:bit。"
     }
   ],
   "edit-in-makecode-action": [
     {
       "type": 0,
-      "value": "Edit in MakeCode"
+      "value": "在 MakeCode 內編輯"
     }
   ],
   "estimated-action-aria": [
     {
       "type": 0,
-      "value": "Estimated action: \""
+      "value": "預測動作：「"
     },
     {
       "type": 1,
@@ -1010,193 +1010,193 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」"
     }
   ],
   "estimated-action-label": [
     {
       "type": 0,
-      "value": "Estimated action"
+      "value": "預測動作"
     }
   ],
   "estimated-action-label-tooltip-aria": [
     {
       "type": 0,
-      "value": "Estimated action tooltip"
+      "value": "預測動作工具提示"
     }
   ],
   "estimated-action-tooltip": [
     {
       "type": 0,
-      "value": "This is the action the model thinks you are currently doing."
+      "value": "這是模型認為您目前正在進行的動作。"
     }
   ],
   "feedback": [
     {
       "type": 0,
-      "value": "Feedback"
+      "value": "回饋"
     }
   ],
   "fingerprint-acc-x-tooltip": [
     {
       "type": 0,
-      "value": "Sum of x-direction data"
+      "value": "x 方向數據的總和"
     }
   ],
   "fingerprint-acc-y-tooltip": [
     {
       "type": 0,
-      "value": "Sum of y-direction data"
+      "value": "y 方向數據的總和"
     }
   ],
   "fingerprint-acc-z-tooltip": [
     {
       "type": 0,
-      "value": "Sum of z-direction data"
+      "value": "z 方向數據的總和"
     }
   ],
   "fingerprint-max-x-tooltip": [
     {
       "type": 0,
-      "value": "Maximum point among all x-direction data points"
+      "value": "所有 x 方向數據點中的最大點"
     }
   ],
   "fingerprint-max-y-tooltip": [
     {
       "type": 0,
-      "value": "Maximum point among all y-direction data points"
+      "value": "所有 y 方向數據點中的最大點"
     }
   ],
   "fingerprint-max-z-tooltip": [
     {
       "type": 0,
-      "value": "Maximum point among all z-direction data points"
+      "value": "所有 z 方向數據點中的最大點"
     }
   ],
   "fingerprint-mean-x-tooltip": [
     {
       "type": 0,
-      "value": "Mean value for x-direction data"
+      "value": "對於 x 方向數據的平均值"
     }
   ],
   "fingerprint-mean-y-tooltip": [
     {
       "type": 0,
-      "value": "Mean value for y-direction data"
+      "value": "對於 y 方向數據的平均值"
     }
   ],
   "fingerprint-mean-z-tooltip": [
     {
       "type": 0,
-      "value": "Mean value for z-direction data"
+      "value": "對於 z 方向數據的平均值"
     }
   ],
   "fingerprint-min-x-tooltip": [
     {
       "type": 0,
-      "value": "Minimum point among all x-direction data points"
+      "value": "所有 x 方向數據點中的最小點"
     }
   ],
   "fingerprint-min-y-tooltip": [
     {
       "type": 0,
-      "value": "Minimum point among all y-direction data points"
+      "value": "所有 y 方向數據點中的最小點"
     }
   ],
   "fingerprint-min-z-tooltip": [
     {
       "type": 0,
-      "value": "Minimum point among all z-direction data points"
+      "value": "所有 z 方向數據點中的最小點"
     }
   ],
   "fingerprint-peaks-x-tooltip": [
     {
       "type": 0,
-      "value": "Number of extremes among all x-direction data points"
+      "value": "所有 x 方向數據點中的極端數"
     }
   ],
   "fingerprint-peaks-y-tooltip": [
     {
       "type": 0,
-      "value": "Number of extremes among all y-direction data points"
+      "value": "所有 y 方向數據點中的極端數"
     }
   ],
   "fingerprint-peaks-z-tooltip": [
     {
       "type": 0,
-      "value": "Number of extremes among all z-direction data points"
+      "value": "所有 z 方向數據點中的極端數"
     }
   ],
   "fingerprint-rms-x-tooltip": [
     {
       "type": 0,
-      "value": "Root mean square value for all x-direction data points"
+      "value": "所有 x 方向數據點的均方根值"
     }
   ],
   "fingerprint-rms-y-tooltip": [
     {
       "type": 0,
-      "value": "Root mean square value for all y-direction data points"
+      "value": "所有 y 方向數據點的均方根值"
     }
   ],
   "fingerprint-rms-z-tooltip": [
     {
       "type": 0,
-      "value": "Root mean square value for all z-direction data points"
+      "value": "所有 z 方向數據點的均方根值"
     }
   ],
   "fingerprint-std-x-tooltip": [
     {
       "type": 0,
-      "value": "Average deviation from 0 among all x-direction data points"
+      "value": "所有 x 方向數據點與 0 的平均偏差"
     }
   ],
   "fingerprint-std-y-tooltip": [
     {
       "type": 0,
-      "value": "Average deviation from 0 among all y-direction data points"
+      "value": "所有 y 方向數據點與 0 的平均偏差"
     }
   ],
   "fingerprint-std-z-tooltip": [
     {
       "type": 0,
-      "value": "Average deviation from 0 among all z-direction data points"
+      "value": "所有 z 方向數據點與 0 的平均偏差"
     }
   ],
   "fingerprint-zcr-x-tooltip": [
     {
       "type": 0,
-      "value": "Rate at which acceleration transitions between positive and negative for x-direction data points"
+      "value": "對於 x 方向數據點的加速度在正負之間轉換的速率"
     }
   ],
   "fingerprint-zcr-y-tooltip": [
     {
       "type": 0,
-      "value": "Rate at which acceleration transitions between positive and negative for y-direction data points"
+      "value": "對於 y 方向數據點的加速度在正負之間轉換的速率"
     }
   ],
   "fingerprint-zcr-z-tooltip": [
     {
       "type": 0,
-      "value": "Rate at which acceleration transitions between positive and negative for z-direction data points"
+      "value": "對於 z 方向數據點的加速度在正負之間轉換的速率"
     }
   ],
   "firmware-outdated-content1": [
     {
       "type": 0,
-      "value": "Connecting to the micro:bit failed because the firmware on your micro:bit is too old."
+      "value": "您 micro:bit 上的韌體過舊，無法連線至 micro:bit。"
     }
   ],
   "firmware-outdated-content2": [
     {
       "type": 0,
-      "value": "You must "
+      "value": "在連線至 micro:bit 前，您必須"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "update your firmware"
+          "value": "更新您的韌體"
         }
       ],
       "type": 8,
@@ -1204,97 +1204,97 @@
     },
     {
       "type": 0,
-      "value": " before you can connect to this micro:bit."
+      "value": "。"
     }
   ],
   "firmware-outdated-heading": [
     {
       "type": 0,
-      "value": "Firmware update required"
+      "value": "韌體需要更新"
     }
   ],
   "get-started-action": [
     {
       "type": 0,
-      "value": "Get started"
+      "value": "入門指南"
     }
   ],
   "go-action": [
     {
       "type": 0,
-      "value": "Go"
+      "value": "進行"
     }
   ],
   "graph-color-scheme": [
     {
       "type": 0,
-      "value": "Graph colour scheme"
+      "value": "圖表顏色方案"
     }
   ],
   "graph-color-scheme-color-blind-1": [
     {
       "type": 0,
-      "value": "Colour blind alternative 1"
+      "value": "色盲替代方案 1"
     }
   ],
   "graph-color-scheme-color-blind-2": [
     {
       "type": 0,
-      "value": "Colour blind alternative 2"
+      "value": "色盲替代方案 2"
     }
   ],
   "graph-color-scheme-default": [
     {
       "type": 0,
-      "value": "Default (red, blue, green)"
+      "value": "預設 (紅、藍、綠)"
     }
   ],
   "graph-line-scheme": [
     {
       "type": 0,
-      "value": "Graph line style"
+      "value": "圖表線條風格"
     }
   ],
   "graph-line-scheme-accessible": [
     {
       "type": 0,
-      "value": "Accessible lines (solid, dashed, dots)"
+      "value": "可存取的線條 (實線、虛線、點)"
     }
   ],
   "graph-line-scheme-solid": [
     {
       "type": 0,
-      "value": "Solid lines"
+      "value": "實心線條"
     }
   ],
   "graph-line-weight": [
     {
       "type": 0,
-      "value": "Graph line thickness"
+      "value": "圖形線條粗細度"
     }
   ],
   "graph-line-weight-default": [
     {
       "type": 0,
-      "value": "Default"
+      "value": "預設"
     }
   ],
   "graph-line-weight-thick": [
     {
       "type": 0,
-      "value": "Thick"
+      "value": "厚實的"
     }
   ],
   "help-label": [
     {
       "type": 0,
-      "value": "Help"
+      "value": "幫助"
     }
   ],
   "help-support": [
     {
       "type": 0,
-      "value": "Help & support"
+      "value": "說明與支援"
     }
   ],
   "help-translate": [
@@ -1306,55 +1306,55 @@
   "home-action": [
     {
       "type": 0,
-      "value": "Home"
+      "value": "主頁"
     }
   ],
   "homepage": [
     {
       "type": 0,
-      "value": "Home page"
+      "value": "首頁"
     }
   ],
   "homepage-alt": [
     {
       "type": 0,
-      "value": "graph showing x, y, z graph lines representing micro:bit accelerometer data with clapping hands overlaid"
+      "value": "顯示代表 micro:bit 加速計數據的 x、y、z 圖線的圖表，並重疊拍手圖示"
     }
   ],
   "homepage-alt-graph": [
     {
       "type": 0,
-      "value": "graph showing x, y, z graph lines representing micro:bit accelerometer data"
+      "value": "顯示代表 micro:bit 加速計數據的 x、y、z 圖線的圖表"
     }
   ],
   "homepage-alt-hands": [
     {
       "type": 0,
-      "value": "clapping hands"
+      "value": "拍手"
     }
   ],
   "homepage-description": [
     {
       "type": 0,
-      "value": "Train a machine learning model on your own movement data and run it on your micro:bit."
+      "value": "以您自己的移動數據來訓練機器學習模型並且在您的 micro:bit 上運行它。"
     }
   ],
   "homepage-how-it-works": [
     {
       "type": 0,
-      "value": "How it works"
+      "value": "運作方式"
     }
   ],
   "homepage-how-it-works-paragraph": [
     {
       "type": 0,
-      "value": "Watch the video to get started. Learn more in the "
+      "value": "觀看影片即可開始。請參閱"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "user guide"
+          "value": "使用者指南"
         }
       ],
       "type": 8,
@@ -1362,25 +1362,25 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "以瞭解更多資訊。"
     }
   ],
   "homepage-projects": [
     {
       "type": 0,
-      "value": "Projects"
+      "value": "專案"
     }
   ],
   "homepage-projects-more": [
     {
       "type": 0,
-      "value": "Explore more "
+      "value": "探索更多"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "content and resources about micro:bit and AI"
+          "value": "有關於 micro:bit 和 AI 的內容及資源"
         }
       ],
       "type": 8,
@@ -1388,63 +1388,59 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "。"
     }
   ],
   "homepage-step-by-step": [
     {
       "type": 0,
-      "value": "Step by step"
+      "value": "一步一步的"
     }
   ],
   "homepage-subtitle": [
     {
       "type": 0,
-      "value": "Create AI on your BBC micro:bit using movement and machine learning."
+      "value": "利用移動和機器學習在您的 BBC micro:bit 上建立 AI。"
     }
   ],
   "homepage-video-alt": [
     {
       "type": 0,
-      "value": "Introductory video"
+      "value": "介紹視訊"
     }
   ],
   "import-data-samples-action": [
     {
       "type": 0,
-      "value": "Import data samples"
+      "value": "匯入數據樣本"
     }
   ],
   "import-error-dialog-content": [
-    {
-      "type": 0,
-      "value": "Only MakeCode hex files or data samples files (.json) can be opened by "
-    },
     {
       "type": 1,
       "value": "appNameFull"
     },
     {
       "type": 0,
-      "value": "."
+      "value": " 只能開啟 MakeCode 十六進位檔案或數據樣本檔案 (.json)。"
     }
   ],
   "import-error-dialog-title": [
     {
       "type": 0,
-      "value": "Unsupported file type"
+      "value": "不支援的檔案類型"
     }
   ],
   "incompatible-device-body-alt": [
     {
       "type": 0,
-      "value": "Go back to select a different micro:bit, or "
+      "value": "返回選擇不同的 micro:bit，或"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "save the project hex"
+          "value": "儲存專案十六進位檔案"
         }
       ],
       "type": 8,
@@ -1452,25 +1448,25 @@
     },
     {
       "type": 0,
-      "value": " which can be downloaded onto a micro:bit V2 later."
+      "value": "，稍後可以將其下載到 micro:bit V2 上。"
     }
   ],
   "incompatible-device-body1": [
     {
       "type": 0,
-      "value": "Continue to MakeCode to edit the program. You can then save the project hex which can be downloaded onto a micro:bit V2."
+      "value": "繼續 MakeCode 來編輯程式。然後，您可以儲存專案十六進位檔案，並將其下載到 micro:bit V2 上。"
     }
   ],
   "incompatible-device-body2": [
     {
       "type": 0,
-      "value": "Alternatively, "
+      "value": "或者，"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "save the project hex"
+          "value": "儲存專案十六進位檔案"
         }
       ],
       "type": 8,
@@ -1478,25 +1474,25 @@
     },
     {
       "type": 0,
-      "value": " without using MakeCode."
+      "value": "而不使用 MakeCode。"
     }
   ],
   "incompatible-device-heading": [
     {
       "type": 0,
-      "value": "Incompatible device"
+      "value": "不相容的裝置"
     }
   ],
   "incompatible-device-subtitle": [
     {
       "type": 0,
-      "value": "You are using a micro:bit V1, but machine learning projects need the faster processor on a micro:bit V2. "
+      "value": "您使用的是 micro:bit V1，但是機器學習專案需要 micro:bit V2 上更快的處理器。 "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "Learn more about micro:bit versions."
+          "value": "瞭解有關 micro:bit 版本的更多資訊。"
         }
       ],
       "type": 8,
@@ -1506,313 +1502,313 @@
   "insufficient-data-body": [
     {
       "type": 0,
-      "value": "You need at least 3 data samples for 2 actions to train the model."
+      "value": "您至少需要對於 2 個動作的 3 個數據樣本來訓練模型。"
     }
   ],
   "insufficient-data-title": [
     {
       "type": 0,
-      "value": "You don't have enough data"
+      "value": "您沒有足夠的數據"
     }
   ],
   "language": [
     {
       "type": 0,
-      "value": "Language"
+      "value": "語言"
     }
   ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,
-      "value": "Learn about firewall requirements"
+      "value": "瞭解防火牆要求"
     }
   ],
   "led-icon-option-angry": [
     {
       "type": 0,
-      "value": "Angry"
+      "value": "憤怒"
     }
   ],
   "led-icon-option-asleep": [
     {
       "type": 0,
-      "value": "Asleep"
+      "value": "睡眠"
     }
   ],
   "led-icon-option-butterfly": [
     {
       "type": 0,
-      "value": "Butterfly"
+      "value": "蝴蝶"
     }
   ],
   "led-icon-option-chessboard": [
     {
       "type": 0,
-      "value": "Chessboard"
+      "value": "棋盤"
     }
   ],
   "led-icon-option-confused": [
     {
       "type": 0,
-      "value": "Confused"
+      "value": "困惑"
     }
   ],
   "led-icon-option-cow": [
     {
       "type": 0,
-      "value": "Cow"
+      "value": "母牛"
     }
   ],
   "led-icon-option-diamond": [
     {
       "type": 0,
-      "value": "Diamond"
+      "value": "菱形"
     }
   ],
   "led-icon-option-duck": [
     {
       "type": 0,
-      "value": "Duck"
+      "value": "鴨子"
     }
   ],
   "led-icon-option-eighthnote": [
     {
       "type": 0,
-      "value": "Eighth Note"
+      "value": "八分音符"
     }
   ],
   "led-icon-option-fabulous": [
     {
       "type": 0,
-      "value": "Fabulous"
+      "value": "極好"
     }
   ],
   "led-icon-option-ghost": [
     {
       "type": 0,
-      "value": "Ghost"
+      "value": "鬼魂"
     }
   ],
   "led-icon-option-giraffe": [
     {
       "type": 0,
-      "value": "Giraffe"
+      "value": "長頸鹿"
     }
   ],
   "led-icon-option-happy": [
     {
       "type": 0,
-      "value": "Happy"
+      "value": "開心"
     }
   ],
   "led-icon-option-heart": [
     {
       "type": 0,
-      "value": "Heart"
+      "value": "心形"
     }
   ],
   "led-icon-option-house": [
     {
       "type": 0,
-      "value": "House"
+      "value": "房屋"
     }
   ],
   "led-icon-option-lefttriangle": [
     {
       "type": 0,
-      "value": "Left Triangle"
+      "value": "左三角形"
     }
   ],
   "led-icon-option-meh": [
     {
       "type": 0,
-      "value": "Meh"
+      "value": "嗯"
     }
   ],
   "led-icon-option-no": [
     {
       "type": 0,
-      "value": "No"
+      "value": "否"
     }
   ],
   "led-icon-option-off": [
     {
       "type": 0,
-      "value": "Off"
+      "value": "關閉"
     }
   ],
   "led-icon-option-pitchfork": [
     {
       "type": 0,
-      "value": "Pitchfork"
+      "value": "乾草叉"
     }
   ],
   "led-icon-option-quarternote": [
     {
       "type": 0,
-      "value": "Quarter Note"
+      "value": "四分音符"
     }
   ],
   "led-icon-option-rabbit": [
     {
       "type": 0,
-      "value": "Rabbit"
+      "value": "兔子"
     }
   ],
   "led-icon-option-rollerskate": [
     {
       "type": 0,
-      "value": "Rollerskate"
+      "value": "溜冰鞋"
     }
   ],
   "led-icon-option-sad": [
     {
       "type": 0,
-      "value": "Sad"
+      "value": "悲傷"
     }
   ],
   "led-icon-option-scissors": [
     {
       "type": 0,
-      "value": "Scissors"
+      "value": "剪刀"
     }
   ],
   "led-icon-option-silly": [
     {
       "type": 0,
-      "value": "Silly"
+      "value": "愚蠢"
     }
   ],
   "led-icon-option-skull": [
     {
       "type": 0,
-      "value": "Skull"
+      "value": "骷髏"
     }
   ],
   "led-icon-option-smalldiamond": [
     {
       "type": 0,
-      "value": "Small Diamond"
+      "value": "小菱形"
     }
   ],
   "led-icon-option-smallheart": [
     {
       "type": 0,
-      "value": "Small Heart"
+      "value": "小心形"
     }
   ],
   "led-icon-option-smallsquare": [
     {
       "type": 0,
-      "value": "Small Square"
+      "value": "小方形"
     }
   ],
   "led-icon-option-snake": [
     {
       "type": 0,
-      "value": "Snake"
+      "value": "蛇"
     }
   ],
   "led-icon-option-square": [
     {
       "type": 0,
-      "value": "Square"
+      "value": "方形"
     }
   ],
   "led-icon-option-stickfigure": [
     {
       "type": 0,
-      "value": "Stick Figure"
+      "value": "簡筆畫"
     }
   ],
   "led-icon-option-surprised": [
     {
       "type": 0,
-      "value": "Surprised"
+      "value": "驚訝"
     }
   ],
   "led-icon-option-sword": [
     {
       "type": 0,
-      "value": "Sword"
+      "value": "劍"
     }
   ],
   "led-icon-option-target": [
     {
       "type": 0,
-      "value": "Target"
+      "value": "目標"
     }
   ],
   "led-icon-option-tortoise": [
     {
       "type": 0,
-      "value": "Tortoise"
+      "value": "陸龜"
     }
   ],
   "led-icon-option-triangle": [
     {
       "type": 0,
-      "value": "Triangle"
+      "value": "三角形"
     }
   ],
   "led-icon-option-tshirt": [
     {
       "type": 0,
-      "value": "T-Shirt"
+      "value": "T 恤"
     }
   ],
   "led-icon-option-umbrella": [
     {
       "type": 0,
-      "value": "Umbrella"
+      "value": "雨傘"
     }
   ],
   "led-icon-option-yes": [
     {
       "type": 0,
-      "value": "Yes"
+      "value": "是"
     }
   ],
   "live-data-graph": [
     {
       "type": 0,
-      "value": "Live data graph"
+      "value": "即時數據圖表"
     }
   ],
   "live-graph": [
     {
       "type": 0,
-      "value": "Live graph"
+      "value": "即時圖表"
     }
   ],
   "live-graph-tooltip": [
     {
       "type": 0,
-      "value": "This graph shows movement data from the micro:bit's accelerometer in real time. Try moving your data collection micro:bit to see the X, Y and Z axes change. Each coloured line represents a different direction (dimension) you are moving the micro:bit in."
+      "value": "這張圖表即時顯示來自 micro:bit 加速計的運動數據。嘗試移動您的數據收集用的 micro:bit 以查看 X、Y 和 Z 軸的變更。每條彩色線條代表您在 micro:bit 移動的不同方向 (維度)。"
     }
   ],
   "live-graph-tooltip-aria": [
     {
       "type": 0,
-      "value": "Live graph tooltip"
+      "value": "即時圖表工具提示"
     }
   ],
   "loading": [
     {
       "type": 0,
-      "value": "Loading"
+      "value": "正在載入"
     }
   ],
   "main-menu": [
     {
       "type": 0,
-      "value": "Main menu"
+      "value": "主選單"
     }
   ],
   "makecode-back-alt": [
     {
       "type": 0,
-      "value": "Left arrow icon for MakeCode back"
+      "value": "MakeCode 傳回的左箭頭圖標"
     }
   ],
   "makecode-block-alt-prefix": [
@@ -1824,7 +1820,7 @@
   "makecode-block-show-icon": [
     {
       "type": 0,
-      "value": "show icon"
+      "value": "顯示圖示"
     }
   ],
   "makecode-load-error-dialog-body": [
@@ -1834,67 +1830,67 @@
     },
     {
       "type": 0,
-      "value": " has failed to load MakeCode. Please check your internet connection, reload the page then try again."
+      "value": " 未能載入 MakeCode。請檢查您的網路連線，重新載入頁面，然後重試。"
     }
   ],
   "makecode-load-error-dialog-title": [
     {
       "type": 0,
-      "value": "Could not load Microsoft MakeCode"
+      "value": "無法載入 Microsoft MakeCode"
     }
   ],
   "microbit-not-connected": [
     {
       "type": 0,
-      "value": "Your micro:bit is not connected"
+      "value": "您的 micro:bit 未連線"
     }
   ],
   "ml.onStart|block": [
     {
       "type": 0,
-      "value": "on ML $event start"
+      "value": "ML $event 開始時"
     }
   ],
   "more-edit-in-makecode-options": [
     {
       "type": 0,
-      "value": "More edit in MakeCode options"
+      "value": "在 MakeCode 選項中進行更多編輯"
     }
   ],
   "name-action-hint": [
     {
       "type": 0,
-      "value": "Name an action you want the micro:bit to recognise"
+      "value": "命名您希望 micro:bit 辨識的動作"
     }
   ],
   "name-project": [
     {
       "type": 0,
-      "value": "Name your project"
+      "value": "為您的專案命名"
     }
   ],
   "name-text": [
     {
       "type": 0,
-      "value": "Name"
+      "value": "名稱"
     }
   ],
   "name-used-when": [
     {
       "type": 0,
-      "value": "The name is used when you save a file."
+      "value": "儲存 HEX 檔案時，使用該名稱。"
     }
   ],
   "new-session-setup-description": [
     {
       "type": 0,
-      "value": "Starting a new session will overwrite your existing session. You may want to "
+      "value": "啟動新會話將覆蓋您現有的會話。您可能需要先"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "save your existing session"
+          "value": "儲存您的現有會話"
         }
       ],
       "type": 8,
@@ -1902,25 +1898,25 @@
     },
     {
       "type": 0,
-      "value": " first."
+      "value": "。"
     }
   ],
   "new-session-setup-title": [
     {
       "type": 0,
-      "value": "New session setup"
+      "value": "新會話設定"
     }
   ],
   "newpage-continue-session-subtitle": [
     {
       "type": 0,
-      "value": "Use a hex file or data samples file you saved to your computer to continue a session."
+      "value": "利用您儲存到您電腦的十六進位檔案或數據樣本檔案以繼續會話。"
     }
   ],
   "newpage-continue-session-title": [
     {
       "type": 0,
-      "value": "Continue a saved session"
+      "value": "繼續一個已儲存會話"
     }
   ],
   "newpage-last-session-date": [
@@ -1928,7 +1924,7 @@
       "children": [
         {
           "type": 0,
-          "value": "Date:"
+          "value": "日期："
         }
       ],
       "type": 8,
@@ -1948,7 +1944,7 @@
       "children": [
         {
           "type": 0,
-          "value": "Name:"
+          "value": "名稱："
         }
       ],
       "type": 8,
@@ -1966,67 +1962,67 @@
   "newpage-last-session-none": [
     {
       "type": 0,
-      "value": "No session found"
+      "value": "未找到會話"
     }
   ],
   "newpage-last-session-title": [
     {
       "type": 0,
-      "value": "Open last session"
+      "value": "開啟上一個會話"
     }
   ],
   "newpage-new-session-subtitle": [
     {
       "type": 0,
-      "value": "Connect your micro:bit and collect movement data to build a machine learning model."
+      "value": "連線您的 micro:bit 並收集移動數據以建立機器學習模型。"
     }
   ],
   "newpage-new-session-title": [
     {
       "type": 0,
-      "value": "New session"
+      "value": "新會話"
     }
   ],
   "newpage-section-one-title": [
     {
       "type": 0,
-      "value": "Pick up where you left off"
+      "value": "從您上次離開的地方繼續"
     }
   ],
   "newpage-section-two-title": [
     {
       "type": 0,
-      "value": "Start something new"
+      "value": "開始新專案"
     }
   ],
   "newpage-title": [
     {
       "type": 0,
-      "value": "New session"
+      "value": "新會話"
     }
   ],
   "next-action": [
     {
       "type": 0,
-      "value": "Next"
+      "value": "下一個"
     }
   ],
   "no-data-samples": [
     {
       "type": 0,
-      "value": "No data samples"
+      "value": "沒有數據樣本"
     }
   ],
   "not-create-ai-hex-import-dialog-content": [
     {
       "type": 0,
-      "value": "This project did not contain any data samples, so only the code has been opened. You need to train a model before you can use the code."
+      "value": "這項專案不包含任何數據樣本，因此僅開啟程式碼。您需要先訓練模型，然後才能使用程式碼。"
     }
   ],
   "not-create-ai-hex-import-dialog-title": [
     {
       "type": 0,
-      "value": "Your MakeCode project has been imported"
+      "value": "您的 MakeCode 專案已匯入"
     }
   ],
   "not-found": [
@@ -2036,37 +2032,37 @@
     },
     {
       "type": 0,
-      "value": " home page"
+      "value": " 首頁"
     }
   ],
   "not-found-title": [
     {
       "type": 0,
-      "value": "Page not found"
+      "value": "找不到頁面"
     }
   ],
   "open-file-action": [
     {
       "type": 0,
-      "value": "Open…"
+      "value": "開啟..."
     }
   ],
   "open-file-dropped": [
     {
       "type": 0,
-      "value": "Open file when dropped"
+      "value": "放置時開啟檔案"
     }
   ],
   "other-tabs-body1": [
     {
       "type": 0,
-      "value": "Another process is connected to this device."
+      "value": "其他程序連線至此裝置。"
     }
   ],
   "other-tabs-body2": [
     {
       "type": 0,
-      "value": "Close any other tabs that may be using WebUSB (e.g. MakeCode, Python Editor, "
+      "value": "關閉任何其他可能正在使用 WebUSB 的索引標籤 (例如 MakeCode、Python 編輯程式、"
     },
     {
       "type": 1,
@@ -2074,121 +2070,121 @@
     },
     {
       "type": 0,
-      "value": "), or unplug and replug the micro:bit before trying again."
+      "value": ")，或者在重試之前拔下並重新插入 micro:bit。"
     }
   ],
   "other-tabs-heading": [
     {
       "type": 0,
-      "value": "Connect using WebUSB"
+      "value": "使用 WebUSB 連線"
     }
   ],
   "privacy": [
     {
       "type": 0,
-      "value": "Privacy policy"
+      "value": "隱私權政策"
     }
   ],
   "project-loaded": [
     {
       "type": 0,
-      "value": "Project loaded"
+      "value": "專案已載入"
     }
   ],
   "project-name-not-empty": [
     {
       "type": 0,
-      "value": "The project name cannot be empty"
+      "value": "專案名稱不可為空白"
     }
   ],
   "radio-link-microbit": [
     {
       "type": 0,
-      "value": "Radio link micro:bit"
+      "value": "無線電連結 micro:bit"
     }
   ],
   "radio-link-microbit-label": [
     {
       "type": 0,
-      "value": "diagram showing radio link micro:bit being connected with a computer"
+      "value": "顯示無線電連結 micro:bit 與電腦連線的示意圖"
     }
   ],
   "recognition-point-label": [
     {
       "type": 0,
-      "value": "Recognition point:"
+      "value": "辨識點："
     }
   ],
   "reconnect-action": [
     {
       "type": 0,
-      "value": "Reconnect"
+      "value": "重新連線"
     }
   ],
   "reconnect-failed-bluetooth-heading": [
     {
       "type": 0,
-      "value": "Failed to reconnect to data collection micro:bit"
+      "value": "無法重新連線至數據收集 micro:bit"
     }
   ],
   "reconnect-failed-bluetooth1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit could not be re-established."
+      "value": "無法重新建立與數據收集 micro:bit 的連線。"
     }
   ],
   "reconnect-failed-bridge-heading": [
     {
       "type": 0,
-      "value": "Failed to reconnect to radio link micro:bit"
+      "value": "無法重新連線到無線電連結 micro:bit"
     }
   ],
   "reconnect-failed-bridge1": [
     {
       "type": 0,
-      "value": "The connection to the micro:bit connected to your computer could not be re-established."
+      "value": "無法重新建立與您的電腦連線的 micro:bit 的連線。"
     }
   ],
   "reconnect-failed-radio-heading": [
     {
       "type": 0,
-      "value": "Failed to reconnect to micro:bits"
+      "value": "無法重新連線到 micro:bits"
     }
   ],
   "reconnect-failed-remote-heading": [
     {
       "type": 0,
-      "value": "Failed to reconnect to data collection micro:bit"
+      "value": "無法重新連線至數據收集 micro:bit"
     }
   ],
   "reconnect-failed-remote1": [
     {
       "type": 0,
-      "value": "The connection to the data collection micro:bit could not be re-established."
+      "value": "無法重新建立與數據收集 micro:bit 的連線。"
     }
   ],
   "reconnect-failed-subtitle": [
     {
       "type": 0,
-      "value": "Follow these instructions to restart the connection process."
+      "value": "請依照以下說明重新啟動連線程序。"
     }
   ],
   "reconnecting": [
     {
       "type": 0,
-      "value": "Reconnecting…"
+      "value": "重新連接中…"
     }
   ],
   "record-action": [
     {
       "type": 0,
-      "value": "Record"
+      "value": "錄製"
     }
   ],
   "record-action-aria": [
     {
       "type": 0,
-      "value": "Record data for action \""
+      "value": "記錄動作「"
     },
     {
       "type": 1,
@@ -2196,25 +2192,25 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」的數據"
     }
   ],
   "record-hint": [
     {
       "type": 0,
-      "value": "Press to record a data sample."
+      "value": "按下以記錄數據樣本。"
     }
   ],
   "record-hint-button-b": [
     {
       "type": 0,
-      "value": "Press to record a data sample or press button B on your data collection micro:bit."
+      "value": "按下以記錄數據樣本或是按下您的數據收集用的 micro:bit 上的按鍵 B。"
     }
   ],
   "record-samples": [
     {
       "type": 0,
-      "value": "Record "
+      "value": "記錄 "
     },
     {
       "type": 1,
@@ -2222,19 +2218,19 @@
     },
     {
       "type": 0,
-      "value": " samples"
+      "value": " 個樣本"
     }
   ],
   "record-samples-help": [
     {
       "type": 0,
-      "value": "Each sample has its own countdown"
+      "value": "每個樣本都有它自己的倒數計時"
     }
   ],
   "record-seconds": [
     {
       "type": 0,
-      "value": "Record for "
+      "value": "記錄 "
     },
     {
       "type": 1,
@@ -2242,13 +2238,13 @@
     },
     {
       "type": 0,
-      "value": " seconds"
+      "value": " 秒"
     }
   ],
   "record-seconds-help": [
     {
       "type": 0,
-      "value": "Move continuously to get "
+      "value": "連續移動以獲得 "
     },
     {
       "type": 1,
@@ -2256,25 +2252,25 @@
     },
     {
       "type": 0,
-      "value": " samples"
+      "value": " 個樣本"
     }
   ],
   "recording": [
     {
       "type": 0,
-      "value": "Recording"
+      "value": "正在錄製 "
     }
   ],
   "recording-complete": [
     {
       "type": 0,
-      "value": "Done"
+      "value": "完成"
     }
   ],
   "recording-data-for": [
     {
       "type": 0,
-      "value": "Record data for action \""
+      "value": "記錄動作「"
     },
     {
       "type": 1,
@@ -2282,21 +2278,21 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」的數據"
     }
   ],
   "recording-data-for-numbered": [
     {
       "type": 0,
-      "value": "Record "
+      "value": "記錄對於動作「"
     },
     {
       "type": 1,
-      "value": "sample"
+      "value": "action"
     },
     {
       "type": 0,
-      "value": " of "
+      "value": "」的 "
     },
     {
       "type": 1,
@@ -2304,33 +2300,29 @@
     },
     {
       "type": 0,
-      "value": " for action \""
+      "value": " 個記錄 "
     },
     {
       "type": 1,
-      "value": "action"
-    },
-    {
-      "type": 0,
-      "value": "\""
+      "value": "sample"
     }
   ],
   "recording-fingerprint-label": [
     {
       "type": 0,
-      "value": "heatmap showing micro:bit x, y, z accelerometer data features for one recording"
+      "value": "顯示一次記錄的 micro:bit x、y、z 加速度計數據功能的熱圖"
     }
   ],
   "recording-graph-label": [
     {
       "type": 0,
-      "value": "graph showing micro:bit x, y, z accelerometer data for one recording"
+      "value": "顯示一次記錄的 micro:bit x、y、z 加速度計數據的圖表"
     }
   ],
   "recording-options-aria": [
     {
       "type": 0,
-      "value": "More recording options for action \""
+      "value": "對於動作「"
     },
     {
       "type": 1,
@@ -2338,67 +2330,67 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」的更多錄製選項"
     }
   ],
   "reload-action": [
     {
       "type": 0,
-      "value": "Reload"
+      "value": "重新載入"
     }
   ],
   "reset-to-default-action": [
     {
       "type": 0,
-      "value": "Reset to default blocks"
+      "value": "重設為預設區塊"
     }
   ],
   "restore-defaults-action": [
     {
       "type": 0,
-      "value": "Restore default values for all settings"
+      "value": "恢復所有設定的預設值"
     }
   ],
   "restore-defaults-confirm-action": [
     {
       "type": 0,
-      "value": "Restore defaults"
+      "value": "恢復預設值"
     }
   ],
   "restore-defaults-confirm-body": [
     {
       "type": 0,
-      "value": "Are you sure you want to restore default values for all settings?"
+      "value": "您確定您要恢復所有設定的預設值嗎？"
     }
   ],
   "restore-defaults-confirm-heading": [
     {
       "type": 0,
-      "value": "Restore default settings"
+      "value": "恢復預設設定"
     }
   ],
   "restore-defaults-helper": [
     {
       "type": 0,
-      "value": "Previously dismissed help content may be shown again."
+      "value": "先前隱藏的幫助內容可能會再次顯示。"
     }
   ],
   "save-action": [
     {
       "type": 0,
-      "value": "Save"
+      "value": "儲存"
     }
   ],
   "save-hex-dialog-heading": [
     {
       "type": 0,
-      "value": "Save project as a hex file"
+      "value": "將專案儲存為十六進位檔案"
     }
   ],
   "save-hex-dialog-message1": [
     {
       "type": 0,
-      "value": "The download contains your actions, data samples and your MakeCode project. Open it in "
+      "value": "下載內容包含您的動作、數據樣本和您的 MakeCode 專案。在 "
     },
     {
       "type": 1,
@@ -2406,37 +2398,37 @@
     },
     {
       "type": 0,
-      "value": " to continue working."
+      "value": " 中開啟它以繼續工作。"
     }
   ],
   "save-hex-dialog-message2": [
     {
       "type": 0,
-      "value": "You can also open it with Microsoft MakeCode if you don't need to change the actions and data samples."
+      "value": "如果您不需要變更動作和數據樣本，您也可以使用 Microsoft MakeCode 開啟它。"
     }
   ],
   "saving-description": [
     {
       "type": 0,
-      "value": "Your download will be ready soon."
+      "value": "您的下載很快就會準備就緒。"
     }
   ],
   "saving-title": [
     {
       "type": 0,
-      "value": "Saving…"
+      "value": "儲存中…"
     }
   ],
   "saving-toast-title": [
     {
       "type": 0,
-      "value": "Your hex file has been downloaded"
+      "value": "您的十六進位檔案已下載"
     }
   ],
   "select-icon-action-aria": [
     {
       "type": 0,
-      "value": "Pick icon for action \""
+      "value": "挑選動作「"
     },
     {
       "type": 1,
@@ -2444,19 +2436,19 @@
     },
     {
       "type": 0,
-      "value": "\""
+      "value": "」的圖標"
     }
   ],
   "select-icon-action-untitled-aria": [
     {
       "type": 0,
-      "value": "Pick icon for untitled action"
+      "value": "挑選無標題動作的圖標"
     }
   ],
   "select-icon-option-action-aria": [
     {
       "type": 0,
-      "value": "Select \""
+      "value": "選擇「"
     },
     {
       "type": 1,
@@ -2464,109 +2456,109 @@
     },
     {
       "type": 0,
-      "value": "\" icon"
+      "value": "」圖標"
     }
   ],
   "settings": [
     {
       "type": 0,
-      "value": "Settings"
+      "value": "設置"
     }
   ],
   "settings-menu-action": [
     {
       "type": 0,
-      "value": "Settings actions menu"
+      "value": "設定動作選單"
     }
   ],
   "show-graphs-checkbox-label-text": [
     {
       "type": 0,
-      "value": "Show graphs"
+      "value": "顯示圖表"
     }
   ],
   "simple-ai-exercise-timer-resource-title": [
     {
       "type": 0,
-      "value": "Simple AI exercise timer"
+      "value": "簡單的 AI 鍛鍊計時器"
     }
   ],
   "skip-tour-action": [
     {
       "type": 0,
-      "value": "Skip tour"
+      "value": "跳過導覽"
     }
   ],
   "software-versions": [
     {
       "type": 0,
-      "value": "Software versions"
+      "value": "軟體版本"
     }
   ],
   "start-session-action": [
     {
       "type": 0,
-      "value": "Start session"
+      "value": "開始會話"
     }
   ],
   "start-training-action": [
     {
       "type": 0,
-      "value": "Start training"
+      "value": "開始訓練"
     }
   ],
   "steps-alt": [
     {
       "type": 0,
-      "value": "diagram showing the iterative process of collecting data, training a model, testing the model, and improving the model by improving the data collected before finally coding using the model."
+      "value": "圖表顯示收集數據、訓練模型、測試模型、改進數據以優化模型的迭代程序，然後最終利用模型進行編碼。"
     }
   ],
   "steps-code": [
     {
       "type": 0,
-      "value": "Code"
+      "value": "編程"
     }
   ],
   "steps-collect-data": [
     {
       "type": 0,
-      "value": "Collect data"
+      "value": "收集數據"
     }
   ],
   "steps-improve": [
     {
       "type": 0,
-      "value": "Improve"
+      "value": "改進"
     }
   ],
   "steps-test-model": [
     {
       "type": 0,
-      "value": "Test model"
+      "value": "測試模型"
     }
   ],
   "steps-train": [
     {
       "type": 0,
-      "value": "Train"
+      "value": "訓練"
     }
   ],
   "stop-recording-action": [
     {
       "type": 0,
-      "value": "Stop recording"
+      "value": "停止錄製"
     }
   ],
   "support-request": [
     {
       "type": 0,
-      "value": "Please consider "
+      "value": "請考慮"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "raising a support request"
+          "value": "提出支援請求"
         }
       ],
       "type": 8,
@@ -2574,55 +2566,55 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "。"
     }
   ],
   "terms": [
     {
       "type": 0,
-      "value": "Terms of use"
+      "value": "網站使用條款"
     }
   ],
   "testing-model-actions-region": [
     {
       "type": 0,
-      "value": "Testing model toolbar"
+      "value": "測試模型工具列"
     }
   ],
   "testing-model-title": [
     {
       "type": 0,
-      "value": "Testing model"
+      "value": "測試模型"
     }
   ],
   "tour-action": [
     {
       "type": 0,
-      "value": "Tour"
+      "value": "導覽"
     }
   ],
   "tour-collect-addActions-content": [
     {
       "type": 0,
-      "value": "Decide what your other actions will be and what you will name them. You need at least 2 actions with 3 data samples to train the model. Your data samples are only stored on your computer, they do not get sent to anyone else."
+      "value": "決定您的其他動作是什麼以及您將如何命名它們。您需要至少 2 個動作和 3 個數據樣本來訓練模型。您的數據樣本僅儲存在您的電腦上，不會發送給其他任何人。"
     }
   ],
   "tour-collect-addActions-title": [
     {
       "type": 0,
-      "value": "Add more actions"
+      "value": "新增更多動作"
     }
   ],
   "tour-collect-afterFirst-content": [
     {
       "type": 0,
-      "value": "To train the machine learning model you need at least 3 data samples for 2 different actions."
+      "value": "要訓練機器學習模型，您需要至少 2 個動作和 3 個數據樣本。"
     }
   ],
   "tour-collect-afterFirst-title": [
     {
       "type": 0,
-      "value": "You’ve recorded your first "
+      "value": "您已經錄製了您的第一個 "
     },
     {
       "offset": 0,
@@ -2650,85 +2642,85 @@
     },
     {
       "type": 0,
-      "value": "!"
+      "value": "！"
     }
   ],
   "tour-collect-collectMore-explanation-content": [
     {
       "type": 0,
-      "value": "Collecting more samples should result in a better machine learning model."
+      "value": "收集更多樣本應該會獲得更好的機器學習模型。"
     }
   ],
   "tour-collect-collectMore-hasRecordings-content": [
     {
       "type": 0,
-      "value": "Record data samples for your actions."
+      "value": "記錄您的動作的數據樣本。"
     }
   ],
   "tour-collect-collectMore-noRecordings-content": [
     {
       "type": 0,
-      "value": "Record more samples for this action."
+      "value": "記錄更多對於這個動作的樣本。"
     }
   ],
   "tour-collect-collectMore-title": [
     {
       "type": 0,
-      "value": "Collect more data samples"
+      "value": "收集更多數據樣本"
     }
   ],
   "tour-collect-trainModel-content": [
     {
       "type": 0,
-      "value": "When you have collected enough data samples you can train the machine learning model. You can come back later to remove or add more data and re-train to make the model more reliable."
+      "value": "當您收集了足夠的數據樣本後，您可以訓練機器學習模型。您可以稍後再回來移除或新增更多數據並且重新訓練以便讓模型更加可靠。"
     }
   ],
   "tour-dataSamples-actions-common-content": [
     {
       "type": 0,
-      "value": "An action is the type of movement you want the machine learning model to recognise e.g. ‘waving’ or ‘clapping’."
+      "value": "動作是您希望機器學習模型辨識的移動類型，例如「揮手」或「鼓掌」。"
     }
   ],
   "tour-dataSamples-actions-noRecordings-content": [
     {
       "type": 0,
-      "value": "Decide what your first action will be, name it and then start recording data samples."
+      "value": "決定您的第一個動作是什麼，為其命名，然後開始記錄數據樣本。"
     }
   ],
   "tour-dataSamples-connected-content": [
     {
       "type": 0,
-      "value": "Now you can start collecting data samples to train a machine learning (ML) model to recognise different movements, or actions."
+      "value": "現在您可以開始收集數據樣本以便訓練機器學習 (ML) 模型來辨識不同的移動或動作。"
     }
   ],
   "tour-dataSamples-connected-title": [
     {
       "type": 0,
-      "value": "Your data collection micro:bit is connected!"
+      "value": "您的數據收集用的 micro:bit 已連線！"
     }
   ],
   "tour-dataSamples-liveGraph-content": [
     {
       "type": 0,
-      "value": "The graph shows movement data from the micro:bit’s accelerometer. Move your data collection micro:bit and see how the graph changes."
+      "value": "圖表顯示來自 micro:bit 加速計的移動數據。移動您的數據收集用的 micro:bit 並查看圖表如何變化。"
     }
   ],
   "tour-makecode-intro-content1": [
     {
       "type": 0,
-      "value": "Download the model and code to test your project on a micro:bit. You can also add more code blocks to create your own programs using your model."
+      "value": "下載模型和程式碼以在 micro:bit 上測試您的專案。您還可以新增更多程式碼區塊以利用您的模型建立您自己的程式。"
     }
   ],
   "tour-makecode-intro-content2": [
     {
       "type": 0,
-      "value": "Need to improve the ML model? "
+      "value": "需要改進 ML 模型嗎？"
     }
   ],
   "tour-makecode-intro-content3": [
     {
       "type": 0,
-      "value": "Use this back button in the top left."
+      "value": "使用左上角的返回按鍵。"
     }
   ],
   "tour-makecode-intro-title": [
@@ -2740,61 +2732,61 @@
   "tour-trainModel-afterTrain-alreadyConnected-title": [
     {
       "type": 0,
-      "value": "You’ve trained an ML model!"
+      "value": "您已經訓練了 ML 模型！"
     }
   ],
   "tour-trainModel-afterTrain-content": [
     {
       "type": 0,
-      "value": "Now test your machine learning model. Try each action by moving your data collection micro:bit. Does the model correctly estimate each action?"
+      "value": "現在測試您的機器學習模型。藉由移動您的數據收集用的 micro:bit 嘗試各個動作。模型是否正確地估計各個動作？"
     }
   ],
   "tour-trainModel-afterTrain-delayedUntilConnected-title": [
     {
       "type": 0,
-      "value": "Test your ML model"
+      "value": "測試您的 ML 模型"
     }
   ],
   "tour-trainModel-certaintyRecognition-content": [
     {
       "type": 0,
-      "value": "The bar graph shows how confident the model is that you are doing each action. Move the slider to adjust the recognition point, or threshold."
+      "value": "長條圖顯示模型對您正在做的各個動作的信心程度。移動滑桿以調整辨識點，或閾值。"
     }
   ],
   "tour-trainModel-certaintyRecognition-title": [
     {
       "type": 0,
-      "value": "Certainty and recognition point"
+      "value": "確定性和辨識點"
     }
   ],
   "tour-trainModel-editInMakeCode-content": [
     {
       "type": 0,
-      "value": "Open your project in MakeCode to download the program and your machine learning model to a micro:bit. You can add more blocks to create your own programs using your model."
+      "value": "在 MakeCode 中開啟您的專案，將程式和您的機器學習模型下載到 micro:bit。您可以新增更多區塊以利用您的模型來建立您自己的程式。"
     }
   ],
   "tour-trainModel-estimatedAction-content": [
     {
       "type": 0,
-      "value": "The action the model estimates you are currently doing is shown below the micro:bit icon for that action."
+      "value": "模型估計您目前正在執行的動作會顯示在該動作的 micro:bit 圖示下方。"
     }
   ],
   "tour-trainModel-makeCodeBlocks-content": [
     {
       "type": 0,
-      "value": "These MakeCode blocks will show icons for each action detected when you transfer your code and model to a micro:bit."
+      "value": "當您將程式碼和模型傳輸到 micro:bit 時，這些 MakeCode 區塊將顯示偵測到的各個動作的圖示。"
     }
   ],
   "tour-trainModel-makeCodeBlocks-title": [
     {
       "type": 0,
-      "value": "Microsoft MakeCode blocks"
+      "value": "Microsoft MakeCode 區塊"
     }
   ],
   "train-description": [
     {
       "type": 0,
-      "value": "The computer program spots patterns or differences in your data samples, and uses these to build a mathematical model that allows "
+      "value": "電腦程式會發現數據樣本中的模式或差異，並使用它們建立數學模型，讓 "
     },
     {
       "type": 1,
@@ -2802,67 +2794,67 @@
     },
     {
       "type": 0,
-      "value": " to recognise different actions when you move your micro:bit."
+      "value": " 能夠在當您移動 micro:bit 時辨識不同的動作。"
     }
   ],
   "train-error-body": [
     {
       "type": 0,
-      "value": "The training did not result in a usable model. The reason for this is most likely the data used for training. If the data samples for different actions are too similar, this can result in issues in the training process."
+      "value": "訓練沒有產生可用的模型。原因很可能是用於訓練的數據。如果不同動作的數據樣本太相似，則可能會導致訓練程序中出現問題。"
     }
   ],
   "train-error-header": [
     {
       "type": 0,
-      "value": "Training failed"
+      "value": "訓練失敗"
     }
   ],
   "train-error-todo": [
     {
       "type": 0,
-      "value": "Return to the Add data page and change your data."
+      "value": "返回新增數據頁面並且變更您的數據。"
     }
   ],
   "train-header": [
     {
       "type": 0,
-      "value": "Training a model"
+      "value": "訓練模型"
     }
   ],
   "train-model": [
     {
       "type": 0,
-      "value": "Train model"
+      "value": "訓練模型"
     }
   ],
   "training-model": [
     {
       "type": 0,
-      "value": "Training model…"
+      "value": "正在訓練模型…"
     }
   ],
   "transfer-hex-alt": [
     {
       "type": 0,
-      "value": "animation of dragging a hex file from the downloads folder onto the micro:bit drive or device listed in the file explorer"
+      "value": "將十六進位檔案從下載資料夾拖曳到檔案總管中列出的 micro:bit 磁碟機或裝置上的動畫"
     }
   ],
   "transfer-hex-heading": [
     {
       "type": 0,
-      "value": "Transfer saved hex file to micro:bit"
+      "value": "將儲存的 HEX 檔案傳輸至 micro:bit"
     }
   ],
   "transfer-hex-manual-download": [
     {
       "type": 0,
-      "value": "If the file did not automatically download then "
+      "value": "如果檔案未自動下載，則"
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "please download the file here"
+          "value": "請在此下載檔案"
         }
       ],
       "type": 8,
@@ -2870,49 +2862,49 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "。"
     }
   ],
   "transfer-hex-message": [
     {
       "type": 0,
-      "value": "Drag the hex file from your Downloads folder to the MICROBIT drive."
+      "value": "將十六進位檔案從您的下載資料夾拖曳至 MICROBIT 磁碟。"
     }
   ],
   "try-again-action": [
     {
       "type": 0,
-      "value": "Try again"
+      "value": "重試一次"
     }
   ],
   "unknown": [
     {
       "type": 0,
-      "value": "unknown"
+      "value": "未知"
     }
   ],
   "unplug-radio-link-microbit-description": [
     {
       "type": 0,
-      "value": "Unplug the radio link micro:bit from the computer. You will need to reconnect the micro:bit if you want to record more data samples."
+      "value": "從電腦上拔下無線電連結 micro:bit。如果您想要記錄更多數據樣本，則需要重新連接 micro:bit。"
     }
   ],
   "unplug-radio-link-microbit-label": [
     {
       "type": 0,
-      "value": "animation showing a USB cable being disconnected from the top of a micro:bit"
+      "value": "顯示 USB 纜線從 micro:bit 頂部斷開連接的動畫"
     }
   ],
   "unplug-radio-link-microbit-title": [
     {
       "type": 0,
-      "value": "Unplug the radio link micro:bit"
+      "value": "拔掉無線電連結 micro:bit"
     }
   ],
   "unsupported-device-explain": [
     {
       "type": 0,
-      "value": "Unfortunately, we only support using micro:bit V2 when connecting using micro:bit radio. You have connected a "
+      "value": "很遺憾，使用 micro:bit 無線電連線時，我們僅支援 micro:bit V2。您已連線"
     },
     {
       "children": [
@@ -2926,31 +2918,31 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "。"
     }
   ],
   "unsupported-device-header": [
     {
       "type": 0,
-      "value": "micro:bit radio connections do not support micro:bit V1"
+      "value": "micro:bit 無線電連線不支援 micro:bit V1"
     }
   ],
   "unsupported-device-with-bluetooth": [
     {
       "type": 0,
-      "value": "Please use Web Bluetooth to connect to your micro:bit V1 instead."
+      "value": "請改用網路藍牙連線至您的 micro:bit V1。"
     }
   ],
   "unsupported-device-without-bluetooth": [
     {
       "type": 0,
-      "value": "You can connect to micro:bit V1 using Web Bluetooth, however, this browser or device does not have Bluetooth enabled. "
+      "value": "您可以利用網路藍牙連線至 micro:bit V1，但是，此瀏覽器或裝置沒有啟用藍牙。 "
     },
     {
       "children": [
         {
           "type": 0,
-          "value": "How to enable Bluetooth"
+          "value": "如何啟用藍牙"
         }
       ],
       "type": 8,
@@ -2958,43 +2950,43 @@
     },
     {
       "type": 0,
-      "value": "."
+      "value": "。"
     }
   ],
   "user-guide": [
     {
       "type": 0,
-      "value": "User guide"
+      "value": "用戶指南 "
     }
   ],
   "webusb-retry-no-select": [
     {
       "type": 0,
-      "value": "You didn't select a micro:bit. Do you want to try again?"
+      "value": "您沒有選擇 micro:bit。您想再試一次嗎？"
     }
   ],
   "webusb-retry-replug1": [
     {
       "type": 0,
-      "value": "A WebUSB error occurred."
+      "value": "發生 WebUSB 錯誤。"
     }
   ],
   "webusb-retry-replug2": [
     {
       "type": 0,
-      "value": "Please:"
+      "value": "請："
     }
   ],
   "webusb-retry-replug3": [
     {
       "type": 0,
-      "value": "check that this micro:bit does not have a battery pack connected"
+      "value": "檢查此 micro:bit 是否未連線電池組"
     }
   ],
   "webusb-retry-replug4": [
     {
       "type": 0,
-      "value": "unplug and replug the USB cable"
+      "value": "拔下並重新插入 USB 纜線"
     }
   ]
 }

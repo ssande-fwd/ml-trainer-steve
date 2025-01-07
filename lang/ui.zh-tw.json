@@ -1,766 +1,766 @@
 {
   "aarhus-university-alt": {
-    "defaultMessage": "Aarhus University",
+    "defaultMessage": "奧胡斯大學",
     "description": "Alt text for Aarhus University logo in about dialog"
   },
   "about": {
-    "defaultMessage": "About",
+    "defaultMessage": "關於",
     "description": "Menu item link to view information about app"
   },
   "about-dialog-alt": {
-    "defaultMessage": "micro:bit board showing a heart on the LED display",
+    "defaultMessage": "micro:bit 開發板在 LED 顯示器上顯示一顆心",
     "description": "Alt text for image in about dialog"
   },
   "about-dialog-title": {
-    "defaultMessage": "Developed in partnership with <link>Center for Computational Thinking and Design, Aarhus University</link>",
+    "defaultMessage": "與<link> 奧胡斯大學運算思維與設計中心</link>合作開發",
     "description": "Title of about dialog"
   },
   "accelerometer-image-alt": {
-    "defaultMessage": "micro:bit showing X axis going across the front, Y axis going down and up, Z axis going back to front",
+    "defaultMessage": "micro:bit 會顯示 X 軸穿過前方，Y 軸向下和向上，Z 軸回到前方",
     "description": "Alt text for image showing the board-relative directions of the X/Y/Z dimensions of the micro:bit accelerometer"
   },
   "action-label": {
-    "defaultMessage": "Action",
+    "defaultMessage": "動作",
     "description": "Label for a movement-related action, e.g. clapping"
   },
   "action-label-tooltip-aria": {
-    "defaultMessage": "Action tooltip",
+    "defaultMessage": "動作工具提示",
     "description": "Aria label for action tooltip icon"
   },
   "action-length-error": {
-    "defaultMessage": "Action names cannot be longer than {maxLen} characters.",
+    "defaultMessage": "動作名稱的長度不能超過 {maxLen} 個字元。",
     "description": "Error message shown when an action name is too long"
   },
   "action-name-placeholder": {
-    "defaultMessage": "Name of action",
+    "defaultMessage": "動作名稱",
     "description": "Placeholder text for user supplied name of a movement-related action, e.g. clapping"
   },
   "action-region": {
-    "defaultMessage": "Action \"{action}\"",
+    "defaultMessage": "動作「{action}」",
     "description": "Region label for action row"
   },
   "action-tooltip": {
-    "defaultMessage": "The type of movement you want {appNameFull} to recognise e.g. ‘waving’ or ‘clapping’.",
+    "defaultMessage": "您希望 {appNameFull} 辨識的移動類型，例如「揮手」或「鼓掌」。",
     "description": "Tooltip explaining action"
   },
   "actions-label": {
-    "defaultMessage": "Actions",
+    "defaultMessage": "動作",
     "description": "Label for Actions"
   },
   "add-action-action": {
-    "defaultMessage": "Add action",
+    "defaultMessage": "新增動作",
     "description": "Button to add an action (movement related, e.g. clapping)"
   },
   "ai-activity-timer-resource-title": {
-    "defaultMessage": "AI activity timer",
+    "defaultMessage": "AI 活動計時器",
     "description": "Home page resource card title"
   },
   "ai-storytelling-friend-resource-title": {
-    "defaultMessage": "AI storytelling friend",
+    "defaultMessage": "AI 說故事夥伴",
     "description": "Home page resource card title"
   },
   "back-action": {
-    "defaultMessage": "Back",
+    "defaultMessage": "返回",
     "description": "Back button text"
   },
   "back-to-data-samples-action": {
-    "defaultMessage": "Edit data samples",
+    "defaultMessage": "編輯數據樣本",
     "description": "Back button text"
   },
   "bluetooth-unsupported-advice": {
-    "defaultMessage": "We recommend Google Chrome or Microsoft Edge so you can connect directly to your micro:bit.",
+    "defaultMessage": "我們建議您使用 Google Chrome 或 Microsoft Edge，以便您能夠直接連線到您的 micro:bit。",
     "description": "Note on supported browsers"
   },
   "bluetooth-unsupported-explain": {
-    "defaultMessage": "Unfortunately, WebUSB and Web Bluetooth are not supported by this browser. This means you cannot connect to a micro:bit to record the data samples needed to train a machine learning model.",
+    "defaultMessage": "很遺憾，此瀏覽器不支援 WebUSB 和 Web 藍牙。這表示您無法連線到 micro:bit 來記錄訓練機器學習模型所需要的數據樣本。",
     "description": "Note on supported browsers"
   },
   "bluetooth-unsupported-header": {
-    "defaultMessage": "This browser is not supported",
+    "defaultMessage": "此瀏覽器不受支援",
     "description": "Heading for browser support dialog"
   },
   "cancel-action": {
-    "defaultMessage": "Cancel",
+    "defaultMessage": "取消",
     "description": "Cancel button text"
   },
   "cancel-recording-action": {
-    "defaultMessage": "Cancel recording",
+    "defaultMessage": "取消錄製",
     "description": "Button label to cancel a movement data recording"
   },
   "certainty-label": {
-    "defaultMessage": "Certainty",
+    "defaultMessage": "確定性",
     "description": "Heading for certainty column"
   },
   "certainty-label-tooltip-aria": {
-    "defaultMessage": "Certainty tooltip",
+    "defaultMessage": "確定性工具提示",
     "description": "Aria label for code certainty icon"
   },
   "certainty-percentage-label": {
-    "defaultMessage": "certainty for {action}: {currentConfidence} percent",
+    "defaultMessage": "{action} 的確定性：{currentConfidence}%",
     "description": "Label for certainty of an action"
   },
   "certainty-tooltip": {
-    "defaultMessage": "How confident the model is that you are currently doing each action.",
+    "defaultMessage": "模型對您目前正在執行的各個動作的信心程度。",
     "description": "Tooltip for certainty column"
   },
   "click-to-reload-page-action": {
-    "defaultMessage": "Click to reload the page",
+    "defaultMessage": "點擊重新載入頁面",
     "description": "Reload page button text"
   },
   "close-action": {
-    "defaultMessage": "Close",
+    "defaultMessage": "關閉",
     "description": "Close button text or label"
   },
   "code-download-error": {
-    "defaultMessage": "Error downloading the project code",
+    "defaultMessage": "下載專案程式碼時發生錯誤",
     "description": "Title for error message relating to project loading"
   },
   "code-label": {
-    "defaultMessage": "Code",
+    "defaultMessage": "編程",
     "description": "Code column heading"
   },
   "code-label-tooltip-aria": {
-    "defaultMessage": "Code tooltip",
+    "defaultMessage": "程式碼工具提示",
     "description": "Aria label for code tooltip icon"
   },
   "code-tooltip": {
-    "defaultMessage": "These are the MakeCode blocks for each detected action when you transfer your ML model and code to a micro:bit",
+    "defaultMessage": "這些是對於當您將您的 ML 模型和程式碼傳輸到 micro:bit 時，各個偵測動作 MakeCode 區塊",
     "description": "Code column heading tooltip"
   },
   "confirm-action": {
-    "defaultMessage": "Confirm",
+    "defaultMessage": "確認",
     "description": "Confirm button text"
   },
   "confirm-save-action": {
-    "defaultMessage": "Confirm and save",
+    "defaultMessage": "確認並儲存",
     "description": "Confirm and save action label"
   },
   "connect-action": {
-    "defaultMessage": "Connect",
+    "defaultMessage": "連線",
     "description": "Connect action to connect to data collection micro:bit via Bluetooth or micro:bit radio"
   },
   "connect-action-aria": {
-    "defaultMessage": "Connect to micro:bit",
+    "defaultMessage": "連接到 micro:bit",
     "description": "Connect action to connect to data collection micro:bit via Bluetooth or micro:bit radio"
   },
   "connect-battery-heading": {
-    "defaultMessage": "Disconnect USB and connect battery pack",
+    "defaultMessage": "中斷 USB 並連接電池組",
     "description": "Battery connection dialog "
   },
   "connect-battery-holder": {
-    "defaultMessage": "Battery holder",
+    "defaultMessage": "電池座",
     "description": "Label for battery holder icon"
   },
   "connect-battery-link": {
-    "defaultMessage": "You can attach the micro:bit to your wrist or an object",
+    "defaultMessage": "您可以將 micro:bit 連接到您的手腕或物件上",
     "description": "Battery connection dialog"
   },
   "connect-battery-subtitle": {
-    "defaultMessage": "Disconnect the micro:bit from the computer and connect the battery pack.",
+    "defaultMessage": "中斷 micro:bit 與電腦的連線並連接電池組。",
     "description": "Battery connection dialog"
   },
   "connect-bluetooth-cancelled-connection": {
-    "defaultMessage": "You didn't choose a micro:bit. Do you want to try again?",
+    "defaultMessage": "您沒有選擇 micro:bit。您想再試一次嗎？",
     "description": "Error when the user cancelled the Web Bluetooth permission/device selection dialog"
   },
   "connect-bluetooth-heading": {
-    "defaultMessage": "Connect using Web Bluetooth",
+    "defaultMessage": "使用網路藍牙來連線",
     "description": "Connection dialogs"
   },
   "connect-bluetooth-invalid-pattern": {
-    "defaultMessage": "The pattern you have drawn is invalid.",
+    "defaultMessage": "您繪製的圖案無效。",
     "description": "Error when the bluetooth pattern is incomplete "
   },
   "connect-bluetooth-start-heading": {
-    "defaultMessage": "What you need to connect using Web Bluetooth",
+    "defaultMessage": "使用網路藍牙連線需要什麼",
     "description": "Connection dialog heading"
   },
   "connect-bluetooth-start-requirements1": {
-    "defaultMessage": "1 micro:bit",
+    "defaultMessage": "一個 micro:bit",
     "description": "Label for icon of single micro:bit"
   },
   "connect-bluetooth-start-requirements2-subtitle": {
-    "defaultMessage": "with Internet, a USB port & Web Bluetooth",
+    "defaultMessage": "需要網際網路、USB 連接埠和網路藍牙",
     "description": "Under heading 'Computer' this lists the features the computer needs"
   },
   "connect-bluetooth-start-switch-radio": {
-    "defaultMessage": "Connect using micro:bit radio instead",
+    "defaultMessage": "改用 micro:bit 無線電來連線",
     "description": "Link to alternative connection method"
   },
   "connect-cable-alt": {
-    "defaultMessage": "animation showing a USB cable being connected to the top of a micro:bit",
+    "defaultMessage": "顯示將 USB 纜線連接至 micro:bit 頂部的動畫",
     "description": "Alt text"
   },
   "connect-cable-download-project-subtitle": {
-    "defaultMessage": "Connect a micro:bit to this computer with a USB cable to download your machine learning MakeCode program to it.",
+    "defaultMessage": "使用 USB 纜線將 micro:bit 連線到這台電腦以將機器學習 MakeCode 程式下載到其中。",
     "description": "Download project dialog"
   },
   "connect-cable-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit",
+    "defaultMessage": "將 USB 纜線連接至 micro:bit",
     "description": "Connect cable dialog heading"
   },
   "connect-cable-skip": {
-    "defaultMessage": "Skip: program already downloaded?",
+    "defaultMessage": "跳過：程式已經下載？",
     "description": "Link to skip"
   },
   "connect-cable-subtitle": {
-    "defaultMessage": "Connect the micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it.",
+    "defaultMessage": "使用 USB 纜線將 micro:bit 連線到這台電腦，以便將數據收集程式下載到其中。",
     "description": "Project download instructions"
   },
   "connect-computer": {
-    "defaultMessage": "Computer",
+    "defaultMessage": "電腦",
     "description": "Label for computer icon in connection dialog"
   },
   "connect-data-collection-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit 1",
+    "defaultMessage": "將 USB 纜線連接至 micro:bit 1",
     "description": "Connection dialog heading"
   },
   "connect-data-collection-subtitle": {
-    "defaultMessage": "Connect the first micro:bit to this computer with a USB cable so that the data collection program can be downloaded to it. This is the micro:bit you will use to collect data samples.",
+    "defaultMessage": "利用 USB 纜線將第一台 micro:bit 連線到這台電腦，以便將數據收集程式下載到其上。這是您將用來收集數據樣本的 micro:bit。",
     "description": "Connection dialog subtitle"
   },
   "connect-failed-bluetooth-heading": {
-    "defaultMessage": "Failed to connect to micro:bit",
+    "defaultMessage": "無法連線到 micro:bit",
     "description": "Bluetooth connection error message"
   },
   "connect-failed-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be established.",
+    "defaultMessage": "無法建立與數據收集 micro:bit 的連線。",
     "description": "Bluetooth connection error message"
   },
   "connect-failed-bridge-heading": {
-    "defaultMessage": "Failed to connect to radio link micro:bit",
+    "defaultMessage": "無法連線到無線電連結 micro:bit",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer could not be established.",
+    "defaultMessage": "無法建立與您的電腦連線的 micro:bit 的連線。",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-remote-heading": {
-    "defaultMessage": "Failed to connect to data collection micro:bit",
+    "defaultMessage": "無法連線至數據收集 micro:bit",
     "description": "micro:bit radio connection error message"
   },
   "connect-failed-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be established.",
+    "defaultMessage": "無法建立與數據收集 micro:bit 的連線。",
     "description": "micro:bit radio connection error message"
   },
   "connect-help-alt": {
-    "defaultMessage": "WebUSB connection dialog with BBC micro:bit entry labelled 1 and Connect button labelled 2",
+    "defaultMessage": "WebUSB 連線對話框，帶有標記為 1 的 BBC micro:bit 項目和標記為 2 的「連線」按鈕",
     "description": "Alt text for image in connect help dialog"
   },
   "connect-micro-usb-cable": {
-    "defaultMessage": "Micro USB cable",
+    "defaultMessage": "微型 USB 纜線",
     "description": "Label for cable icon in list of requirements"
   },
   "connect-or-import": {
-    "defaultMessage": "<link1>Connect a data collection micro:bit</link1> or <link2>import data samples</link2>",
+    "defaultMessage": "<link1>連線數據收集用的 micro:bit</link1> 或<link2>匯入數據樣本</link2>",
     "description": "Empty data samples page text"
   },
   "connect-pattern-heading": {
-    "defaultMessage": "Copy pattern",
+    "defaultMessage": "複製圖案",
     "description": "Heading for Bluetooth pattern connection dialog"
   },
   "connect-pattern-input-label": {
-    "defaultMessage": "Column {colNum} - number of LEDs lit on the micro:bit display",
+    "defaultMessage": "第 {colNum} 欄 - micro:bit 顯示器上亮起的 LED 數量",
     "description": "Screen reader text for numeric pattern input"
   },
   "connect-pattern-subtitle": {
-    "defaultMessage": "Copy the pattern displayed on the micro:bit.",
+    "defaultMessage": "複製 micro:bit 上顯示的圖案。",
     "description": "Instruction for bluetooth pattern dialog"
   },
   "connect-popup": {
-    "defaultMessage": "Select micro:bit",
+    "defaultMessage": "選擇 micro:bit",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-bluetooth-alt": {
-    "defaultMessage": "Web Bluetooth connection dialog with BBC micro:bit entry labelled 1 and Pair button labelled 2",
+    "defaultMessage": "網路藍牙連線對話框，帶有標記為 1 的 BBC micro:bit 項目和標記為 2 的「配對」按鈕",
     "description": "Alt text"
   },
   "connect-popup-bluetooth-instruction2": {
-    "defaultMessage": "Select 'Pair'",
+    "defaultMessage": "選擇「配對」",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-bluetooth-title": {
-    "defaultMessage": "Connect to micro:bit using Web Bluetooth",
+    "defaultMessage": "使用網路藍牙連線至 micro:bit",
     "description": "Instruction for dialog that previews the Bluetooth permission dialog"
   },
   "connect-popup-instruction-heading": {
-    "defaultMessage": "In the next popup",
+    "defaultMessage": "在下一個快顯視窗內",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-instruction1": {
-    "defaultMessage": "Choose your micro:bit",
+    "defaultMessage": "選擇您的 micro:bit",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-popup-usb-bluetooth-data-collection-title": {
-    "defaultMessage": "Download data collection program to micro:bit",
+    "defaultMessage": "將數據收集程式下載至 micro:bit",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-usb-radio-data-collection-title": {
-    "defaultMessage": "Download data collection program to micro:bit 1",
+    "defaultMessage": "將數據收集程式下載至 micro:bit 1",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-usb-radio-link-title": {
-    "defaultMessage": "Download radio link program to micro:bit 2",
+    "defaultMessage": "將無線電連結程式下載至 micro:bit 2",
     "description": "Instruction for dialog that previews the WebUSB permission dialog"
   },
   "connect-popup-webusb-instruction2": {
-    "defaultMessage": "Select 'Connect'",
+    "defaultMessage": "選擇「連線」",
     "description": "Instruction for dialog that previews the Bluetooth/WebUSB permission dialog"
   },
   "connect-radio-data-collection-microbit-description": {
-    "defaultMessage": "Connect the data collection micro:bit to this computer to download your machine learning MakeCode program to it. If you're wearing the data collection micro:bit, you may need to remove it.",
+    "defaultMessage": "將數據收集用的 micro:bit 連線至這台電腦，以將您的機器學習 MakeCode 程式下載到其中。如果您正在配戴數據收集 micro:bit，則可能需要將其移除。",
     "description": "Connect radio data collection micro:bit dialog description"
   },
   "connect-radio-data-collection-microbit-title": {
-    "defaultMessage": "Connect USB cable to the data collection micro:bit",
+    "defaultMessage": "將 USB 纜線連線至數據收集用的 micro:bit",
     "description": "Connect radio data collection micro:bit dialog title"
   },
   "connect-radio-heading": {
-    "defaultMessage": "Connecting micro:bits",
+    "defaultMessage": "連線到 micro:bits",
     "description": "Text shown while radio link and data connection micro:bit are being connected"
   },
   "connect-radio-link-heading": {
-    "defaultMessage": "Connect USB cable to micro:bit 2",
+    "defaultMessage": "將 USB 纜線連接至 micro:bit 2",
     "description": "Heading for connecting radio link micro:bit cable"
   },
   "connect-radio-link-subtitle": {
-    "defaultMessage": "Connect a second micro:bit to this computer with a USB cable so that the radio link program can be downloaded to it. This radio link micro:bit will communicate with the data collection micro:bit.",
+    "defaultMessage": "使用 USB 電纜將第二個 micro:bit 連線至這台電腦，以下載無線電連結程式。此無線電連結 micro:bit 將與數據收集 micro:bit 通訊。",
     "description": "Instruction for connecting radio link micro:bit cable"
   },
   "connect-radio-start-heading": {
-    "defaultMessage": "What you need to connect using micro:bit radio",
+    "defaultMessage": "使用 micro:bit 無線電連線所需的條件",
     "description": "Connection dialog heading"
   },
   "connect-radio-start-requirements1": {
-    "defaultMessage": "2 micro:bits",
+    "defaultMessage": "2 片micro:bit",
     "description": "Label for icon of two micro:bits"
   },
   "connect-radio-start-requirements1-subtitle": {
-    "defaultMessage": "V2 only",
+    "defaultMessage": "僅限 V2",
     "description": "Shown below 2 micro:bit label for micro:bit radio approach"
   },
   "connect-radio-start-requirements2-subtitle": {
-    "defaultMessage": "with Internet & a USB port",
+    "defaultMessage": "需要網際網路和 USB 連接埠",
     "description": "Shown below 'Computer' heading listing additional requirements"
   },
   "connect-radio-start-switch-bluetooth": {
-    "defaultMessage": "Connect using Web Bluetooth instead",
+    "defaultMessage": "改用網路藍牙進行連線",
     "description": "Link to alternative connection method"
   },
   "connect-to-record": {
-    "defaultMessage": "Connect to record data samples",
+    "defaultMessage": "連線以記錄數據樣本",
     "description": "Live graph disconnected micro:bit status message for data samples page"
   },
   "connect-to-record-body": {
-    "defaultMessage": "Connect a micro:bit to record a data sample.",
+    "defaultMessage": "連線 micro:bit 以記錄數據樣本。",
     "description": "Insufficient data modal content"
   },
   "connect-to-test-model": {
-    "defaultMessage": "Connect to test your ML model",
+    "defaultMessage": "連線以測試您的 ML 模型",
     "description": "Live graph disconnected micro:bit status message for test model page"
   },
   "connect-to-tour-body": {
-    "defaultMessage": "You need to connect a data collection micro:bit to view the tour.",
+    "defaultMessage": "您需要連線數據收集用的 micro:bit 才能檢視導覽內容。",
     "description": "Prompt to connect the app to a micro:bit"
   },
   "connect-troubleshoot": {
-    "defaultMessage": "Troubleshoot problems with connecting to your micro:bit",
+    "defaultMessage": "疑難排解連線至 micro:bit 的問題",
     "description": "Link to support article for troubleshooting"
   },
   "connect-troubleshooting": {
-    "defaultMessage": "Troubleshooting",
+    "defaultMessage": "疑難排解",
     "description": "Troubleshooting heading"
   },
   "connect-with-batteries": {
-    "defaultMessage": "with batteries",
+    "defaultMessage": "需要電池",
     "description": "Under header 'Battery holder' this notes that batteries are required"
   },
   "connect-with-web-bluetooth": {
-    "defaultMessage": "Connect with Web Bluetooth",
+    "defaultMessage": "透過網路藍牙連線",
     "description": "Connection dialog title"
   },
   "connecting": {
-    "defaultMessage": "Connecting…",
+    "defaultMessage": "正在連線…",
     "description": "Text shown while waiting for bluetooth/radio connection"
   },
   "continue-makecode-action": {
-    "defaultMessage": "Continue to MakeCode",
+    "defaultMessage": "繼續前往 MakeCode",
     "description": "Continue to MakeCode editor button text"
   },
   "cookies-action": {
-    "defaultMessage": "Cookies",
+    "defaultMessage": "餅乾",
     "description": "Action to show dialog to choose website cookie preferences"
   },
   "copied": {
-    "defaultMessage": "Copied",
+    "defaultMessage": "複製的",
     "description": "Displayed as copy button text briefly after successful copy action"
   },
   "copy-action": {
-    "defaultMessage": "Copy",
+    "defaultMessage": "複製",
     "description": "Copy button text"
   },
   "data-actions-menu": {
-    "defaultMessage": "Data actions",
+    "defaultMessage": "數據動作",
     "description": "Aria label for menu"
   },
   "data-collection-microbit": {
-    "defaultMessage": "Data collection micro:bit",
+    "defaultMessage": "數據收集用的 micro:bit",
     "description": "Data collection micro:bit image caption"
   },
   "data-collection-microbit-label": {
-    "defaultMessage": "diagram showing data collection micro:bit being connected to a person's wrist",
+    "defaultMessage": "圖表顯示數據收集用的 micro:bit 被連線到一個人的手腕上",
     "description": "Aria label for data collection image"
   },
   "data-connection-region": {
-    "defaultMessage": "micro:bit data connection",
+    "defaultMessage": "micro:bit 數據連線",
     "description": "Region label for data connection area"
   },
   "data-features-hide-action": {
-    "defaultMessage": "Hide data features",
+    "defaultMessage": "隱藏數據功能",
     "description": "Hide data features button text"
   },
   "data-features-show-action": {
-    "defaultMessage": "Show data features",
+    "defaultMessage": "顯示數據功能",
     "description": "Show data features button text"
   },
   "data-samples-actions-region": {
-    "defaultMessage": "Data samples toolbar",
+    "defaultMessage": "數據樣本工具列",
     "description": "Region label for data samples actions"
   },
   "data-samples-label": {
-    "defaultMessage": "Data samples",
+    "defaultMessage": "數據樣本",
     "description": "Heading for data samples column"
   },
   "data-samples-label-tooltip-aria": {
-    "defaultMessage": "Data samples tooltip",
+    "defaultMessage": "數據樣本工具提示",
     "description": "Aria label for data samples tooltip icon"
   },
   "data-samples-status-count": {
-    "defaultMessage": "{numSamples} samples recorded",
+    "defaultMessage": "記錄了 {numSamples} 個樣本",
     "description": "Data samples status text"
   },
   "data-samples-status-not-enough": {
-    "defaultMessage": "At least 3 required",
+    "defaultMessage": "至少需要 3 個",
     "description": "Data samples status text"
   },
   "data-samples-title": {
-    "defaultMessage": "Data samples",
+    "defaultMessage": "數據樣本",
     "description": "Data samples page title"
   },
   "data-samples-tooltip": {
-    "defaultMessage": "Short collections of movement data lasting 1 second. Your data samples are only stored on your computer, they do not get sent to anyone else.",
+    "defaultMessage": "持續 1 秒的簡短移動數據集合。您的數據樣本僅儲存在您的電腦上，不會發送給其他任何人。",
     "description": "Tooltip for data samples heading"
   },
   "default-project-name": {
-    "defaultMessage": "Untitled",
+    "defaultMessage": "未命名",
     "description": "Default project name"
   },
   "delete-action-aria": {
-    "defaultMessage": "Delete action \"{action}\"",
+    "defaultMessage": "刪除動作：「{action}」",
     "description": "Aria label for action delete icon"
   },
   "delete-action-confirm-heading": {
-    "defaultMessage": "Confirm delete action",
+    "defaultMessage": "確認刪除動作",
     "description": "Confirmation dialog heading"
   },
   "delete-action-confirm-text": {
-    "defaultMessage": "Are you sure you want to delete the action \"{action}\"?",
+    "defaultMessage": "您確定您要刪除動作「{action}」嗎？",
     "description": "Confirmation dialog text"
   },
   "delete-data-samples-action": {
-    "defaultMessage": "Delete all data samples",
+    "defaultMessage": "刪除所有數據樣本",
     "description": "Menu item to delete data samples"
   },
   "delete-data-samples-confirm-heading": {
-    "defaultMessage": "Confirm delete all data samples",
+    "defaultMessage": "確認刪除所有數據樣本",
     "description": "Confirmation dialog heading"
   },
   "delete-data-samples-confirm-text": {
-    "defaultMessage": "Are you sure you want to delete all data samples?",
+    "defaultMessage": "您確定您要刪除所有的數據樣本嗎？",
     "description": "Confirmation dialog text"
   },
   "delete-recording-aria": {
-    "defaultMessage": "Delete recording {sample} of {numSamples} for action \"{action}\"",
+    "defaultMessage": "刪除對於動作「{action}」的 {numSamples} 個記錄 {sample}",
     "description": "Aria label for data sample delete action"
   },
   "disconnect-action": {
-    "defaultMessage": "Disconnect",
+    "defaultMessage": "中斷連線",
     "description": "Disconnect (from bluetooth/radio) action"
   },
   "disconnected-during-recording": {
-    "defaultMessage": "micro:bit disconnected during recording",
+    "defaultMessage": "micro:bit 在錄製過程中已斷線",
     "description": "Error when the micro:bit is disconnected during recording"
   },
   "disconnected-warning-bluetooth-heading": {
-    "defaultMessage": "Data collection micro:bit connection lost",
+    "defaultMessage": "數據收集 micro:bit 連線遺失",
     "description": "Dialog heading"
   },
   "disconnected-warning-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit has been lost.",
+    "defaultMessage": "與數據收集 micro:bit 的連線已遺失。",
     "description": "Dialog text"
   },
   "disconnected-warning-bluetooth2": {
-    "defaultMessage": "Please check that the micro:bit:",
+    "defaultMessage": "請檢查 micro:bit：",
     "description": "Heading for list of things to check"
   },
   "disconnected-warning-bluetooth3": {
-    "defaultMessage": "is powered on (the red light on the back of the micro:bit should be on)",
+    "defaultMessage": "已開機（micro:bit 背面的紅燈應亮起）",
     "description": "List item, one of several things to check about the micro:bit"
   },
   "disconnected-warning-bluetooth4": {
-    "defaultMessage": "is close to the computer",
+    "defaultMessage": "靠近電腦",
     "description": "List item, one of several things to check about the micro:bit"
   },
   "disconnected-warning-bridge-heading": {
-    "defaultMessage": "Radio link micro:bit connection lost",
+    "defaultMessage": "無線電連結 micro:bit 連線遺失",
     "description": "Connection error dialog"
   },
   "disconnected-warning-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer has been lost.",
+    "defaultMessage": "與您的電腦連線的 micro:bit 的連線已遺失。",
     "description": "Connection error dialog"
   },
   "disconnected-warning-remote-heading": {
-    "defaultMessage": "Data collection micro:bit connection lost",
+    "defaultMessage": "數據收集 micro:bit 連線遺失",
     "description": "Connection error dialog"
   },
   "disconnected-warning-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit has been lost.",
+    "defaultMessage": "與數據收集 micro:bit 的連線已遺失。",
     "description": "Connection error dialog"
   },
   "dont-show-again": {
-    "defaultMessage": "Don't show this again",
+    "defaultMessage": "不要再顯示",
     "description": "Text to never show a dialog again"
   },
   "download-data-samples-action": {
-    "defaultMessage": "Download all data samples",
+    "defaultMessage": "下載所有數據樣本",
     "description": "Download action"
   },
   "download-project-choose-microbit-subtitle": {
-    "defaultMessage": "Downloading your project on to the same micro:bit will disconnect the micro:bit from the tool. You will need to reconnect the micro:bit if you want to record more data samples.",
+    "defaultMessage": "將您的專案下載到相同的 micro:bit 將會中斷 micro:bit 與工具的連線。如果您想要記錄更多數據樣本，則您需要重新連線 micro:bit。",
     "description": "Download project choose micro:bit dialog subtitle"
   },
   "download-project-choose-microbit-title": {
-    "defaultMessage": "Which micro:bit do you want to use?",
+    "defaultMessage": "您想使用哪一個 micro:bit？",
     "description": "Download project choose micro:bit dialog title"
   },
   "download-project-different-microbit-option": {
-    "defaultMessage": "Different micro:bit",
+    "defaultMessage": "不同的 micro:bit",
     "description": "Download project different micro:bit option"
   },
   "download-project-intro-description": {
-    "defaultMessage": "Your program includes the machine learning model you created. The model runs on the micro:bit so you can use it without being connected to {appNameFull}.",
+    "defaultMessage": "您的程式包含您建立的機器學習模型。模型在 micro:bit 上運行，因此您無需連線到 {appNameFull} 即可使用它。",
     "description": "Download project intro dialog description"
   },
   "download-project-intro-title": {
-    "defaultMessage": "Download your machine learning MakeCode project",
+    "defaultMessage": "下載您的機器學習 MakeCode 專案",
     "description": "Download project intro dialog title"
   },
   "download-project-same-microbit-option": {
-    "defaultMessage": "Same micro:bit",
+    "defaultMessage": "相同的 micro:bit",
     "description": "Download project same micro:bit option"
   },
   "downloading-data-collection-header": {
-    "defaultMessage": "Downloading the data collection program",
+    "defaultMessage": "下載數據收集程式",
     "description": "Progress text"
   },
   "downloading-header": {
-    "defaultMessage": "Downloading program to micro:bit",
+    "defaultMessage": "將程式下載至 micro:bit",
     "description": "Progress text"
   },
   "downloading-radio-link-header": {
-    "defaultMessage": "Downloading the radio link program",
+    "defaultMessage": "下載無線電連結程式",
     "description": "Progress text"
   },
   "downloading-subtitle": {
-    "defaultMessage": "Please wait. Downloading program to micro:bit.",
+    "defaultMessage": "請稍等。正在將程式下載至 micro:bit。",
     "description": "Progress text"
   },
   "edit-in-makecode-action": {
-    "defaultMessage": "Edit in MakeCode",
+    "defaultMessage": "在 MakeCode 內編輯",
     "description": "Edit in MakeCode button text"
   },
   "estimated-action-aria": {
-    "defaultMessage": "Estimated action: \"{action}\"",
+    "defaultMessage": "預測動作：「{action}」",
     "description": "Aria live text for the current estimated action"
   },
   "estimated-action-label": {
-    "defaultMessage": "Estimated action",
+    "defaultMessage": "預測動作",
     "description": "Heading for estimated action area next to the live graph"
   },
   "estimated-action-label-tooltip-aria": {
-    "defaultMessage": "Estimated action tooltip",
+    "defaultMessage": "預測動作工具提示",
     "description": "Aria label for estimated action tooltip icon"
   },
   "estimated-action-tooltip": {
-    "defaultMessage": "This is the action the model thinks you are currently doing.",
+    "defaultMessage": "這是模型認為您目前正在進行的動作。",
     "description": "Tooltip for the estimated action heading"
   },
   "feedback": {
-    "defaultMessage": "Feedback",
+    "defaultMessage": "回饋",
     "description": "Action to open a feedback dialog"
   },
   "fingerprint-acc-x-tooltip": {
-    "defaultMessage": "Sum of x-direction data",
+    "defaultMessage": "x 方向數據的總和",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-acc-y-tooltip": {
-    "defaultMessage": "Sum of y-direction data",
+    "defaultMessage": "y 方向數據的總和",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-acc-z-tooltip": {
-    "defaultMessage": "Sum of z-direction data",
+    "defaultMessage": "z 方向數據的總和",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-x-tooltip": {
-    "defaultMessage": "Maximum point among all x-direction data points",
+    "defaultMessage": "所有 x 方向數據點中的最大點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-y-tooltip": {
-    "defaultMessage": "Maximum point among all y-direction data points",
+    "defaultMessage": "所有 y 方向數據點中的最大點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-max-z-tooltip": {
-    "defaultMessage": "Maximum point among all z-direction data points",
+    "defaultMessage": "所有 z 方向數據點中的最大點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-x-tooltip": {
-    "defaultMessage": "Mean value for x-direction data",
+    "defaultMessage": "對於 x 方向數據的平均值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-y-tooltip": {
-    "defaultMessage": "Mean value for y-direction data",
+    "defaultMessage": "對於 y 方向數據的平均值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-mean-z-tooltip": {
-    "defaultMessage": "Mean value for z-direction data",
+    "defaultMessage": "對於 z 方向數據的平均值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-x-tooltip": {
-    "defaultMessage": "Minimum point among all x-direction data points",
+    "defaultMessage": "所有 x 方向數據點中的最小點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-y-tooltip": {
-    "defaultMessage": "Minimum point among all y-direction data points",
+    "defaultMessage": "所有 y 方向數據點中的最小點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-min-z-tooltip": {
-    "defaultMessage": "Minimum point among all z-direction data points",
+    "defaultMessage": "所有 z 方向數據點中的最小點",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-x-tooltip": {
-    "defaultMessage": "Number of extremes among all x-direction data points",
+    "defaultMessage": "所有 x 方向數據點中的極端數",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-y-tooltip": {
-    "defaultMessage": "Number of extremes among all y-direction data points",
+    "defaultMessage": "所有 y 方向數據點中的極端數",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-peaks-z-tooltip": {
-    "defaultMessage": "Number of extremes among all z-direction data points",
+    "defaultMessage": "所有 z 方向數據點中的極端數",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-x-tooltip": {
-    "defaultMessage": "Root mean square value for all x-direction data points",
+    "defaultMessage": "所有 x 方向數據點的均方根值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-y-tooltip": {
-    "defaultMessage": "Root mean square value for all y-direction data points",
+    "defaultMessage": "所有 y 方向數據點的均方根值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-rms-z-tooltip": {
-    "defaultMessage": "Root mean square value for all z-direction data points",
+    "defaultMessage": "所有 z 方向數據點的均方根值",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-x-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all x-direction data points",
+    "defaultMessage": "所有 x 方向數據點與 0 的平均偏差",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-y-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all y-direction data points",
+    "defaultMessage": "所有 y 方向數據點與 0 的平均偏差",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-std-z-tooltip": {
-    "defaultMessage": "Average deviation from 0 among all z-direction data points",
+    "defaultMessage": "所有 z 方向數據點與 0 的平均偏差",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-x-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for x-direction data points",
+    "defaultMessage": "對於 x 方向數據點的加速度在正負之間轉換的速率",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-y-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for y-direction data points",
+    "defaultMessage": "對於 y 方向數據點的加速度在正負之間轉換的速率",
     "description": "Tooltip for data feature of a recording"
   },
   "fingerprint-zcr-z-tooltip": {
-    "defaultMessage": "Rate at which acceleration transitions between positive and negative for z-direction data points",
+    "defaultMessage": "對於 z 方向數據點的加速度在正負之間轉換的速率",
     "description": "Tooltip for data feature of a recording"
   },
   "firmware-outdated-content1": {
-    "defaultMessage": "Connecting to the micro:bit failed because the firmware on your micro:bit is too old.",
+    "defaultMessage": "您 micro:bit 上的韌體過舊，無法連線至 micro:bit。",
     "description": "Connection error dialog"
   },
   "firmware-outdated-content2": {
-    "defaultMessage": "You must <link>update your firmware</link> before you can connect to this micro:bit.",
+    "defaultMessage": "在連線至 micro:bit 前，您必須<link>更新您的韌體</link>。",
     "description": "Connection error dialog"
   },
   "firmware-outdated-heading": {
-    "defaultMessage": "Firmware update required",
+    "defaultMessage": "韌體需要更新",
     "description": "Connection error dialog"
   },
   "get-started-action": {
-    "defaultMessage": "Get started",
+    "defaultMessage": "入門指南",
     "description": "Get started action"
   },
   "go-action": {
-    "defaultMessage": "Go",
+    "defaultMessage": "進行",
     "description": "Go action"
   },
   "graph-color-scheme": {
-    "defaultMessage": "Graph colour scheme",
+    "defaultMessage": "圖表顏色方案",
     "description": "Graph colour scheme setting label"
   },
   "graph-color-scheme-color-blind-1": {
-    "defaultMessage": "Colour blind alternative 1",
+    "defaultMessage": "色盲替代方案 1",
     "description": "Graph colour scheme option"
   },
   "graph-color-scheme-color-blind-2": {
-    "defaultMessage": "Colour blind alternative 2",
+    "defaultMessage": "色盲替代方案 2",
     "description": "Graph colour scheme option"
   },
   "graph-color-scheme-default": {
-    "defaultMessage": "Default (red, blue, green)",
+    "defaultMessage": "預設 (紅、藍、綠)",
     "description": "Graph colour scheme option"
   },
   "graph-line-scheme": {
-    "defaultMessage": "Graph line style",
+    "defaultMessage": "圖表線條風格",
     "description": "Graph line scheme setting label"
   },
   "graph-line-scheme-accessible": {
-    "defaultMessage": "Accessible lines (solid, dashed, dots)",
+    "defaultMessage": "可存取的線條 (實線、虛線、點)",
     "description": "Graph line scheme option"
   },
   "graph-line-scheme-solid": {
-    "defaultMessage": "Solid lines",
+    "defaultMessage": "實心線條",
     "description": "Graph line scheme option"
   },
   "graph-line-weight": {
-    "defaultMessage": "Graph line thickness",
+    "defaultMessage": "圖形線條粗細度",
     "description": "Graph line weight setting label"
   },
   "graph-line-weight-default": {
-    "defaultMessage": "Default",
+    "defaultMessage": "預設",
     "description": "Graph line weight option"
   },
   "graph-line-weight-thick": {
-    "defaultMessage": "Thick",
+    "defaultMessage": "厚實的",
     "description": "Graph line weight option"
   },
   "help-label": {
-    "defaultMessage": "Help",
+    "defaultMessage": "幫助",
     "description": "Help icon aria label"
   },
   "help-support": {
-    "defaultMessage": "Help & support",
+    "defaultMessage": "說明與支援",
     "description": "Link or menu item link to support site"
   },
   "help-translate": {
@@ -768,295 +768,295 @@
     "description": "Help translate  menu option text"
   },
   "home-action": {
-    "defaultMessage": "Home",
+    "defaultMessage": "主頁",
     "description": "Home button text"
   },
   "homepage": {
-    "defaultMessage": "Home page",
+    "defaultMessage": "首頁",
     "description": "Link to home page"
   },
   "homepage-alt": {
-    "defaultMessage": "graph showing x, y, z graph lines representing micro:bit accelerometer data with clapping hands overlaid",
+    "defaultMessage": "顯示代表 micro:bit 加速計數據的 x、y、z 圖線的圖表，並重疊拍手圖示",
     "description": "Alt text for image in homepage"
   },
   "homepage-alt-graph": {
-    "defaultMessage": "graph showing x, y, z graph lines representing micro:bit accelerometer data",
+    "defaultMessage": "顯示代表 micro:bit 加速計數據的 x、y、z 圖線的圖表",
     "description": "Alt text for image in homepage"
   },
   "homepage-alt-hands": {
-    "defaultMessage": "clapping hands",
+    "defaultMessage": "拍手",
     "description": "Alt text for image in homepage"
   },
   "homepage-description": {
-    "defaultMessage": "Train a machine learning model on your own movement data and run it on your micro:bit.",
+    "defaultMessage": "以您自己的移動數據來訓練機器學習模型並且在您的 micro:bit 上運行它。",
     "description": "Home page description"
   },
   "homepage-how-it-works": {
-    "defaultMessage": "How it works",
+    "defaultMessage": "運作方式",
     "description": "Home page section heading"
   },
   "homepage-how-it-works-paragraph": {
-    "defaultMessage": "Watch the video to get started. Learn more in the <link>user guide</link>.",
+    "defaultMessage": "觀看影片即可開始。請參閱<link>使用者指南</link>以瞭解更多資訊。",
     "description": "Home page content under the video"
   },
   "homepage-projects": {
-    "defaultMessage": "Projects",
+    "defaultMessage": "專案",
     "description": "Home page section heading"
   },
   "homepage-projects-more": {
-    "defaultMessage": "Explore more <link>content and resources about micro:bit and AI</link>.",
+    "defaultMessage": "探索更多<link>有關於 micro:bit 和 AI 的內容及資源</link>。",
     "description": "Link back to AI landing page"
   },
   "homepage-step-by-step": {
-    "defaultMessage": "Step by step",
+    "defaultMessage": "一步一步的",
     "description": "Home page section heading"
   },
   "homepage-subtitle": {
-    "defaultMessage": "Create AI on your BBC micro:bit using movement and machine learning.",
+    "defaultMessage": "利用移動和機器學習在您的 BBC micro:bit 上建立 AI。",
     "description": "Home page subtitle"
   },
   "homepage-video-alt": {
-    "defaultMessage": "Introductory video",
+    "defaultMessage": "介紹視訊",
     "description": "Home page video alt text"
   },
   "import-data-samples-action": {
-    "defaultMessage": "Import data samples",
+    "defaultMessage": "匯入數據樣本",
     "description": "Data samples action"
   },
   "import-error-dialog-content": {
-    "defaultMessage": "Only MakeCode hex files or data samples files (.json) can be opened by {appNameFull}.",
+    "defaultMessage": "{appNameFull} 只能開啟 MakeCode 十六進位檔案或數據樣本檔案 (.json)。",
     "description": "Content of import error dialog"
   },
   "import-error-dialog-title": {
-    "defaultMessage": "Unsupported file type",
+    "defaultMessage": "不支援的檔案類型",
     "description": "Title of import error dialog"
   },
   "incompatible-device-body-alt": {
-    "defaultMessage": "Go back to select a different micro:bit, or <link>save the project hex</link> which can be downloaded onto a micro:bit V2 later.",
+    "defaultMessage": "返回選擇不同的 micro:bit，或<link>儲存專案十六進位檔案</link>，稍後可以將其下載到 micro:bit V2 上。",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-body1": {
-    "defaultMessage": "Continue to MakeCode to edit the program. You can then save the project hex which can be downloaded onto a micro:bit V2.",
+    "defaultMessage": "繼續 MakeCode 來編輯程式。然後，您可以儲存專案十六進位檔案，並將其下載到 micro:bit V2 上。",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-body2": {
-    "defaultMessage": "Alternatively, <link>save the project hex</link> without using MakeCode.",
+    "defaultMessage": "或者，<link>儲存專案十六進位檔案</link>而不使用 MakeCode。",
     "description": "Incompatible device dialog body text"
   },
   "incompatible-device-heading": {
-    "defaultMessage": "Incompatible device",
+    "defaultMessage": "不相容的裝置",
     "description": "Incompatible device dialog heading"
   },
   "incompatible-device-subtitle": {
-    "defaultMessage": "You are using a micro:bit V1, but machine learning projects need the faster processor on a micro:bit V2. <link>Learn more about micro:bit versions.</link>",
+    "defaultMessage": "您使用的是 micro:bit V1，但是機器學習專案需要 micro:bit V2 上更快的處理器。 <link>瞭解有關 micro:bit 版本的更多資訊。</link>",
     "description": "Incompatible device dialog subtitle"
   },
   "insufficient-data-body": {
-    "defaultMessage": "You need at least 3 data samples for 2 actions to train the model.",
+    "defaultMessage": "您至少需要對於 2 個動作的 3 個數據樣本來訓練模型。",
     "description": "Insufficient data modal content"
   },
   "insufficient-data-title": {
-    "defaultMessage": "You don't have enough data",
+    "defaultMessage": "您沒有足夠的數據",
     "description": "Insufficient data modal title"
   },
   "language": {
-    "defaultMessage": "Language",
+    "defaultMessage": "語言",
     "description": "Language option text"
   },
   "learn-about-firewall-requirements-action": {
-    "defaultMessage": "Learn about firewall requirements",
+    "defaultMessage": "瞭解防火牆要求",
     "description": "Link to support article for firewall requirements"
   },
   "led-icon-option-angry": {
-    "defaultMessage": "Angry",
+    "defaultMessage": "憤怒",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-asleep": {
-    "defaultMessage": "Asleep",
+    "defaultMessage": "睡眠",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-butterfly": {
-    "defaultMessage": "Butterfly",
+    "defaultMessage": "蝴蝶",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-chessboard": {
-    "defaultMessage": "Chessboard",
+    "defaultMessage": "棋盤",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-confused": {
-    "defaultMessage": "Confused",
+    "defaultMessage": "困惑",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-cow": {
-    "defaultMessage": "Cow",
+    "defaultMessage": "母牛",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-diamond": {
-    "defaultMessage": "Diamond",
+    "defaultMessage": "菱形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-duck": {
-    "defaultMessage": "Duck",
+    "defaultMessage": "鴨子",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-eighthnote": {
-    "defaultMessage": "Eighth Note",
+    "defaultMessage": "八分音符",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-fabulous": {
-    "defaultMessage": "Fabulous",
+    "defaultMessage": "極好",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-ghost": {
-    "defaultMessage": "Ghost",
+    "defaultMessage": "鬼魂",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-giraffe": {
-    "defaultMessage": "Giraffe",
+    "defaultMessage": "長頸鹿",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-happy": {
-    "defaultMessage": "Happy",
+    "defaultMessage": "開心",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-heart": {
-    "defaultMessage": "Heart",
+    "defaultMessage": "心形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-house": {
-    "defaultMessage": "House",
+    "defaultMessage": "房屋",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-lefttriangle": {
-    "defaultMessage": "Left Triangle",
+    "defaultMessage": "左三角形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-meh": {
-    "defaultMessage": "Meh",
+    "defaultMessage": "嗯",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-no": {
-    "defaultMessage": "No",
+    "defaultMessage": "否",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-off": {
-    "defaultMessage": "Off",
+    "defaultMessage": "關閉",
     "description": "Icon option."
   },
   "led-icon-option-pitchfork": {
-    "defaultMessage": "Pitchfork",
+    "defaultMessage": "乾草叉",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-quarternote": {
-    "defaultMessage": "Quarter Note",
+    "defaultMessage": "四分音符",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-rabbit": {
-    "defaultMessage": "Rabbit",
+    "defaultMessage": "兔子",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-rollerskate": {
-    "defaultMessage": "Rollerskate",
+    "defaultMessage": "溜冰鞋",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-sad": {
-    "defaultMessage": "Sad",
+    "defaultMessage": "悲傷",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-scissors": {
-    "defaultMessage": "Scissors",
+    "defaultMessage": "剪刀",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-silly": {
-    "defaultMessage": "Silly",
+    "defaultMessage": "愚蠢",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-skull": {
-    "defaultMessage": "Skull",
+    "defaultMessage": "骷髏",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smalldiamond": {
-    "defaultMessage": "Small Diamond",
+    "defaultMessage": "小菱形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smallheart": {
-    "defaultMessage": "Small Heart",
+    "defaultMessage": "小心形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-smallsquare": {
-    "defaultMessage": "Small Square",
+    "defaultMessage": "小方形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-snake": {
-    "defaultMessage": "Snake",
+    "defaultMessage": "蛇",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-square": {
-    "defaultMessage": "Square",
+    "defaultMessage": "方形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-stickfigure": {
-    "defaultMessage": "Stick Figure",
+    "defaultMessage": "簡筆畫",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-surprised": {
-    "defaultMessage": "Surprised",
+    "defaultMessage": "驚訝",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-sword": {
-    "defaultMessage": "Sword",
+    "defaultMessage": "劍",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-target": {
-    "defaultMessage": "Target",
+    "defaultMessage": "目標",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-tortoise": {
-    "defaultMessage": "Tortoise",
+    "defaultMessage": "陸龜",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-triangle": {
-    "defaultMessage": "Triangle",
+    "defaultMessage": "三角形",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-tshirt": {
-    "defaultMessage": "T-Shirt",
+    "defaultMessage": "T 恤",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-umbrella": {
-    "defaultMessage": "Umbrella",
+    "defaultMessage": "雨傘",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "led-icon-option-yes": {
-    "defaultMessage": "Yes",
+    "defaultMessage": "是",
     "description": "Makecode icon option. The translation should match MakeCode translations."
   },
   "live-data-graph": {
-    "defaultMessage": "Live data graph",
+    "defaultMessage": "即時數據圖表",
     "description": "Title for live data graph"
   },
   "live-graph": {
-    "defaultMessage": "Live graph",
+    "defaultMessage": "即時圖表",
     "description": "Heading for live graph"
   },
   "live-graph-tooltip": {
-    "defaultMessage": "This graph shows movement data from the micro:bit's accelerometer in real time. Try moving your data collection micro:bit to see the X, Y and Z axes change. Each coloured line represents a different direction (dimension) you are moving the micro:bit in.",
+    "defaultMessage": "這張圖表即時顯示來自 micro:bit 加速計的運動數據。嘗試移動您的數據收集用的 micro:bit 以查看 X、Y 和 Z 軸的變更。每條彩色線條代表您在 micro:bit 移動的不同方向 (維度)。",
     "description": "Tooltip for live graph heading"
   },
   "live-graph-tooltip-aria": {
-    "defaultMessage": "Live graph tooltip",
+    "defaultMessage": "即時圖表工具提示",
     "description": "Aria label for live graph tooltip icon"
   },
   "loading": {
-    "defaultMessage": "Loading",
+    "defaultMessage": "正在載入",
     "description": "Aria label for loading spinner"
   },
   "main-menu": {
-    "defaultMessage": "Main menu",
+    "defaultMessage": "主選單",
     "description": "Main menu label"
   },
   "makecode-back-alt": {
-    "defaultMessage": "Left arrow icon for MakeCode back",
+    "defaultMessage": "MakeCode 傳回的左箭頭圖標",
     "description": "Testing model page title"
   },
   "makecode-block-alt-prefix": {
@@ -1064,479 +1064,479 @@
     "description": "Makecode block alt text prefix"
   },
   "makecode-block-show-icon": {
-    "defaultMessage": "show icon",
+    "defaultMessage": "顯示圖示",
     "description": "Makecode block text. The translation should match MakeCode translations."
   },
   "makecode-load-error-dialog-body": {
-    "defaultMessage": "{appNameFull} has failed to load MakeCode. Please check your internet connection, reload the page then try again.",
+    "defaultMessage": "{appNameFull} 未能載入 MakeCode。請檢查您的網路連線，重新載入頁面，然後重試。",
     "description": "Content of MakeCode load error dialog"
   },
   "makecode-load-error-dialog-title": {
-    "defaultMessage": "Could not load Microsoft MakeCode",
+    "defaultMessage": "無法載入 Microsoft MakeCode",
     "description": "Title of MakeCode load error dialog"
   },
   "microbit-not-connected": {
-    "defaultMessage": "Your micro:bit is not connected",
+    "defaultMessage": "您的 micro:bit 未連線",
     "description": "Live graph disconnected micro:bit status message"
   },
   "ml.onStart|block": {
-    "defaultMessage": "on ML $event start",
+    "defaultMessage": "ML $event 開始時",
     "description": "This string should be a Crowdin duplicate of the MakeCode extension block with the same text and use the same translation."
   },
   "more-edit-in-makecode-options": {
-    "defaultMessage": "More edit in MakeCode options",
+    "defaultMessage": "在 MakeCode 選項中進行更多編輯",
     "description": "Aria label for the additional actions menu to the right of the Edit in MakeCode button"
   },
   "name-action-hint": {
-    "defaultMessage": "Name an action you want the micro:bit to recognise",
+    "defaultMessage": "命名您希望 micro:bit 辨識的動作",
     "description": "Hint shown when you have an unnamed action"
   },
   "name-project": {
-    "defaultMessage": "Name your project",
+    "defaultMessage": "為您的專案命名",
     "description": "Name your project header"
   },
   "name-text": {
-    "defaultMessage": "Name",
+    "defaultMessage": "名稱",
     "description": "Header for name field"
   },
   "name-used-when": {
-    "defaultMessage": "The name is used when you save a file.",
+    "defaultMessage": "儲存 HEX 檔案時，使用該名稱。",
     "description": "Text under project name field"
   },
   "new-session-setup-description": {
-    "defaultMessage": "Starting a new session will overwrite your existing session. You may want to <link>save your existing session</link> first.",
+    "defaultMessage": "啟動新會話將覆蓋您現有的會話。您可能需要先<link>儲存您的現有會話</link>。",
     "description": "New session setup description"
   },
   "new-session-setup-title": {
-    "defaultMessage": "New session setup",
+    "defaultMessage": "新會話設定",
     "description": "New session setup title"
   },
   "newpage-continue-session-subtitle": {
-    "defaultMessage": "Use a hex file or data samples file you saved to your computer to continue a session.",
+    "defaultMessage": "利用您儲存到您電腦的十六進位檔案或數據樣本檔案以繼續會話。",
     "description": "Continue session subtitle"
   },
   "newpage-continue-session-title": {
-    "defaultMessage": "Continue a saved session",
+    "defaultMessage": "繼續一個已儲存會話",
     "description": "Continue session title"
   },
   "newpage-last-session-date": {
-    "defaultMessage": "<strong>Date:</strong> {date}",
+    "defaultMessage": "<strong>日期：</strong> {date}",
     "description": "Last session date label"
   },
   "newpage-last-session-name": {
-    "defaultMessage": "<strong>Name:</strong> {name}",
+    "defaultMessage": "<strong>名稱：</strong> {name}",
     "description": "Last session name label"
   },
   "newpage-last-session-none": {
-    "defaultMessage": "No session found",
+    "defaultMessage": "未找到會話",
     "description": "Last session not found text"
   },
   "newpage-last-session-title": {
-    "defaultMessage": "Open last session",
+    "defaultMessage": "開啟上一個會話",
     "description": "Open last session title"
   },
   "newpage-new-session-subtitle": {
-    "defaultMessage": "Connect your micro:bit and collect movement data to build a machine learning model.",
+    "defaultMessage": "連線您的 micro:bit 並收集移動數據以建立機器學習模型。",
     "description": "Start new session subtitle"
   },
   "newpage-new-session-title": {
-    "defaultMessage": "New session",
+    "defaultMessage": "新會話",
     "description": "Start new session title"
   },
   "newpage-section-one-title": {
-    "defaultMessage": "Pick up where you left off",
+    "defaultMessage": "從您上次離開的地方繼續",
     "description": "Homepage section one title"
   },
   "newpage-section-two-title": {
-    "defaultMessage": "Start something new",
+    "defaultMessage": "開始新專案",
     "description": "Homepage section two title"
   },
   "newpage-title": {
-    "defaultMessage": "New session",
+    "defaultMessage": "新會話",
     "description": "New page title"
   },
   "next-action": {
-    "defaultMessage": "Next",
+    "defaultMessage": "下一個",
     "description": "Next button text for dialogs and similar"
   },
   "no-data-samples": {
-    "defaultMessage": "No data samples",
+    "defaultMessage": "沒有數據樣本",
     "description": "Empty data samples page status text"
   },
   "not-create-ai-hex-import-dialog-content": {
-    "defaultMessage": "This project did not contain any data samples, so only the code has been opened. You need to train a model before you can use the code.",
+    "defaultMessage": "這項專案不包含任何數據樣本，因此僅開啟程式碼。您需要先訓練模型，然後才能使用程式碼。",
     "description": "Content of import non-CreateAI hex dialog"
   },
   "not-create-ai-hex-import-dialog-title": {
-    "defaultMessage": "Your MakeCode project has been imported",
+    "defaultMessage": "您的 MakeCode 專案已匯入",
     "description": "Title of import non-CreateAI hex dialog"
   },
   "not-found": {
-    "defaultMessage": "{appNameFull} home page",
+    "defaultMessage": "{appNameFull} 首頁",
     "description": "Page not found link text"
   },
   "not-found-title": {
-    "defaultMessage": "Page not found",
+    "defaultMessage": "找不到頁面",
     "description": "Page not found page title"
   },
   "open-file-action": {
-    "defaultMessage": "Open…",
+    "defaultMessage": "開啟...",
     "description": "Open file button text"
   },
   "open-file-dropped": {
-    "defaultMessage": "Open file when dropped",
+    "defaultMessage": "放置時開啟檔案",
     "description": "Aria label for file drop target"
   },
   "other-tabs-body1": {
-    "defaultMessage": "Another process is connected to this device.",
+    "defaultMessage": "其他程序連線至此裝置。",
     "description": "Connection error dialog"
   },
   "other-tabs-body2": {
-    "defaultMessage": "Close any other tabs that may be using WebUSB (e.g. MakeCode, Python Editor, {appNameShort}), or unplug and replug the micro:bit before trying again.",
+    "defaultMessage": "關閉任何其他可能正在使用 WebUSB 的索引標籤 (例如 MakeCode、Python 編輯程式、{appNameShort})，或者在重試之前拔下並重新插入 micro:bit。",
     "description": "Connection error dialog"
   },
   "other-tabs-heading": {
-    "defaultMessage": "Connect using WebUSB",
+    "defaultMessage": "使用 WebUSB 連線",
     "description": "Connection error dialog"
   },
   "privacy": {
-    "defaultMessage": "Privacy policy",
+    "defaultMessage": "隱私權政策",
     "description": "Link to view privacy policy"
   },
   "project-loaded": {
-    "defaultMessage": "Project loaded",
+    "defaultMessage": "專案已載入",
     "description": "Toast when a new project is loaded"
   },
   "project-name-not-empty": {
-    "defaultMessage": "The project name cannot be empty",
+    "defaultMessage": "專案名稱不可為空白",
     "description": "Validation message for project name"
   },
   "radio-link-microbit": {
-    "defaultMessage": "Radio link micro:bit",
+    "defaultMessage": "無線電連結 micro:bit",
     "description": "Radio link micro:bit image caption"
   },
   "radio-link-microbit-label": {
-    "defaultMessage": "diagram showing radio link micro:bit being connected with a computer",
+    "defaultMessage": "顯示無線電連結 micro:bit 與電腦連線的示意圖",
     "description": "Aria label for radio link image"
   },
   "recognition-point-label": {
-    "defaultMessage": "Recognition point:",
+    "defaultMessage": "辨識點：",
     "description": "Label for the slider for the recognition point"
   },
   "reconnect-action": {
-    "defaultMessage": "Reconnect",
+    "defaultMessage": "重新連線",
     "description": "Button text to reconnect a micro:bit over Bluetooth/radio"
   },
   "reconnect-failed-bluetooth-heading": {
-    "defaultMessage": "Failed to reconnect to data collection micro:bit",
+    "defaultMessage": "無法重新連線至數據收集 micro:bit",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bluetooth1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be re-established.",
+    "defaultMessage": "無法重新建立與數據收集 micro:bit 的連線。",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bridge-heading": {
-    "defaultMessage": "Failed to reconnect to radio link micro:bit",
+    "defaultMessage": "無法重新連線到無線電連結 micro:bit",
     "description": "Connection error dialog"
   },
   "reconnect-failed-bridge1": {
-    "defaultMessage": "The connection to the micro:bit connected to your computer could not be re-established.",
+    "defaultMessage": "無法重新建立與您的電腦連線的 micro:bit 的連線。",
     "description": "Connection error dialog"
   },
   "reconnect-failed-radio-heading": {
-    "defaultMessage": "Failed to reconnect to micro:bits",
+    "defaultMessage": "無法重新連線到 micro:bits",
     "description": "Connection error dialog"
   },
   "reconnect-failed-remote-heading": {
-    "defaultMessage": "Failed to reconnect to data collection micro:bit",
+    "defaultMessage": "無法重新連線至數據收集 micro:bit",
     "description": "Connection error dialog"
   },
   "reconnect-failed-remote1": {
-    "defaultMessage": "The connection to the data collection micro:bit could not be re-established.",
+    "defaultMessage": "無法重新建立與數據收集 micro:bit 的連線。",
     "description": "Connection error dialog"
   },
   "reconnect-failed-subtitle": {
-    "defaultMessage": "Follow these instructions to restart the connection process.",
+    "defaultMessage": "請依照以下說明重新啟動連線程序。",
     "description": "Connection error dialog"
   },
   "reconnecting": {
-    "defaultMessage": "Reconnecting…",
+    "defaultMessage": "重新連接中…",
     "description": "Shown while reconnecting"
   },
   "record-action": {
-    "defaultMessage": "Record",
+    "defaultMessage": "錄製",
     "description": "Record button text"
   },
   "record-action-aria": {
-    "defaultMessage": "Record data for action \"{action}\"",
+    "defaultMessage": "記錄動作「{action}」的數據",
     "description": "Aria label for record button"
   },
   "record-hint": {
-    "defaultMessage": "Press to record a data sample.",
+    "defaultMessage": "按下以記錄數據樣本。",
     "description": "Hint when you have named the first action but not recorded any data samples"
   },
   "record-hint-button-b": {
-    "defaultMessage": "Press to record a data sample or press button B on your data collection micro:bit.",
+    "defaultMessage": "按下以記錄數據樣本或是按下您的數據收集用的 micro:bit 上的按鍵 B。",
     "description": "Hint when you have named the first action but not recorded any data samples and have a micro:bit connected"
   },
   "record-samples": {
-    "defaultMessage": "Record {numSamples} samples",
+    "defaultMessage": "記錄 {numSamples} 個樣本",
     "description": "Additional recording action text"
   },
   "record-samples-help": {
-    "defaultMessage": "Each sample has its own countdown",
+    "defaultMessage": "每個樣本都有它自己的倒數計時",
     "description": "Help text for additional recording action"
   },
   "record-seconds": {
-    "defaultMessage": "Record for {numSeconds} seconds",
+    "defaultMessage": "記錄 {numSeconds} 秒",
     "description": "Additional recording action text"
   },
   "record-seconds-help": {
-    "defaultMessage": "Move continuously to get {numSamples} samples",
+    "defaultMessage": "連續移動以獲得 {numSamples} 個樣本",
     "description": "Help text for additional recording action"
   },
   "recording": {
-    "defaultMessage": "Recording",
+    "defaultMessage": "正在錄製 ",
     "description": "Shown during recording"
   },
   "recording-complete": {
-    "defaultMessage": "Done",
+    "defaultMessage": "完成",
     "description": "Text shown when data recording complete"
   },
   "recording-data-for": {
-    "defaultMessage": "Record data for action \"{action}\"",
+    "defaultMessage": "記錄動作「{action}」的數據",
     "description": "Text in recording dialog"
   },
   "recording-data-for-numbered": {
-    "defaultMessage": "Record {sample} of {numSamples} for action \"{action}\"",
+    "defaultMessage": "記錄對於動作「{action}」的 {numSamples} 個記錄 {sample}",
     "description": "Text in recording dialog"
   },
   "recording-fingerprint-label": {
-    "defaultMessage": "heatmap showing micro:bit x, y, z accelerometer data features for one recording",
+    "defaultMessage": "顯示一次記錄的 micro:bit x、y、z 加速度計數據功能的熱圖",
     "description": "Label for recording fingerprint heatmap"
   },
   "recording-graph-label": {
-    "defaultMessage": "graph showing micro:bit x, y, z accelerometer data for one recording",
+    "defaultMessage": "顯示一次記錄的 micro:bit x、y、z 加速度計數據的圖表",
     "description": "Label for recording graph"
   },
   "recording-options-aria": {
-    "defaultMessage": "More recording options for action \"{action}\"",
+    "defaultMessage": "對於動作「{action}」的更多錄製選項",
     "description": "Aria label for more recording options button"
   },
   "reload-action": {
-    "defaultMessage": "Reload",
+    "defaultMessage": "重新載入",
     "description": "Reload button text"
   },
   "reset-to-default-action": {
-    "defaultMessage": "Reset to default blocks",
+    "defaultMessage": "重設為預設區塊",
     "description": "Reset to default blocks button text"
   },
   "restore-defaults-action": {
-    "defaultMessage": "Restore default values for all settings",
+    "defaultMessage": "恢復所有設定的預設值",
     "description": "Restore default button text"
   },
   "restore-defaults-confirm-action": {
-    "defaultMessage": "Restore defaults",
+    "defaultMessage": "恢復預設值",
     "description": "Restore default settings confirm button text"
   },
   "restore-defaults-confirm-body": {
-    "defaultMessage": "Are you sure you want to restore default values for all settings?",
+    "defaultMessage": "您確定您要恢復所有設定的預設值嗎？",
     "description": "Restore default settings confirmation dialog body text"
   },
   "restore-defaults-confirm-heading": {
-    "defaultMessage": "Restore default settings",
+    "defaultMessage": "恢復預設設定",
     "description": "Restore default settings confirmation dialog title"
   },
   "restore-defaults-helper": {
-    "defaultMessage": "Previously dismissed help content may be shown again.",
+    "defaultMessage": "先前隱藏的幫助內容可能會再次顯示。",
     "description": "Restore default settings helper text"
   },
   "save-action": {
-    "defaultMessage": "Save",
+    "defaultMessage": "儲存",
     "description": "Label for action that saves the project as a file the user downloads"
   },
   "save-hex-dialog-heading": {
-    "defaultMessage": "Save project as a hex file",
+    "defaultMessage": "將專案儲存為十六進位檔案",
     "description": "Heading for the dialog shown when saving a hex file"
   },
   "save-hex-dialog-message1": {
-    "defaultMessage": "The download contains your actions, data samples and your MakeCode project. Open it in {appNameFull} to continue working.",
+    "defaultMessage": "下載內容包含您的動作、數據樣本和您的 MakeCode 專案。在 {appNameFull} 中開啟它以繼續工作。",
     "description": "Text in the dialog shown when saving a hex file"
   },
   "save-hex-dialog-message2": {
-    "defaultMessage": "You can also open it with Microsoft MakeCode if you don't need to change the actions and data samples.",
+    "defaultMessage": "如果您不需要變更動作和數據樣本，您也可以使用 Microsoft MakeCode 開啟它。",
     "description": "Text in the dialog shown when saving a hex file"
   },
   "saving-description": {
-    "defaultMessage": "Your download will be ready soon.",
+    "defaultMessage": "您的下載很快就會準備就緒。",
     "description": "Saving progress dialog text"
   },
   "saving-title": {
-    "defaultMessage": "Saving…",
+    "defaultMessage": "儲存中…",
     "description": "Saving progress title"
   },
   "saving-toast-title": {
-    "defaultMessage": "Your hex file has been downloaded",
+    "defaultMessage": "您的十六進位檔案已下載",
     "description": "Notification after a hex file has been downloaded"
   },
   "select-icon-action-aria": {
-    "defaultMessage": "Pick icon for action \"{action}\"",
+    "defaultMessage": "挑選動作「{action}」的圖標",
     "description": "Aria label for pick icon button"
   },
   "select-icon-action-untitled-aria": {
-    "defaultMessage": "Pick icon for untitled action",
+    "defaultMessage": "挑選無標題動作的圖標",
     "description": "Aria label for pick icon button"
   },
   "select-icon-option-action-aria": {
-    "defaultMessage": "Select \"{iconName}\" icon",
+    "defaultMessage": "選擇「{iconName}」圖標",
     "description": "Aria label for icon option"
   },
   "settings": {
-    "defaultMessage": "Settings",
+    "defaultMessage": "設置",
     "description": "Text for settings dialog header and menu item"
   },
   "settings-menu-action": {
-    "defaultMessage": "Settings actions menu",
+    "defaultMessage": "設定動作選單",
     "description": "Label for settings actions menu button"
   },
   "show-graphs-checkbox-label-text": {
-    "defaultMessage": "Show graphs",
+    "defaultMessage": "顯示圖表",
     "description": "Show graphs checkbox label text"
   },
   "simple-ai-exercise-timer-resource-title": {
-    "defaultMessage": "Simple AI exercise timer",
+    "defaultMessage": "簡單的 AI 鍛鍊計時器",
     "description": "Home page resource card title"
   },
   "skip-tour-action": {
-    "defaultMessage": "Skip tour",
+    "defaultMessage": "跳過導覽",
     "description": "Skip tour button text"
   },
   "software-versions": {
-    "defaultMessage": "Software versions",
+    "defaultMessage": "軟體版本",
     "description": "Software versions text"
   },
   "start-session-action": {
-    "defaultMessage": "Start session",
+    "defaultMessage": "開始會話",
     "description": "Start session button text"
   },
   "start-training-action": {
-    "defaultMessage": "Start training",
+    "defaultMessage": "開始訓練",
     "description": "Start training button text"
   },
   "steps-alt": {
-    "defaultMessage": "diagram showing the iterative process of collecting data, training a model, testing the model, and improving the model by improving the data collected before finally coding using the model.",
+    "defaultMessage": "圖表顯示收集數據、訓練模型、測試模型、改進數據以優化模型的迭代程序，然後最終利用模型進行編碼。",
     "description": "Alt text for the step-by-step home page diagram"
   },
   "steps-code": {
-    "defaultMessage": "Code",
+    "defaultMessage": "編程",
     "description": "Step in home page diagram"
   },
   "steps-collect-data": {
-    "defaultMessage": "Collect data",
+    "defaultMessage": "收集數據",
     "description": "Step in home page diagram"
   },
   "steps-improve": {
-    "defaultMessage": "Improve",
+    "defaultMessage": "改進",
     "description": "Step in home page diagram"
   },
   "steps-test-model": {
-    "defaultMessage": "Test model",
+    "defaultMessage": "測試模型",
     "description": "Step in home page diagram"
   },
   "steps-train": {
-    "defaultMessage": "Train",
+    "defaultMessage": "訓練",
     "description": "Step in home page diagram"
   },
   "stop-recording-action": {
-    "defaultMessage": "Stop recording",
+    "defaultMessage": "停止錄製",
     "description": "Button label to stop recording movement data while recording multiple samples"
   },
   "support-request": {
-    "defaultMessage": "Please consider <link>raising a support request</link>.",
+    "defaultMessage": "請考慮<link>提出支援請求</link>。",
     "description": "Support request link text"
   },
   "terms": {
-    "defaultMessage": "Terms of use",
+    "defaultMessage": "網站使用條款",
     "description": "Link or menu item link to view terms of use"
   },
   "testing-model-actions-region": {
-    "defaultMessage": "Testing model toolbar",
+    "defaultMessage": "測試模型工具列",
     "description": "Region label for testing model actions"
   },
   "testing-model-title": {
-    "defaultMessage": "Testing model",
+    "defaultMessage": "測試模型",
     "description": "Testing model page title"
   },
   "tour-action": {
-    "defaultMessage": "Tour",
+    "defaultMessage": "導覽",
     "description": "Button label that starts a tour of the app's features"
   },
   "tour-collect-addActions-content": {
-    "defaultMessage": "Decide what your other actions will be and what you will name them. You need at least 2 actions with 3 data samples to train the model. Your data samples are only stored on your computer, they do not get sent to anyone else.",
+    "defaultMessage": "決定您的其他動作是什麼以及您將如何命名它們。您需要至少 2 個動作和 3 個數據樣本來訓練模型。您的數據樣本僅儲存在您的電腦上，不會發送給其他任何人。",
     "description": "Tour step description"
   },
   "tour-collect-addActions-title": {
-    "defaultMessage": "Add more actions",
+    "defaultMessage": "新增更多動作",
     "description": "Tour step title"
   },
   "tour-collect-afterFirst-content": {
-    "defaultMessage": "To train the machine learning model you need at least 3 data samples for 2 different actions.",
+    "defaultMessage": "要訓練機器學習模型，您需要至少 2 個動作和 3 個數據樣本。",
     "description": "Tour step description"
   },
   "tour-collect-afterFirst-title": {
-    "defaultMessage": "You’ve recorded your first {recordingCount, plural, one {sample} other {samples}}!",
+    "defaultMessage": "您已經錄製了您的第一個 {recordingCount, plural, one {sample} other {samples}}！",
     "description": "Tour step title. Uses ICU syntax for pluralisation: https://formatjs.io/docs/core-concepts/icu-syntax/#plural-format."
   },
   "tour-collect-collectMore-explanation-content": {
-    "defaultMessage": "Collecting more samples should result in a better machine learning model.",
+    "defaultMessage": "收集更多樣本應該會獲得更好的機器學習模型。",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-hasRecordings-content": {
-    "defaultMessage": "Record data samples for your actions.",
+    "defaultMessage": "記錄您的動作的數據樣本。",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-noRecordings-content": {
-    "defaultMessage": "Record more samples for this action.",
+    "defaultMessage": "記錄更多對於這個動作的樣本。",
     "description": "Tour step description"
   },
   "tour-collect-collectMore-title": {
-    "defaultMessage": "Collect more data samples",
+    "defaultMessage": "收集更多數據樣本",
     "description": "Tour step title"
   },
   "tour-collect-trainModel-content": {
-    "defaultMessage": "When you have collected enough data samples you can train the machine learning model. You can come back later to remove or add more data and re-train to make the model more reliable.",
+    "defaultMessage": "當您收集了足夠的數據樣本後，您可以訓練機器學習模型。您可以稍後再回來移除或新增更多數據並且重新訓練以便讓模型更加可靠。",
     "description": "Tour step description"
   },
   "tour-dataSamples-actions-common-content": {
-    "defaultMessage": "An action is the type of movement you want the machine learning model to recognise e.g. ‘waving’ or ‘clapping’.",
+    "defaultMessage": "動作是您希望機器學習模型辨識的移動類型，例如「揮手」或「鼓掌」。",
     "description": "Tour step content"
   },
   "tour-dataSamples-actions-noRecordings-content": {
-    "defaultMessage": "Decide what your first action will be, name it and then start recording data samples.",
+    "defaultMessage": "決定您的第一個動作是什麼，為其命名，然後開始記錄數據樣本。",
     "description": "Tour step content"
   },
   "tour-dataSamples-connected-content": {
-    "defaultMessage": "Now you can start collecting data samples to train a machine learning (ML) model to recognise different movements, or actions.",
+    "defaultMessage": "現在您可以開始收集數據樣本以便訓練機器學習 (ML) 模型來辨識不同的移動或動作。",
     "description": "Tour step content"
   },
   "tour-dataSamples-connected-title": {
-    "defaultMessage": "Your data collection micro:bit is connected!",
+    "defaultMessage": "您的數據收集用的 micro:bit 已連線！",
     "description": "Tour step title"
   },
   "tour-dataSamples-liveGraph-content": {
-    "defaultMessage": "The graph shows movement data from the micro:bit’s accelerometer. Move your data collection micro:bit and see how the graph changes.",
+    "defaultMessage": "圖表顯示來自 micro:bit 加速計的移動數據。移動您的數據收集用的 micro:bit 並查看圖表如何變化。",
     "description": "Tour step content"
   },
   "tour-makecode-intro-content1": {
-    "defaultMessage": "Download the model and code to test your project on a micro:bit. You can also add more code blocks to create your own programs using your model.",
+    "defaultMessage": "下載模型和程式碼以在 micro:bit 上測試您的專案。您還可以新增更多程式碼區塊以利用您的模型建立您自己的程式。",
     "description": "Tour step description"
   },
   "tour-makecode-intro-content2": {
-    "defaultMessage": "Need to improve the ML model? ",
+    "defaultMessage": "需要改進 ML 模型嗎？",
     "description": "Tour step description"
   },
   "tour-makecode-intro-content3": {
-    "defaultMessage": "Use this back button in the top left.",
+    "defaultMessage": "使用左上角的返回按鍵。",
     "description": "Tour step description"
   },
   "tour-makecode-intro-title": {
@@ -1544,143 +1544,143 @@
     "description": "Tour step title"
   },
   "tour-trainModel-afterTrain-alreadyConnected-title": {
-    "defaultMessage": "You’ve trained an ML model!",
+    "defaultMessage": "您已經訓練了 ML 模型！",
     "description": "Tour step title"
   },
   "tour-trainModel-afterTrain-content": {
-    "defaultMessage": "Now test your machine learning model. Try each action by moving your data collection micro:bit. Does the model correctly estimate each action?",
+    "defaultMessage": "現在測試您的機器學習模型。藉由移動您的數據收集用的 micro:bit 嘗試各個動作。模型是否正確地估計各個動作？",
     "description": "Tour step description"
   },
   "tour-trainModel-afterTrain-delayedUntilConnected-title": {
-    "defaultMessage": "Test your ML model",
+    "defaultMessage": "測試您的 ML 模型",
     "description": "Tour step title"
   },
   "tour-trainModel-certaintyRecognition-content": {
-    "defaultMessage": "The bar graph shows how confident the model is that you are doing each action. Move the slider to adjust the recognition point, or threshold.",
+    "defaultMessage": "長條圖顯示模型對您正在做的各個動作的信心程度。移動滑桿以調整辨識點，或閾值。",
     "description": "Tour step description"
   },
   "tour-trainModel-certaintyRecognition-title": {
-    "defaultMessage": "Certainty and recognition point",
+    "defaultMessage": "確定性和辨識點",
     "description": "Tour step title"
   },
   "tour-trainModel-editInMakeCode-content": {
-    "defaultMessage": "Open your project in MakeCode to download the program and your machine learning model to a micro:bit. You can add more blocks to create your own programs using your model.",
+    "defaultMessage": "在 MakeCode 中開啟您的專案，將程式和您的機器學習模型下載到 micro:bit。您可以新增更多區塊以利用您的模型來建立您自己的程式。",
     "description": "Tour step description"
   },
   "tour-trainModel-estimatedAction-content": {
-    "defaultMessage": "The action the model estimates you are currently doing is shown below the micro:bit icon for that action.",
+    "defaultMessage": "模型估計您目前正在執行的動作會顯示在該動作的 micro:bit 圖示下方。",
     "description": "Tour step description"
   },
   "tour-trainModel-makeCodeBlocks-content": {
-    "defaultMessage": "These MakeCode blocks will show icons for each action detected when you transfer your code and model to a micro:bit.",
+    "defaultMessage": "當您將程式碼和模型傳輸到 micro:bit 時，這些 MakeCode 區塊將顯示偵測到的各個動作的圖示。",
     "description": "Tour step description"
   },
   "tour-trainModel-makeCodeBlocks-title": {
-    "defaultMessage": "Microsoft MakeCode blocks",
+    "defaultMessage": "Microsoft MakeCode 區塊",
     "description": "Tour step title"
   },
   "train-description": {
-    "defaultMessage": "The computer program spots patterns or differences in your data samples, and uses these to build a mathematical model that allows {appNameFull} to recognise different actions when you move your micro:bit.",
+    "defaultMessage": "電腦程式會發現數據樣本中的模式或差異，並使用它們建立數學模型，讓 {appNameFull} 能夠在當您移動 micro:bit 時辨識不同的動作。",
     "description": "Explanation on training dialog"
   },
   "train-error-body": {
-    "defaultMessage": "The training did not result in a usable model. The reason for this is most likely the data used for training. If the data samples for different actions are too similar, this can result in issues in the training process.",
+    "defaultMessage": "訓練沒有產生可用的模型。原因很可能是用於訓練的數據。如果不同動作的數據樣本太相似，則可能會導致訓練程序中出現問題。",
     "description": "Training error dialog"
   },
   "train-error-header": {
-    "defaultMessage": "Training failed",
+    "defaultMessage": "訓練失敗",
     "description": "Training error dialog"
   },
   "train-error-todo": {
-    "defaultMessage": "Return to the Add data page and change your data.",
+    "defaultMessage": "返回新增數據頁面並且變更您的數據。",
     "description": "Training error dialog"
   },
   "train-header": {
-    "defaultMessage": "Training a model",
+    "defaultMessage": "訓練模型",
     "description": "Training dialog"
   },
   "train-model": {
-    "defaultMessage": "Train model",
+    "defaultMessage": "訓練模型",
     "description": "Action to train a model"
   },
   "training-model": {
-    "defaultMessage": "Training model…",
+    "defaultMessage": "正在訓練模型…",
     "description": "Progress title"
   },
   "transfer-hex-alt": {
-    "defaultMessage": "animation of dragging a hex file from the downloads folder onto the micro:bit drive or device listed in the file explorer",
+    "defaultMessage": "將十六進位檔案從下載資料夾拖曳到檔案總管中列出的 micro:bit 磁碟機或裝置上的動畫",
     "description": "Alt text"
   },
   "transfer-hex-heading": {
-    "defaultMessage": "Transfer saved hex file to micro:bit",
+    "defaultMessage": "將儲存的 HEX 檔案傳輸至 micro:bit",
     "description": "Dialog shown when WebUSB fails"
   },
   "transfer-hex-manual-download": {
-    "defaultMessage": "If the file did not automatically download then <link>please download the file here</link>.",
+    "defaultMessage": "如果檔案未自動下載，則<link>請在此下載檔案</link>。",
     "description": "Dialog shown when WebUSB fails"
   },
   "transfer-hex-message": {
-    "defaultMessage": "Drag the hex file from your Downloads folder to the MICROBIT drive.",
+    "defaultMessage": "將十六進位檔案從您的下載資料夾拖曳至 MICROBIT 磁碟。",
     "description": "Dialog shown when WebUSB fails"
   },
   "try-again-action": {
-    "defaultMessage": "Try again",
+    "defaultMessage": "重試一次",
     "description": "Button label"
   },
   "unknown": {
-    "defaultMessage": "unknown",
+    "defaultMessage": "未知",
     "description": "Label for unknown ML event"
   },
   "unplug-radio-link-microbit-description": {
-    "defaultMessage": "Unplug the radio link micro:bit from the computer. You will need to reconnect the micro:bit if you want to record more data samples.",
+    "defaultMessage": "從電腦上拔下無線電連結 micro:bit。如果您想要記錄更多數據樣本，則需要重新連接 micro:bit。",
     "description": "Unplug radio link micro:bit dialog description"
   },
   "unplug-radio-link-microbit-label": {
-    "defaultMessage": "animation showing a USB cable being disconnected from the top of a micro:bit",
+    "defaultMessage": "顯示 USB 纜線從 micro:bit 頂部斷開連接的動畫",
     "description": "Unplug radio link micro:bit dialog aria label"
   },
   "unplug-radio-link-microbit-title": {
-    "defaultMessage": "Unplug the radio link micro:bit",
+    "defaultMessage": "拔掉無線電連結 micro:bit",
     "description": "Unplug radio link micro:bit dialog title"
   },
   "unsupported-device-explain": {
-    "defaultMessage": "Unfortunately, we only support using micro:bit V2 when connecting using micro:bit radio. You have connected a <link>micro:bit V1</link>.",
+    "defaultMessage": "很遺憾，使用 micro:bit 無線電連線時，我們僅支援 micro:bit V2。您已連線<link>micro:bit V1</link>。",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-header": {
-    "defaultMessage": "micro:bit radio connections do not support micro:bit V1",
+    "defaultMessage": "micro:bit 無線電連線不支援 micro:bit V1",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-with-bluetooth": {
-    "defaultMessage": "Please use Web Bluetooth to connect to your micro:bit V1 instead.",
+    "defaultMessage": "請改用網路藍牙連線至您的 micro:bit V1。",
     "description": "Unsupported device dialog"
   },
   "unsupported-device-without-bluetooth": {
-    "defaultMessage": "You can connect to micro:bit V1 using Web Bluetooth, however, this browser or device does not have Bluetooth enabled. <link>How to enable Bluetooth</link>.",
+    "defaultMessage": "您可以利用網路藍牙連線至 micro:bit V1，但是，此瀏覽器或裝置沒有啟用藍牙。 <link>如何啟用藍牙</link>。",
     "description": "Unsupported device dialog"
   },
   "user-guide": {
-    "defaultMessage": "User guide",
+    "defaultMessage": "用戶指南 ",
     "description": "Used for link to user guide page on microbit.org"
   },
   "webusb-retry-no-select": {
-    "defaultMessage": "You didn't select a micro:bit. Do you want to try again?",
+    "defaultMessage": "您沒有選擇 micro:bit。您想再試一次嗎？",
     "description": "Shown if the user fails to choose a micro:bit"
   },
   "webusb-retry-replug1": {
-    "defaultMessage": "A WebUSB error occurred.",
+    "defaultMessage": "發生 WebUSB 錯誤。",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug2": {
-    "defaultMessage": "Please:",
+    "defaultMessage": "請：",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug3": {
-    "defaultMessage": "check that this micro:bit does not have a battery pack connected",
+    "defaultMessage": "檢查此 micro:bit 是否未連線電池組",
     "description": "WebUSB error dialog"
   },
   "webusb-retry-replug4": {
-    "defaultMessage": "unplug and replug the USB cable",
+    "defaultMessage": "拔下並重新插入 USB 纜線",
     "description": "WebUSB error dialog"
   }
 }
