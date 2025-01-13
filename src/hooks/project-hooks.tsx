@@ -42,7 +42,6 @@ import {
   readFileAsText,
 } from "../utils/fs-util";
 import { useDownloadActions } from "./download-hooks";
-import { usePromiseRef } from "./use-promise-ref";
 
 class CodeEditorError extends Error {}
 
@@ -136,11 +135,17 @@ export const ProjectProvider = ({
   const checkIfProjectNeedsFlush = useStore((s) => s.checkIfProjectNeedsFlush);
   const getCurrentProject = useStore((s) => s.getCurrentProject);
   const setPostImportDialogState = useStore((s) => s.setPostImportDialogState);
+  const { editorReadyPromise, editorContentLoadedPromise } = useStore(
+    (s) => s.editorPromises
+  );
+  const startUpTimestamp = useStore((s) => s.editorStartUpTimestamp);
+  const langChangeFlushedToEditor = useStore(
+    (s) => s.langChangeFlushedToEditor
+  );
+  const checkIfLangChanged = useStore((s) => s.checkIfLangChanged);
   const navigate = useNavigate();
 
   const project = useStore((s) => s.project);
-  const editorReadyPromiseRef = usePromiseRef<void>();
-  const editorContentLoadedPromiseRef = usePromiseRef<void>();
   const initialProjects = useCallback(() => {
     logging.log(
       `[MakeCode] Initialising with header ID: ${project.header?.id}`
@@ -150,30 +155,29 @@ export const ProjectProvider = ({
   }, [logging, project]);
 
   const startUpTimeout = 90000;
-  const startUpTimestamp = useRef<number>(Date.now());
 
   const onWorkspaceLoaded = useCallback(async () => {
     logging.log("[MakeCode] Workspace loaded");
-    await editorContentLoadedPromiseRef.current.promise;
+    await editorContentLoadedPromise.promise;
     // Get latest start up state and only mark editor ready if editor has not timed out.
     getEditorStartUp() !== "timed out" && editorReady();
-    editorReadyPromiseRef.current.resolve();
+    editorReadyPromise.resolve();
   }, [
-    editorContentLoadedPromiseRef,
+    editorContentLoadedPromise,
     editorReady,
-    editorReadyPromiseRef,
+    editorReadyPromise,
     getEditorStartUp,
     logging,
   ]);
 
   const onEditorContentLoaded = useCallback(() => {
     logging.log("[MakeCode] Editor content loaded");
-    editorContentLoadedPromiseRef.current.resolve();
-  }, [editorContentLoadedPromiseRef, logging]);
+    editorContentLoadedPromise.resolve();
+  }, [editorContentLoadedPromise, logging]);
 
   const checkIfEditorStartUpTimedOut = useCallback(
     async (promise: Promise<void> | undefined) => {
-      const elapsedTimeSinceStartup = Date.now() - startUpTimestamp.current;
+      const elapsedTimeSinceStartup = Date.now() - startUpTimestamp;
       const remainingTimeout = startUpTimeout - elapsedTimeSinceStartup;
       if (
         // Editor has already timed out.
@@ -195,31 +199,39 @@ export const ProjectProvider = ({
           : []),
       ]);
     },
-    [editorStartUp]
+    [editorStartUp, startUpTimestamp]
   );
 
   const doAfterEditorUpdatePromise = useRef<Promise<void>>();
   const doAfterEditorUpdate = useCallback(
     async (action: () => Promise<void>) => {
-      if (!doAfterEditorUpdatePromise.current && checkIfProjectNeedsFlush()) {
+      if (
+        !doAfterEditorUpdatePromise.current &&
+        (checkIfProjectNeedsFlush() || checkIfLangChanged())
+      ) {
         doAfterEditorUpdatePromise.current = (async () => {
           // driverRef.current is not defined on first render.
           // Only an issue when navigating to code page directly.
           if (!driverRef.current) {
             throw new CodeEditorError("MakeCode iframe ref is undefined");
-          } else {
+          } else if (checkIfProjectNeedsFlush()) {
             logging.log("[MakeCode] Importing project");
-            await editorReadyPromiseRef.current.promise;
+            await editorReadyPromise.promise;
             const project = getCurrentProject();
             expectChangedHeader();
             try {
               await driverRef.current.importProject({ project });
               logging.log("[MakeCode] Project import succeeded");
               projectFlushedToEditor();
+              langChangeFlushedToEditor();
             } catch (e) {
               logging.log("[MakeCode] Project import failed");
               throw e;
             }
+          } else {
+            logging.log("[MakeCode] Waiting for editor after language change");
+            await editorReadyPromise.promise;
+            langChangeFlushedToEditor();
           }
         })();
       }
@@ -243,12 +255,14 @@ export const ProjectProvider = ({
     },
     [
       checkIfProjectNeedsFlush,
+      checkIfLangChanged,
       driverRef,
       logging,
-      editorReadyPromiseRef,
+      editorReadyPromise.promise,
       getCurrentProject,
       expectChangedHeader,
       projectFlushedToEditor,
+      langChangeFlushedToEditor,
       checkIfEditorStartUpTimedOut,
       editorTimedOut,
     ]
@@ -311,7 +325,7 @@ export const ProjectProvider = ({
         // Check if is a MakeCode hex, otherwise show error dialog.
         if (hex.includes(makeCodeMagicMark)) {
           const hasTimedOut = await checkIfEditorStartUpTimedOut(
-            editorReadyPromiseRef.current.promise
+            editorReadyPromise.promise
           );
           if (hasTimedOut) {
             openEditorTimedOutDialog();
@@ -332,7 +346,7 @@ export const ProjectProvider = ({
     [
       checkIfEditorStartUpTimedOut,
       driverRef,
-      editorReadyPromiseRef,
+      editorReadyPromise,
       loadDataset,
       logging,
       navigate,
@@ -412,9 +426,14 @@ export const ProjectProvider = ({
   const editorChange = useStore((s) => s.editorChange);
   const onWorkspaceSave = useCallback(
     (event: EditorWorkspaceSaveRequest) => {
-      editorChange(event.project);
+      if (!checkIfLangChanged()) {
+        // We don't want to handle these events until MakeCode has been
+        // reinitialised after a language change.
+        // We should reinitialise with the latest project.
+        editorChange(event.project);
+      }
     },
-    [editorChange]
+    [checkIfLangChanged, editorChange]
   );
 
   const onBack = useCallback(() => {

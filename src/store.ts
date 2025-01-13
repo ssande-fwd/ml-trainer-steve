@@ -44,6 +44,7 @@ import { mlSettings } from "./mlConfig";
 import { BufferedData } from "./buffered-data";
 import { getDetectedAction } from "./utils/prediction";
 import { getTour as getTourSpec } from "./tours";
+import { createPromise, PromiseInfo } from "./hooks/use-promise-ref";
 
 export const modelUrl = "indexeddb://micro:bit-ai-creator-model";
 
@@ -163,7 +164,13 @@ export interface State {
   isEditorOpen: boolean;
   isEditorReady: boolean;
   editorStartUp: EditorStartUp;
+  editorStartUpTimestamp: number;
+  editorPromises: {
+    editorReadyPromise: PromiseInfo<void>;
+    editorContentLoadedPromise: PromiseInfo<void>;
+  };
   isEditorTimedOutDialogOpen: boolean;
+  langChanged: boolean;
 
   download: DownloadState;
   downloadFlashingProgress: number;
@@ -222,6 +229,7 @@ export interface Actions {
   closeTrainModelDialogs: () => void;
   trainModel(): Promise<boolean>;
   setSettings(update: Partial<Settings>): void;
+  setLanguage(languageId: string): void;
 
   /**
    * Resets the project.
@@ -238,6 +246,8 @@ export interface Actions {
    */
   getCurrentProject(): Project;
   checkIfProjectNeedsFlush(): boolean;
+  checkIfLangChanged(): boolean;
+  langChangeFlushedToEditor(): void;
   editorChange(project: Project): void;
   editorReady(): void;
   editorTimedOut(): void;
@@ -307,7 +317,13 @@ const createMlStore = (logging: Logging) => {
           isEditorOpen: false,
           isEditorReady: false,
           editorStartUp: "in-progress",
+          editorStartUpTimestamp: Date.now(),
+          editorPromises: {
+            editorReadyPromise: createPromise<void>(),
+            editorContentLoadedPromise: createPromise<void>(),
+          },
           isEditorTimedOutDialogOpen: false,
+          langChanged: false,
           appEditNeedsFlushToEditor: true,
           changedHeaderExpected: false,
           // This dialog flow spans two pages
@@ -339,6 +355,33 @@ const createMlStore = (logging: Logging) => {
               }),
               false,
               "setSettings"
+            );
+          },
+
+          setLanguage(languageId: string) {
+            const currLanguageId = get().settings.languageId;
+            if (languageId === currLanguageId) {
+              // No need to update language if language is the same.
+              // MakeCode does not reload.
+              return;
+            }
+            set(
+              ({ settings }) => ({
+                settings: {
+                  ...settings,
+                  languageId,
+                },
+                editorPromises: {
+                  editorReadyPromise: createPromise<void>(),
+                  editorContentLoadedPromise: createPromise<void>(),
+                },
+                isEditorReady: false,
+                editorStartUp: "in-progress",
+                editorStartUpTimestamp: Date.now(),
+                langChanged: true,
+              }),
+              false,
+              "setLanguage"
             );
           },
 
@@ -768,6 +811,10 @@ const createMlStore = (logging: Logging) => {
             return get().appEditNeedsFlushToEditor;
           },
 
+          checkIfLangChanged() {
+            return get().langChanged;
+          },
+
           getCurrentProject() {
             return get().project;
           },
@@ -890,6 +937,15 @@ const createMlStore = (logging: Logging) => {
               { changedHeaderExpected: true },
               false,
               "setChangedHeaderExpected"
+            );
+          },
+          langChangeFlushedToEditor() {
+            set(
+              {
+                langChanged: false,
+              },
+              false,
+              "langChangeFlushedToEditor"
             );
           },
           projectFlushedToEditor() {
