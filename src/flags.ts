@@ -29,6 +29,10 @@ export type Flag =
    */
   | "translate"
   /**
+   * Enables languages that are ready for review.
+   */
+  | "translationPreview"
+  /**
    * Flag to show links to website content for the CreateAI release.
    */
   | "websiteContent"
@@ -45,14 +49,15 @@ interface FlagMetadata {
 
 const allFlags: FlagMetadata[] = [
   // Alphabetical order.
-  { name: "devtools", defaultOnStages: ["local"] },
   { name: "exampleOptInA", defaultOnStages: ["review", "staging"] },
   { name: "exampleOptInB", defaultOnStages: [] },
+  { name: "devtools", defaultOnStages: ["local"] },
   {
     name: "preReleaseNotice",
     defaultOnStages: ["staging"],
   },
   { name: "translate", defaultOnStages: [] },
+  { name: "translationPreview", defaultOnStages: [] },
   {
     name: "websiteContent",
     defaultOnStages: ["local", "review", "staging", "production"],

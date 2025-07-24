@@ -1533,6 +1533,42 @@
       "value": "Taal"
     }
   ],
+  "language-fully-supported-heading": [
+    {
+      "type": 0,
+      "value": "Fully supported"
+    }
+  ],
+  "language-partially-supported-heading": [
+    {
+      "type": 0,
+      "value": "Partially supported"
+    }
+  ],
+  "language-support-checked": [
+    {
+      "type": 0,
+      "value": "Ondersteund"
+    }
+  ],
+  "language-support-unchecked": [
+    {
+      "type": 0,
+      "value": "Niet ondersteund"
+    }
+  ],
+  "language-supported-for": [
+    {
+      "type": 0,
+      "value": "Vertalingen ondersteund voor:"
+    }
+  ],
+  "language-toast-title": [
+    {
+      "type": 0,
+      "value": "Taal niet volledig ondersteund"
+    }
+  ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,

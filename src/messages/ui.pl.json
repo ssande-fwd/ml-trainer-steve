@@ -1537,6 +1537,42 @@
       "value": "Język"
     }
   ],
+  "language-fully-supported-heading": [
+    {
+      "type": 0,
+      "value": "Fully supported"
+    }
+  ],
+  "language-partially-supported-heading": [
+    {
+      "type": 0,
+      "value": "Partially supported"
+    }
+  ],
+  "language-support-checked": [
+    {
+      "type": 0,
+      "value": "Wspierane"
+    }
+  ],
+  "language-support-unchecked": [
+    {
+      "type": 0,
+      "value": "Niewspierany"
+    }
+  ],
+  "language-supported-for": [
+    {
+      "type": 0,
+      "value": "Tłumaczenia wspierane dla:"
+    }
+  ],
+  "language-toast-title": [
+    {
+      "type": 0,
+      "value": "Język nie w pełni obsługiwany"
+    }
+  ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,

@@ -1513,6 +1513,42 @@
       "value": "言語"
     }
   ],
+  "language-fully-supported-heading": [
+    {
+      "type": 0,
+      "value": "Fully supported"
+    }
+  ],
+  "language-partially-supported-heading": [
+    {
+      "type": 0,
+      "value": "Partially supported"
+    }
+  ],
+  "language-support-checked": [
+    {
+      "type": 0,
+      "value": "対応"
+    }
+  ],
+  "language-support-unchecked": [
+    {
+      "type": 0,
+      "value": "非対応"
+    }
+  ],
+  "language-supported-for": [
+    {
+      "type": 0,
+      "value": "サポートされている翻訳:"
+    }
+  ],
+  "language-toast-title": [
+    {
+      "type": 0,
+      "value": "言語が完全にサポートされていません"
+    }
+  ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,

@@ -1533,6 +1533,42 @@
       "value": "Idioma"
     }
   ],
+  "language-fully-supported-heading": [
+    {
+      "type": 0,
+      "value": "Fully supported"
+    }
+  ],
+  "language-partially-supported-heading": [
+    {
+      "type": 0,
+      "value": "Partially supported"
+    }
+  ],
+  "language-support-checked": [
+    {
+      "type": 0,
+      "value": "Admitidas"
+    }
+  ],
+  "language-support-unchecked": [
+    {
+      "type": 0,
+      "value": "No admitidas"
+    }
+  ],
+  "language-supported-for": [
+    {
+      "type": 0,
+      "value": "Traducciones admitidas para:"
+    }
+  ],
+  "language-toast-title": [
+    {
+      "type": 0,
+      "value": "El idioma no es soportado totalmente"
+    }
+  ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,

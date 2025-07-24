@@ -871,6 +871,30 @@
     "defaultMessage": "Idioma",
     "description": "Language option text"
   },
+  "language-fully-supported-heading": {
+    "defaultMessage": "Fully supported",
+    "description": "Fully supported languages heading text"
+  },
+  "language-partially-supported-heading": {
+    "defaultMessage": "Partially supported",
+    "description": "Partially supported languages heading text"
+  },
+  "language-support-checked": {
+    "defaultMessage": "Admitidas",
+    "description": "Aria label for ticked checkbox for language support"
+  },
+  "language-support-unchecked": {
+    "defaultMessage": "No admitidas",
+    "description": "Aria label for unticked checkbox for language support"
+  },
+  "language-supported-for": {
+    "defaultMessage": "Traducciones admitidas para:",
+    "description": "Text introducing list of translated areas for a given language (areas: Microsoft MakeCode, micro:bit CreateAI UI itself)"
+  },
+  "language-toast-title": {
+    "defaultMessage": "El idioma no es soportado totalmente",
+    "description": "Language support toast notification title"
+  },
   "learn-about-firewall-requirements-action": {
     "defaultMessage": "Conoce los requisitos del cortafuegos",
     "description": "Link to support article for firewall requirements"

@@ -1519,6 +1519,42 @@
       "value": "Idioma"
     }
   ],
+  "language-fully-supported-heading": [
+    {
+      "type": 0,
+      "value": "Fully supported"
+    }
+  ],
+  "language-partially-supported-heading": [
+    {
+      "type": 0,
+      "value": "Partially supported"
+    }
+  ],
+  "language-support-checked": [
+    {
+      "type": 0,
+      "value": "Compatible"
+    }
+  ],
+  "language-support-unchecked": [
+    {
+      "type": 0,
+      "value": "Incompatible"
+    }
+  ],
+  "language-supported-for": [
+    {
+      "type": 0,
+      "value": "Traduccions compatibles per a:"
+    }
+  ],
+  "language-toast-title": [
+    {
+      "type": 0,
+      "value": "L'idioma no està disponible totalment"
+    }
+  ],
   "learn-about-firewall-requirements-action": [
     {
       "type": 0,
