@@ -28,7 +28,7 @@ export const mlSettings = {
   defaultRequiredConfidence: 0.8, // Default threshold
   numEpochs: 160, // Number of epochs for ML
   learningRate: 0.1,
-  includedAxes: [Axes.X, Axes.Y, Axes.Z],
+  includedAxes: [Axes.X],
   includedFilters: new Set<Filter>([
     Filter.MAX,
     Filter.MEAN,

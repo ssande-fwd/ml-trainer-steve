@@ -22,7 +22,7 @@ export const trainModel = async (
   const { features, labels } = prepareFeaturesAndLabels(data, dataWindow);
   const model: tf.LayersModel = createModel(data);
   const totalNumEpochs = mlSettings.numEpochs;
-
+  console.log(features);
   try {
     await model.fit(tf.tensor(features), tf.tensor(labels), {
       epochs: totalNumEpochs,
@@ -102,11 +102,11 @@ const normalize = (value: number, min: number, max: number) => {
 // Used for training model and producing fingerprints
 // applyFilters reduces array of x, y and z inputs to a single number array with values.
 export const applyFilters = (
-  { x, y, z }: XYZData,
+  { x }: XYZData,
   dataWindow: DataWindow,
   opts: { normalize?: boolean } = {}
 ): Record<string, number> => {
-  if (x.length === 0 || y.length === 0 || z.length === 0) {
+  if (x.length === 0) {
     throw new Error("Empty x/y/z data");
   }
   const filters = getMlFilters(dataWindow);
@@ -119,8 +119,6 @@ export const applyFilters = (
     return {
       ...acc,
       [`${filter}-x`]: applyFilter(x),
-      [`${filter}-y`]: applyFilter(y),
-      [`${filter}-z`]: applyFilter(z),
     };
   }, {} as Record<string, number>);
 };
